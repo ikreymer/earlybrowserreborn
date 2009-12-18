@@ -1,0 +1,19 @@
+#if (ProjectX < 5)
+    STD_DEFINES = LibraryDefines
+    CDEBUGFLAGS = LibraryCDebugFlags
+#else
+#include <Library.tmpl>
+#endif
+
+EXTENSIONSRC =
+
+SRCS_LIBSTG   = libstg.c
+OBJS_LIBSTG   = libstg.o
+
+SRCS          = $(SRCS_LIBSTG)
+
+CC = cc
+CDEBUGFLAGS   = -g
+
+NormalLibraryObjectRule()
+NormalLibraryTarget(Style,$(OBJS_LIBSTG))

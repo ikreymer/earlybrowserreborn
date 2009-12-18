@@ -1,0 +1,19 @@
+#
+#
+#
+           OBJS	= HTAccess.o HTFTP.o HTHistory.o HTParse.o HTTP.o 	\
+		  HTAnchor.o HTFile.o HTList.o HTString.o SGML.o 	\
+		  HTAtom.o HTFormat.o HTML.o HTStyle.o HTChunk.o 	\
+		  HTGopher.o HTNews.o HTTCP.o
+
+	   SRCS = HTAccess.c HTFTP.c HTHistory.c HTParse.c HTTP.c 	\
+		  HTAnchor.c HTFile.c HTList.c HTString.c SGML.c 	\
+		  HTAtom.c HTFormat.c HTML.c HTStyle.c HTChunk.c 	\
+		  HTGopher.c HTNews.c HTTCP.c
+
+	DEFINES = -DERWISE -I.. -I. -I../../HText
+
+
+NormalLibraryTarget(WWW, $(OBJS))
+
+DependTarget()

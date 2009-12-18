@@ -1,0 +1,17 @@
+#
+#
+#
+
+   	   OBJS = XlFormatText.o XlSetup.o XlUtil.o XlWindow.o XlStyle.o
+	   SRCS = XlFormatText.c XlSetup.c XlUtil.c XlWindow.c XlStyle.c
+
+	  XLDIR = ../Xl
+	  HTDIR = ../HText
+	 WWWDIR = ../Cl/WWWLibrary
+     MOTIF_HDRS = -I/p/motif/include
+    ERWISE_HDRS = -I$(XLDIR) -I$(HTDIR) -I$(WWWDIR)
+	DEFINES = $(ERWISE_HDRS) $(MOTIF_HDRS)
+
+NormalLibraryTarget(Xl, $(OBJS))
+
+DependTarget()

@@ -1,0 +1,214 @@
+     MAJORVERSION = 2
+     MINORVERSION = 1
+          VERSION = $(MAJORVERSION).$(MINORVERSION)
+              PGM = midaswww
+            CLASS = Midaswww
+              DIR = $(PGM)-$(VERSION)
+
+          DEFINES = -DVERSION="\"$(VERSION)\""
+
+          HEADERS = \
+		SGMLAnchorText.h \
+		SGMLAnchorTextP.h \
+		SGMLCompositeText.h \
+		SGMLCompositeTextP.h \
+		SGMLCaptionText.h \
+		SGMLCaptionTextP.h \
+		SGMLFormattedText.h \
+		SGMLFormattedTextP.h \
+		SGMLFormText.h \
+		SGMLFormTextP.h \
+		SGMLHyper.h \
+		SGMLHyperP.h \
+		SGMLContainerText.h \
+		SGMLContainerTextP.h \
+		SGMLInputText.h \
+		SGMLInputTextP.h \
+		SGMLListText.h \
+		SGMLListTextP.h \
+		SGMLMarkerText.h \
+		SGMLMarkerTextP.h \
+		SGMLRuleText.h \
+		SGMLRuleTextP.h \
+		SGMLPlainText.h \
+		SGMLPlainTextP.h \
+		SGMLTableText.h \
+		SGMLTableTextP.h \
+		SGMLText.h \
+		SGMLTextP.h \
+		Tree.h \
+		TreeP.h \
+		Ghostview.h \
+		GhostviewP.h \
+		GhostviewPlusP.h \
+		GhostviewPlus.h \
+		ps.h \
+		midas.h \
+		midasconvert.h \
+		midaserrors.h \
+		midaslist.h \
+		midasoperand.h \
+		midasshell.h \
+		midaswidget.h \
+		midaswww.h \
+		midasnet.h \
+		vms_types.h \
+		xgifload.h \
+               stdc.h
+
+            SRCS = \
+		SGMLAnchorText.c \
+		SGMLCompositeText.c \
+		SGMLFormattedText.c \
+		SGMLFormText.c \
+		SGMLHyper.c \
+		SGMLCaptionText.c \
+		SGMLContainerText.c \
+		SGMLInputText.c \
+		SGMLListText.c \
+		SGMLMarkerText.c \
+		SGMLRuleText.c \
+		SGMLPlainText.c \
+		SGMLTableText.c \
+		SGMLText.c \
+		Tree.c \
+		Ghostview.c \
+		GhostviewPlus.c \
+		ps.c \
+		custom.c \
+		dxm.c \
+		midas.c \
+		midasclass.c \
+		midasconvert.c \
+		midasdeclare.c \
+		midasevaluate.c \
+		midasingot.c \
+		midaslist.c \
+		midasloadimage.c \
+		midaswww.c \
+		midasutil.c \
+		setenv.c \
+		getenv.c \
+		xgifload.c \
+		uid2c.c \
+		midasfetchuid.c \
+               strcasecmp.c \
+               mwhttp.c \
+		mwhttp2.c \
+               mwgopher.c \
+               mwftp.c \
+		mwmain.c \
+		mwfont16.c 
+
+            OBJS = \
+		SGMLAnchorText.o \
+		SGMLCompositeText.o \
+		SGMLFormattedText.o \
+		SGMLFormText.o \
+		SGMLHyper.o \
+		SGMLCaptionText.o \
+		SGMLContainerText.o \
+		SGMLInputText.o \
+		SGMLListText.o \
+		SGMLMarkerText.o \
+		SGMLRuleText.o \
+		SGMLPlainText.o \
+		SGMLTableText.o \
+		SGMLText.o \
+		Tree.o \
+		Ghostview.o \
+		GhostviewPlus.o \
+		ps.o \
+		custom.o \
+		dxm.o \
+		midas.o \
+		midasclass.o \
+		midasconvert.o \
+		midasdeclare.o \
+		midasevaluate.o \
+		midasingot.o \
+		midaslist.o \
+		midasloadimage.o \
+		midaswww.o \
+		midasutil.o \
+		setenv.o \
+		getenv.o \
+		xgifload.o \
+		midasfetchuid.o \
+               mwhttp.o \
+		mwhttp2.o \
+               mwgopher.o \
+               mwftp.o  \
+		mwmain.o \
+		mwfont16.o 
+
+           UILS = \
+                midas.uil \
+                midaswww.uil
+
+           UIDS = \
+                midas.uid \
+                midaswww.uid  
+
+           UICS = \
+                midas.uic \
+                midaswww.uic
+
+           ADS = \
+                Midas.ad \
+                Midaswww_color.ad \
+                Midaswww_mono.ad
+           ADHS = \
+                Midas.adh \
+                Midaswww_color_part.adh \
+                Midaswww_mono_part.adh \
+                Midaswww_common_part.adh 
+ 
+           OTHERS = \
+                Imakefile \
+                CommonMakefile \
+                Makefile.hp \
+                Makefile.sgi \
+                Makefile.aix32 \
+                ad2c \
+                Midas.ad \
+                Midaswww_color_part.ad \
+                Midaswww_mono_part.ad \
+                Midaswww_common_part.ad \
+                descrip.mms \
+                make.com \
+                midaswww_multinet.opt \
+                midaswww_ucx.opt \
+                README_VMS \
+                README
+
+world::	$(UIDS) $(UICS) $(ADS) $(ADHS) $(PGM)
+
+
+.SUFFIXES : .uic .uid .uil .ad .adh
+      
+mwmain.o:	$(ADHS)
+
+Midaswww_color.ad:	Midaswww_common_part.ad Midaswww_color_part.ad
+	cat  Midaswww_common_part.ad Midaswww_color_part.ad > $@
+
+Midaswww_mono.ad:	Midaswww_common_part.ad Midaswww_mono_part.ad
+	cat  Midaswww_common_part.ad Midaswww_mono_part.ad > $@
+
+.ad.adh: 
+	./ad2c $< > $*.adh 
+
+uid2c: uid2c.o
+	$(CC) -o $@ uid2c.o      
+
+$(UICS): $(UIDS) uid2c
+
+.uid.uic:  
+	./uid2c $*.uid
+
+.uil.uid:
+	$(UIL) -o $*.uid $<
+
+test::	$(PGM) $(UIDS) 
+	XUSERFILESEARCHPATH=./%N.xx ; export XUSERFILESEARCHPATH; ./$(PGM)
+

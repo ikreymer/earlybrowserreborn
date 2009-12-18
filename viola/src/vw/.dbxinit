@@ -1,0 +1,45 @@
+alias c cont
+alias r run
+alias n next
+alias o next
+alias p print
+alias s step
+alias objName "print (char*)obj[2]"
+alias selfName "print (char*)self[2]"
+
+setenv VIOLA "/usr/work/viola"
+setenv VIOLA_DOCS "/usr/work/viola/docs"
+setenv VIOLA_WWW_DOCS "/usr/work/viola/www/docs"
+setenv VIOLA_GRAPHICS "/usr/work/viola/graphics"
+setenv RES_DATA_PATH "file:/usr/work/viola/twi/docs"
+setenv PURIFYHOME "/usr/work/purify"
+
+#setenv WWW_HOME "/usr/work/viola/src/resourceB.hmmlb"
+#setenv WWW_HOME "/usr/work/viola/docs/testList.hmml"
+#setenv WWW_HOME "/usr/work/viola/tests/docs/test.hmml"
+#setenv WWW_HOME "/etc/motd"
+setenv WWW_HOME "/usr/work/test.html"
+
+setenv VIOLA_SGML "/usr/work/viola/sgml"
+setenv SGML_PATH "/usr/work/viola/sgml/dtds/%N.dtd"
+
+alias make "sh make"
+#alias make "sh make -e 'CC=purify cc'"
+
+#alias cw "sh ccWWWLibNViola"
+
+#setenv BOOK_PATH "/usr/work/book"
+#setenv NAVIB_ARGS "-d /usr/work/book/index ' '"
+#setenv NAVIB_WAISSEARCH "/usr/local/bin/waissearch"
+
+alias nl "call purify_newleaks()"
+alias cl "call purify_clear_newleaks()"
+
+#setenv VIOLA_PATH "/usr/work/viola/res/objs /usr/work/viola/demo/objs /usr/work/viola/sgml/objs /usr/work/viola/www/objs /usr/work/viola/twi/objs /usr/work/viola/ib/objs /usr/work/viola/tests/objs"
+#setenv VIOLA_PATH "/net/swindle/nixon/pei/viola/res/objs /net/swindle/nixon/pei/viola/demo/objs /net/swindle/nixon/pei/viola/sgml/objs /net/swindle/nixon/pei/viola/www/objs /net/swindle/nixon/pei/viola/twi/objs /net/swindle/nixon/pei/viola/ib/objs /net/swindle/nixon/pei/viola/tests/objs"
+setenv VIOLA_PATH "/usr/work/viola/res/objs /usr/work/violaObjs/demo/objs /usr/work/violaObjs/sgml/objs /usr/work/violaObjs/www/objs /usr/work/violaObjs/twi/objs /usr/work/violaObjs/ib/objs /usr/work/violaObjs/tests/objs"
+
+setenv WWW_HOME "/etc/motd"
+
+
+# make -e 'CDEBUGFLAGS=-g -ldl' -e 'VW=1'

@@ -1,0 +1,112 @@
+\name	{res.HTMLStyle}
+\class	{generic}
+\parent	{}
+\script	{
+
+	print("###################\n");
+	print("###################\n");
+	print("###################\n");
+
+	print("@@@@@@ SGML_vobjf clsss = field: args: ");
+	for (i =0; i < arg[]; i++) print(arg[i], ", ");
+	print("\n");
+
+	switch (arg[0]) {
+	case 'D':
+	print("@@@@@@ SGML_vobjf clsss = field: args: DDDD\n");
+/*		docURL = get("label");
+		objFileName = HTTPGet(docURL);
+*/
+		docURL = get("label");
+		sourceFile = HTTPGet(docURL);
+
+print("**** docURL={", docURL, "}\n");
+print("***** src={", sourceFile, "}\n");
+		addrInfo = HTTPCurrentDocAddrParsed(docURL);
+print("**** addrInfo={", addrInfo, "}\n");
+
+/*
+		if (nthChar(addrInfo[2], 0) == '/') {
+			sourceFile = concatenate(addrInfo[0], ":", 
+					 "//", addrInfo[1], 
+					 addrInfo[2], addrInfo[3]);
+		} else {
+			sourceFile = concatenate(addrInfo[0], ":", 
+					 "//", addrInfo[1], "/",
+					 addrInfo[2], addrInfo[3]);
+		}
+*/
+/*		HTTPCurrentDocAddrSet(sourceFile); */
+
+		if (nthChar(addrInfo[2], 0) == '/') {
+			localFile = concatenate(addrInfo[2], addrInfo[3]);
+			path = addrInfo[2];
+		} else {
+			/* is this a mistake? */
+			localFile = concatenate("/", addrInfo[2], addrInfo[3]);
+			path = concatenate("/", addrInfo[2]);
+		}
+		objFileName = addrInfo[3];
+		objName = nthChar(addrInfo[3], 0, strlen(addrInfo[3]) - 3);
+
+print("**** path={", path, "}\n");
+print("***** objFileName={", objFileName, "}\n");
+
+		if (loadObjFile(path, objFileName) <= 0) {
+			print("failed to load obj file ", objFileName,
+				"in dir ", path, "\n");
+			return "";
+		}
+
+		send(objName, "init");
+
+		set("children", objName);
+		tweak(objName, concatenate("set(\"parent\", \"", 
+						self(), "\");"));
+
+/*		objectListSend("children", "configSelf");*/
+/*
+		w = tweak(nthChild(0), "width();");
+		h = tweak(nthChild(0), "height();");
+*/
+		deepObjectListSend("children", "configSelf");
+/*		deepObjectListSend("children", "render");*/
+/*
+		send(objName, "configSelf");
+		send(objName, "configSelf");
+
+*/
+		vspan = tweak(nthChild(0), "height();");
+print("1 SGML_vobjf: final vspan=", vspan, "\n");
+		return vspan;
+	break;
+	case 'R':
+		/* arg[1]	y
+		 * arg[2]	width
+		 */
+		vspan = SGMLGetStyle("VOBJF", "top");
+		set("x", SGMLGetStyle("VOBJF", "left"));
+		set("y", arg[1] + vspan);
+		set("width", arg[2] - x() - SGMLGetStyle("VOBJF", "right"));
+
+		print("SGML_vobjf: arg[1]=", arg[1], " arg[2]=", arg[2], "\n");
+
+		vspan = tweak(nthChild(0), "height();");
+
+		print("SGML_vobjf: final vspan=", vspan, "\n");
+
+		set("height", vspan);
+		vspan = vspan + SGMLGetStyle("VOBJF", "bottom");
+		return vspan;
+	break;
+	case "findTop":
+		return send(parent(), "findTop");
+	break;
+	case "gotoAnchor":
+		return "";
+	break;
+	}
+	usual();
+}
+\
+

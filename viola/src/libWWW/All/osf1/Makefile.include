@@ -1,0 +1,22 @@
+#       Platform-specific Makefile for W3 Library       (AXP OSF1)
+#       -----------------------------------------
+#
+
+WWW = ../..
+
+#  Where should temporary (object) files go?
+WTMP = /tmp
+
+
+CFLAGS = -g
+#CFLAGS =  -Wall -g
+#CC = gcc
+CC = cc
+#LFLAGS = -lresolv
+LFLAGS =
+
+#ASIS_MACH = dec-station/ultrix-4.2
+#WWW_MACH = OSF1
+
+# Directory for installed binary:
+LIBDIR = /usr/local/lib

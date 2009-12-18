@@ -1,0 +1,190 @@
+                                                            Obtaining Midas WWW
+                              OBTAINING MIDAS WWW
+                                       
+   There are two ways to go about obtaining Midas WWW: 
+   
+      Fetch one of the pre-compiled binaries 
+      
+      Build it yourself from the source code 
+      
+   We recommend you initially try the pre-compiled binaries, and only resort 
+   to building your own version if: 
+   
+      The pre-compiled binary does not exist for your machine, or will not run 
+      
+      You are curious to see how it works 
+      
+      You want to change something 
+      
+   If you have already obtained Midas WWW but are having problems,  try the
+   troubleshooting guide. 
+                                        Midas WWW pre-compiled binaries for VMS
+                    MIDAS WWW PRE-COMPILED BINARIES FOR VMS
+                                       
+   Currently pre-compiled binaries for VMS are only available for use with
+   MULTINET TCP/IP software. We hope to make UCX binaries available some time
+   in the future. The binary files are available as a compressed backup file,
+   containing both VAX and ALPHA images, and a few auxilliary files needed to
+   run the image. 
+   
+   To run the pre-compiled binaries you need to have MULTINET software and
+   DecWindows Motif installed. 
+   
+Obtaining and running the VMS binaries
+
+   The binaries are available using FTP from freehep.scri.fsu.eduin directory  
+   freehep/networking_email_news/midaswww/binaries/vms.
+   
+   The following files are available: 
+   
+  midaswww_multinet.bck_Z 
+                         Compiled under VMS 5.5 and OPEN-VMS 1.5 with Multinet 
+                         
+   To uncompress the file you must use the LZDCMP program (available in the
+   same directory, as  lzdcmp.exe). 
+   
+   To obtain and run the pre-compiled binary files follow these instructions: 
+   
+
+   ftp freehep.scri.fsu.edu
+      login as user anonymous
+   cd freehep/networking_email_news/midaswww/binaries/vms
+   binary
+   get midaswww_multinet.bck_Z
+   get lzdcmp.exe        
+   quit
+
+   lzdcmp :== "sys$disk:[]lzdcmp"  
+   lzdcmp midaswww_multinet.bck_Z midaswww.bck
+   backup/log midaswww.bck/save [] 
+
+   The following files should now be created: 
+   
+  midaswww_alpha.exe     The ALPHA executable 
+                         
+  midaswww_vax.exe       The VAX executable 
+                         
+  midas.uid,midaswww.uid These are Motif User Interface Definition files. They
+                         are required in order to run the executable. 
+                         
+  midaswww.vue$dat,vue$midaswww.com
+                         Files that simplify running Midas WWW from a Fileview
+                         or Session Manager menu. 
+                         
+  install.com            A simple .com file for installing the above  files in
+                         system directories. 
+                         
+   To try out Midas WWW just type 
+   
+
+   run midaswww_vax         or
+   run midaswww_alpha
+
+   as appropriate. The MidasWWW window should now appear.  If it doesn't then
+   see thetroubleshooting guide. 
+   
+Installing Midas WWW
+
+   To install MidasWWW in the appropriate system directories, issue the
+   command: 
+   
+
+   @install
+
+   You will be asked which directory you wish to install the .exe file in, 
+   just hit return if you are happy to install in the default SYS$SYSTEM 
+   directory. 
+   
+   When the .com file finished it will ask you to add a line to your
+   SYLOGIN.COM file to make a symbol available to users. Once this has been
+   done then Midas WWW can be invoked by issuing the command: 
+   
+
+   midaswww
+
+   or by selecting the World Wide Web entry from the Applicationsmenu in the
+   Session Manager.   
+                                         MidasWWW VAX Installation Instructions
+                         VAX INSTALLATION INSTRUCTIONS
+                                       
+   These instructions are for the VAX. See  README file for UNIX installation
+   instructions. 
+   
+Requirements
+
+   To install this version of MidasWWW you will need a VAX running VMS 5.4 or
+   greater, with DecWindows/Motif  and C installed.  
+   
+   Currently  MidasWWW has only been run with  Multinet TCP/IP software.  It
+   should be possible to run it with other versions of TCP/IP for the VAX
+   without too much trouble,  if you succeed please feed the changes back to 
+   us. 
+   
+Obtaining MidasWWW
+
+   You can obtain MidasWWW as a compressed backup file via anonymous FTP from 
+   FreeHEP.Scri.Fsu.Edu, in directory   /freehep/networking_email_news/midaswww
+   
+   NoteYou should use the compress BACKUP file for VMS installation, not the
+   TAR file, as the BACKUP file contains some extra VMS only files. You will
+   need to use the lzdcmputility to decompress the backup file, this is also
+   available as an exe file from FreeHEP.Scri.Fsu.Edu in the directory 
+   /freehep/networking_email_news/midaswww/binaries/vms. 
+   
+   You can fetch, decompress and unpack the MidasWWW backup file as follows: 
+   
+
+  ftp freehep.scri.fsu.edu
+     login as user anonymous
+  cd /freehep/networking_email_news/midaswww
+  binary
+  get midaswww-2.1.bck_Z midaswww.bck_Z
+  get binaries/vms/lzdcmp.exe
+  quit
+  lzdmp :== "$sys$disk:lzdcmp"
+  lzdcmp midaswww.bck_Z midaswww.bck
+  backup/log midaswww.bck/save []
+
+Building
+
+   Once you have uncompressed and unpacked the file, you can build the
+   executable by issuing the command: 
+   
+
+   @make
+
+   The .COM file will build MidasWWW on either a VAX or an ALPHA. Note that at
+   present it has only been tested using Multinet software.  
+   
+Testing
+
+   To try out MidasWWW first make sure your X windows DISPLAY is set up
+   correctly (use the  SET DISPLAY command to set it). Then issue the command: 
+   
+
+   run midaswww
+
+   The MidasWWW window should now appear.  If it doesn't then see
+   thetroubleshooting guide. 
+   
+Installing
+
+   To install MidasWWW in the appropriate system directories, issue the
+   command: 
+   
+
+   @install
+
+   You will be asked which directory you wish to install the .exe file in, 
+   just hit return if you are happy to install in the default SYS$SYSTEM 
+   directory. 
+   
+   When the .com file finished it will ask you to add a line to your
+   SYLOGIN.COM file to make a symbol available to users. Once this has been
+   done then Midas WWW can be invoked by issuing the command: 
+   
+
+   midaswww
+
+   or by selecting the World Wide Web entry from the Applicationsmenu in the
+   Session Manager. 

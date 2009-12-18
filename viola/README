@@ -1,0 +1,67 @@
+ViolaWWW, Version 3.3 Beta				April 10 1995
+==========================
+
+ViolaWWW is an extensible World Wide Web hypermedia browser. A new
+release is hereby announced. 
+
+Based on and drawing from the Viola scripting language and toolkit, 
+ViolaWWW provides a way to build relatively complex hypermedia applications
+that are beyond the provisions of the current HTML standard.
+
+Background information: Viola is a toolkit for hypermedia development, 
+publishing, and browsing. It is basically a toolkit consisting of a
+scripting language, a graphical user interface, and an object-oriented 
+data storage system. ViolaWWW is an application of the Viola toolkit.
+
+For more information>> http://berkeley.ora.com/proj/viola/violaHome.html
+
+
+Notable features in the new ViolaWWW
+------------------------------------
+
+* Fundamentally HTML 3.0 (ie: highly container based), plus many extensions
+  for richer formatting capabilities. Extensions such as for multiple 
+  columns formatting, document insertion (client side), and dynamically 
+  collapsable/expandable list. 
+
+* Sidebar panel: for displaying "meta" information, or for intra document
+  navigational links, etc. The panel is engaged and disengaged by the 
+  presence of the document that is associated with the sidebar document. 
+
+* Dynamic toolbar: document engaged tool applets (ie: navigational aids). 
+
+* Rudimentary stylesheet mechanism for attaching styling information to
+  a document. For changing document's fonts, color information, alignments.
+
+* A scripting language that is accessible from the HTML, such that an HTML
+  document can embbed highly interactive scripts/applets. 
+
+* Miscellaneous niceties: hotlist facility; shows HTTP loading progress
+  in a pie chart (when it has the information). 
+
+* An experimental platform. It's source available, even most of the 
+  browser is constructed in a highlevel scripting language; and is very 
+  customizable to someone who understands the scripting language. 
+
+* Motif front-end. The X11 (non Motif) version is also available.
+
+* Self contained single binary for easy installation, unlike the old 
+  ViolaWWW which required setup of various viola application files.
+
+
+Availability
+------------
+
+Source and binary can be found in ftp://ftp.ora.com/pub/www/viola.
+Platform: Unix/XWindows. Sparc binary is supplied. 
+
+
+
+				Pei Wei (wei@ora.com)
+				O'Reilly & Associates, Inc.
+
+
+PS
+--
+See README_SETUP_3.3 for notes on compilation, installation, and 
+running ViolaWWW.

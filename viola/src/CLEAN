@@ -1,0 +1,20 @@
+echo "****** Cleaning W3 library"
+(cd libWWW/Library/Implementation; make clean)
+
+echo "****** Cleaning XPA library"
+(cd libXPA/src; make clean)
+
+echo "****** Cleaning XPM library"
+(cd libXPM; make clean)
+
+echo "****** Cleaning IMG library"
+(cd libIMG; make clean; rm xloadimage)
+
+echo "****** Cleaning Style library"
+(cd libStyle; make clean)
+
+echo "****** Cleaning Viola"
+(cd viola; make clean)
+
+echo "****** Cleaning ViolaWWW-Motif"
+(cd vw; make clean)

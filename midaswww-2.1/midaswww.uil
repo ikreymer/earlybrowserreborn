@@ -1,0 +1,4707 @@
+module WWW
+    names = case_sensitive
+    version = 
+    " 2.1"
+
+object
+!]
+    WWWMain: XmMainWindow 
+        {
+        arguments
+            {
+            XmNborderWidth = 1;
+            XmNmenuBar = XmMenuBar WWWMenu;
+            XmNcommandWindowLocation = XmCOMMAND_ABOVE_WORKSPACE;
+            XmNmessageWindow = XmForm WWWKey;
+            XmNcommandWindow = XmRowColumn WWWHeader;
+            XmNwidth = 552;
+            XmNheight = 572;
+            };
+        controls
+            {
+            XmMenuBar WWWMenu;
+            XmForm WWWKey;
+            unmanaged XmRowColumn WWWHeader;
+            };
+        };
+    WWWMenu: XmMenuBar 
+        {
+        };
+    WWWCommand: XmForm 
+        {
+        arguments
+            {
+            XmNborderWidth = 0;
+            XmNtopAttachment = XmATTACH_FORM;
+            XmNtopOffset = 0;
+            XmNrightAttachment = XmATTACH_WIDGET;
+            XmNrightOffset = 9;
+            XmNrightWidget = XmDrawnButton WWWHotList;
+            XmNleftAttachment = XmATTACH_FORM;
+            XmNleftOffset = 0;
+            };
+        controls
+            {
+            XmLabelGadget VUITaaaag;
+            XmCommand WWWCommandText;
+            };
+        };
+!**VUIT_Manage false ***
+!**VUIT_Manage false ***
+!**VUIT_Manage false ***
+!**VUIT_Manage false ***
+!**VUIT_Manage false ***
+!**VUIT_Manage false ***
+!**VUIT_Manage false ***
+!**VUIT_Manage false ***
+!**VUIT_Manage false ***
+!**VUIT_Manage false ***
+!**VUIT_Manage false ***
+!**VUIT_Manage false ***
+!**VUIT_Manage false ***
+!**VUIT_Manage false ***
+!**VUIT_Manage false ***
+!**VUIT_Manage false ***
+!**VUIT_Manage false ***
+!**VUIT_Manage false ***
+!**VUIT_Manage false ***
+!**VUIT_Manage false ***
+!**VUIT_Manage false ***
+!**VUIT_Manage false ***
+!**VUIT_Manage false ***
+!**VUIT_Manage false ***
+!**VUIT_Manage false ***
+!***VUIT_Manage false ***
+    WWWDocInfo: XmFormDialog 
+        {
+        arguments
+            {
+            XmNx = 1046;
+            XmNy = 1413;
+            XmNborderWidth = 1;
+            XmNwidth = 517;
+            XmNheight = 167;
+            XmNresizePolicy = XmRESIZE_NONE;
+            };
+        controls
+            {
+            XmRowColumn DocInfoDooHickey;
+            unmanaged XmScrolledWindow SourceTextSW;
+            XmFrame VUITaaaap;
+            XmToggleButton ShowDocumentSource;
+            };
+        };
+    VUITaaaaa: XmRowColumn 
+        {
+        arguments
+            {
+            XmNborderWidth = 0;
+            XmNnumColumns = 2;
+            XmNpacking = XmPACK_COLUMN;
+            XmNorientation = XmVERTICAL;
+            XmNentryAlignment = XmALIGNMENT_END;
+            XmNx = 2;
+            XmNy = 1;
+            };
+        controls
+            {
+            XmLabelGadget 
+                {
+                arguments
+                    {
+                    XmNx = 17;
+                    XmNy = 4;
+                    XmNlabelString = 
+                    compound_string("Title:");
+                    XmNalignment = XmALIGNMENT_END;
+                    };
+                };
+            XmLabelGadget 
+                {
+                arguments
+                    {
+                    XmNx = 13;
+                    XmNy = 24;
+                    XmNlabelString = 
+                    compound_string("Document:");
+                    XmNalignment = XmALIGNMENT_END;
+                    };
+                };
+            XmLabelGadget 
+                {
+                arguments
+                    {
+                    XmNx = 19;
+                    XmNy = 75;
+                    XmNlabelString = 
+                    compound_string("Format:");
+                    };
+                };
+            XmTextField WWWDocInfoDocTitleText;
+            XmTextField WWWWDocInfoDocNameText;
+            XmTextField WWWDocInfoDocFormatText;
+            };
+        };
+    DocInfoDooHickey: XmRowColumn 
+        {
+        arguments
+            {
+            XmNborderWidth = 0;
+            XmNleftAttachment = XmATTACH_NONE;
+            XmNtopAttachment = XmATTACH_WIDGET;
+            XmNleftOffset = 187;
+            XmNtopOffset = 2;
+            XmNorientation = XmHORIZONTAL;
+            XmNtopWidget = XmFrame VUITaaaap;
+            XmNrightAttachment = XmATTACH_FORM;
+            XmNrightOffset = 10;
+            XmNy = 127;
+            XmNheight = 35;
+            XmNx = 395;
+            };
+        controls
+            {
+            XmPushButtonGadget WWWDocInfoSearch;
+            XmPushButtonGadget WWWDocInfoHelp;
+            XmPushButtonGadget WWWDocInfoDismiss;
+            };
+        };
+    WWWWDocInfoDocNameText: XmTextField 
+        {
+        arguments
+            {
+            XmNcolumns = 1;
+            XmNeditable = false;
+            };
+        };
+    WWWDocInfoDocTitleText: XmTextField 
+        {
+        arguments
+            {
+            XmNcolumns = 1;
+            XmNeditable = false;
+            };
+        };
+    SourceTextSW: XmScrolledWindow 
+        {
+        arguments
+            {
+            XmNborderWidth = 0;
+            XmNleftAttachment = XmATTACH_FORM;
+            XmNtopAttachment = XmATTACH_WIDGET;
+            XmNleftOffset = 8;
+            XmNtopOffset = 9;
+            XmNtopWidget = XmRowColumn DocInfoDooHickey;
+            XmNrightAttachment = XmATTACH_FORM;
+            XmNrightOffset = 6;
+            XmNbottomAttachment = XmATTACH_FORM;
+            XmNbottomOffset = 5;
+            XmNscrollingPolicy = XmAUTOMATIC;
+            };
+        controls
+            {
+            };
+        };
+    WWWDocInfoDismiss: XmPushButtonGadget 
+        {
+        arguments
+            {
+            XmNx = 405;
+            XmNy = 9;
+            XmNlabelString = 
+            compound_string("Cancel");
+            };
+        };
+!**VUIT_Manage false ***
+!**VUIT_Manage false ***
+!**VUIT_Manage false ***
+!**VUIT_Manage false ***
+!**VUIT_Manage false ***
+!**VUIT_Manage false ***
+!**VUIT_Manage false ***
+!**VUIT_Manage false ***
+!**VUIT_Manage false ***
+!**VUIT_Manage false ***
+!**VUIT_Manage false ***
+!**VUIT_Manage false ***
+!**VUIT_Manage false ***
+!**VUIT_Manage false ***
+!**VUIT_Manage false ***
+!**VUIT_Manage false ***
+!**VUIT_Manage false ***
+!**VUIT_Manage false ***
+!**VUIT_Manage false ***
+!**VUIT_Manage false ***
+!**VUIT_Manage false ***
+!**VUIT_Manage false ***
+!**VUIT_Manage false ***
+!**VUIT_Manage false ***
+!**VUIT_Manage false ***
+!***VUIT_Manage false ***
+    WWWDocOpen: XmFormDialog 
+        {
+        arguments
+            {
+            XmNx = 21;
+            XmNy = 887;
+            XmNwidth = 503;
+            XmNborderWidth = 1;
+            XmNresizePolicy = XmRESIZE_ANY;
+            XmNdefaultButton = XmPushButtonGadget WWWDocOpenOk;
+            };
+        controls
+            {
+            XmRowColumn VUITaaaac;
+            XmRowColumn 
+                {
+                arguments
+                    {
+                    XmNborderWidth = 0;
+                    XmNleftAttachment = XmATTACH_FORM;
+                    XmNtopAttachment = XmATTACH_WIDGET;
+                    XmNleftOffset = 9;
+                    XmNtopOffset = 2;
+                    XmNorientation = XmHORIZONTAL;
+                    XmNmenuHelpWidget = XmPushButtonGadget WWWOpenHelp;
+                    XmNrightAttachment = XmATTACH_FORM;
+                    XmNrightOffset = 10;
+                    XmNtopWidget = XmSeparator VUITaaaai;
+                    };
+                controls
+                    {
+                    XmPushButtonGadget WWWDocOpenOk;
+                    XmPushButtonGadget WWWDocInfoCancel;
+                    XmPushButtonGadget WWWOpenHelp;
+                    };
+                };
+            XmSeparator VUITaaaai;
+            };
+        };
+    VUITaaaac: XmRowColumn 
+        {
+        arguments
+            {
+            XmNborderWidth = 0;
+            XmNleftAttachment = XmATTACH_FORM;
+            XmNtopAttachment = XmATTACH_FORM;
+            XmNleftOffset = 10;
+            XmNtopOffset = 12;
+            XmNrightAttachment = XmATTACH_FORM;
+            XmNrightOffset = 9;
+            XmNorientation = XmVERTICAL;
+            XmNpacking = XmPACK_COLUMN;
+            XmNnumColumns = 2;
+            };
+        controls
+            {
+            XmLabelGadget 
+                {
+                arguments
+                    {
+                    XmNx = 12;
+                    XmNy = 5;
+                    XmNlabelString = 
+                    compound_string("Document Address:");
+                    };
+                };
+            XmTextField WWWDocOpenText;
+            };
+        };
+    WWWDocOpenOk: XmPushButtonGadget 
+        {
+        arguments
+            {
+            XmNlabelString = 
+            compound_string("Ok");
+            XmNx = 8;
+            XmNy = 6;
+            };
+        };
+    WWWDocInfoCancel: XmPushButtonGadget 
+        {
+        arguments
+            {
+            XmNlabelString = 
+            compound_string("Cancel");
+            XmNx = 34;
+            XmNy = 8;
+            };
+        };
+    WWWDocOpenText: XmTextField 
+        {
+        arguments
+            {
+            XmNx = 56;
+            XmNy = 5;
+            XmNwidth = 25;
+            XmNheight = 25;
+            XmNcolumns = 1;
+            };
+        };
+    WWWSaveFormat: XmOptionMenu 
+        {
+        arguments
+            {
+            XmNborderWidth = 0;
+            XmNlabelString = 
+            compound_string("Format");
+            XmNx = 77;
+            XmNy = 10;
+            };
+        controls
+            {
+            XmPulldownMenu WWWSaveFormatMenu;
+            };
+        };
+    WWWSaveFormatMenu: XmPulldownMenu 
+        {
+        arguments
+            {
+            XmNx = 111;
+            XmNy = 20;
+            XmNborderWidth = 1;
+            };
+        };
+!**VUIT_Manage false ***
+!**VUIT_Manage false ***
+!**VUIT_Manage false ***
+!**VUIT_Manage false ***
+!**VUIT_Manage false ***
+!**VUIT_Manage false ***
+!**VUIT_Manage false ***
+!**VUIT_Manage false ***
+!**VUIT_Manage false ***
+!**VUIT_Manage false ***
+!**VUIT_Manage false ***
+!**VUIT_Manage false ***
+!**VUIT_Manage false ***
+!**VUIT_Manage false ***
+!**VUIT_Manage false ***
+!**VUIT_Manage false ***
+!**VUIT_Manage false ***
+!**VUIT_Manage false ***
+!**VUIT_Manage false ***
+!**VUIT_Manage false ***
+!**VUIT_Manage false ***
+!**VUIT_Manage false ***
+!**VUIT_Manage false ***
+!**VUIT_Manage false ***
+!**VUIT_Manage false ***
+!***VUIT_Manage false ***
+    WWWMail: XmFormDialog 
+        {
+        arguments
+            {
+            XmNx = 278;
+            XmNy = 1021;
+            XmNwidth = 374;
+            XmNborderWidth = 1;
+            XmNautoUnmanage = false;
+            XmNdefaultButton = XmPushButtonGadget WWWMailOk;
+            };
+        controls
+            {
+            XmRowColumn WWWMailTo;
+            XmLabelGadget VUITaaaaj;
+            XmSeparator VUITaaaam;
+            XmRowColumn 
+                {
+                arguments
+                    {
+                    XmNborderWidth = 0;
+                    XmNleftAttachment = XmATTACH_FORM;
+                    XmNtopAttachment = XmATTACH_WIDGET;
+                    XmNleftOffset = 10;
+                    XmNtopOffset = 2;
+                    XmNorientation = XmHORIZONTAL;
+                    XmNmenuHelpWidget = XmPushButtonGadget WWWMailHelp;
+                    XmNrightAttachment = XmATTACH_FORM;
+                    XmNrightOffset = 10;
+                    XmNtopWidget = XmSeparator VUITaaaam;
+                    };
+                controls
+                    {
+                    XmPushButtonGadget WWWMailOk;
+                    XmPushButtonGadget WWWMailDismiss;
+                    XmPushButtonGadget WWWMailHelp;
+                    };
+                };
+            XmBulletinBoard VUITaaaao;
+            };
+        };
+    WWWMailFormat: XmOptionMenu 
+        {
+        arguments
+            {
+            XmNborderWidth = 0;
+            XmNlabelString = 
+            compound_string("Format:");
+            };
+        controls
+            {
+            XmPulldownMenu WWWMailFormatMenu;
+            };
+        };
+    WWWMailFormatMenu: XmPulldownMenu 
+        {
+        arguments
+            {
+            XmNx = 111;
+            XmNy = 20;
+            XmNborderWidth = 1;
+            };
+        };
+    WWWMailTo: XmRowColumn 
+        {
+        arguments
+            {
+            XmNborderWidth = 0;
+            XmNleftAttachment = XmATTACH_FORM;
+            XmNtopAttachment = XmATTACH_WIDGET;
+            XmNleftOffset = 10;
+            XmNtopOffset = 8;
+            XmNrightAttachment = XmATTACH_FORM;
+            XmNrightOffset = 11;
+            XmNorientation = XmVERTICAL;
+            XmNpacking = XmPACK_COLUMN;
+            XmNnumColumns = 2;
+            XmNtopWidget = XmLabelGadget VUITaaaaj;
+            };
+        controls
+            {
+            XmLabelGadget 
+                {
+                arguments
+                    {
+                    XmNx = 14;
+                    XmNy = 8;
+                    XmNlabelString = 
+                    compound_string("Send to:");
+                    };
+                };
+            XmTextField WWWMailToText;
+            };
+        };
+    WWWMailOk: XmPushButtonGadget 
+        {
+        arguments
+            {
+            XmNlabelString = 
+            compound_string("Ok");
+            XmNy = 5;
+            XmNx = 4;
+            };
+        };
+    VUITaaaaj: XmLabelGadget 
+        {
+        arguments
+            {
+            XmNlabelString = 
+            compound_string("Give e-mail address to send result to",separate=true) &
+                compound_string("(e.g. MidasWWW@Slac.Stanford.Edu)");
+            XmNleftAttachment = XmATTACH_FORM;
+            XmNtopAttachment = XmATTACH_FORM;
+            XmNleftOffset = 0;
+            XmNtopOffset = 10;
+            XmNalignment = XmALIGNMENT_CENTER;
+            XmNrightAttachment = XmATTACH_FORM;
+            XmNrightOffset = 0;
+            };
+        };
+    WWWParameters: XmFormDialog 
+        {
+        arguments
+            {
+            XmNy = 1436;
+            XmNborderWidth = 1;
+            XmNautoUnmanage = false;
+            XmNx = 111;
+            };
+        controls
+            {
+            XmRowColumn 
+                {
+                arguments
+                    {
+                    XmNborderWidth = 0;
+                    XmNleftAttachment = XmATTACH_FORM;
+                    XmNtopAttachment = XmATTACH_WIDGET;
+                    XmNleftOffset = 8;
+                    XmNtopOffset = 0;
+                    XmNtopWidget = XmSeparator VUITaaaau;
+                    XmNorientation = XmHORIZONTAL;
+                    XmNbottomAttachment = XmATTACH_NONE;
+                    XmNbottomOffset = 26;
+                    XmNrightAttachment = XmATTACH_FORM;
+                    XmNrightOffset = 11;
+                    XmNmenuHelpWidget = XmPushButtonGadget WWWParamHelp;
+                    };
+                controls
+                    {
+                    XmPushButtonGadget WWWParamOk;
+                    XmPushButtonGadget WWWParamApply;
+                    XmPushButtonGadget WWWParamSave;
+                    XmPushButtonGadget WWWParamReset;
+                    XmPushButtonGadget WWWParamDismiss;
+                    XmPushButtonGadget WWWParamHelp;
+                    };
+                };
+            XmToggleButton ConfirmExit;
+            XmSeparator VUITaaaau;
+            XmFrame VUITaaaaz;
+            XmFrame 
+                {
+                arguments
+                    {
+                    XmNleftAttachment = XmATTACH_WIDGET;
+                    XmNtopAttachment = XmATTACH_OPPOSITE_WIDGET;
+                    XmNleftOffset = 13;
+                    XmNtopOffset = 0;
+                    XmNleftWidget = XmFrame VUITaaaaz;
+                    XmNtopWidget = XmFrame VUITaaaaz;
+                    XmNrightAttachment = XmATTACH_FORM;
+                    XmNrightOffset = 15;
+                    };
+                controls
+                    {
+                    XmRowColumn WWWParamCache;
+                    };
+                };
+            XmFrame VUITaaabb;
+            XmToggleButton EnableHTTP2;
+            };
+        };
+    VUITaaaak: XmRowColumn 
+        {
+        arguments
+            {
+            XmNborderWidth = 0;
+            XmNentryAlignment = XmALIGNMENT_END;
+            XmNnumColumns = 2;
+            XmNorientation = XmVERTICAL;
+            XmNpacking = XmPACK_COLUMN;
+            XmNx = 6;
+            XmNy = 9;
+            };
+        controls
+            {
+            XmLabelGadget 
+                {
+                arguments
+                    {
+                    XmNx = 19;
+                    XmNy = 6;
+                    XmNlabelString = 
+                    compound_string("Home Page:");
+                    };
+                };
+            XmLabelGadget 
+                {
+                arguments
+                    {
+                    XmNx = 5;
+                    XmNy = 25;
+                    XmNlabelString = 
+                    compound_string("Default Gateway:");
+                    };
+                };
+            XmTextField WWWParamHome;
+            XmTextField WWWParamGate;
+            };
+        };
+    WWWParamOk: XmPushButtonGadget 
+        {
+        arguments
+            {
+            XmNlabelString = 
+            compound_string("Ok");
+            XmNx = 11;
+            XmNy = 7;
+            };
+        };
+    WWWParamCache: XmRowColumn 
+        {
+        arguments
+            {
+            XmNborderWidth = 0;
+            XmNx = 8;
+            XmNy = 8;
+            };
+        controls
+            {
+            XmToggleButtonGadget WWWParamCacheEnable;
+            XmScale WWWParamCacheSize;
+            };
+        };
+    WWWParamHome: XmTextField 
+        {
+        arguments
+            {
+            XmNx = 5;
+            XmNy = 48;
+            XmNcolumns = 1;
+            };
+        };
+    WWWParamGate: XmTextField 
+        {
+        arguments
+            {
+            XmNx = 7;
+            XmNy = 86;
+            XmNcolumns = 1;
+            };
+        };
+    WWWParamCacheEnable: XmToggleButtonGadget 
+        {
+        arguments
+            {
+            XmNlabelString = 
+            compound_string("Enable Document Caching");
+            XmNx = 5;
+            XmNy = 10;
+            };
+        };
+    WWWParamCacheSize: XmScale 
+        {
+        arguments
+            {
+            XmNx = 5;
+            XmNy = 31;
+            XmNborderWidth = 0;
+            XmNorientation = XmHORIZONTAL;
+            XmNshowValue = true;
+            XmNtitleString = 
+            compound_string("Maximum Cache Size");
+            XmNmaximum = 20;
+            XmNminimum = 2;
+            };
+        };
+    WWWParamDismiss: XmPushButtonGadget 
+        {
+        arguments
+            {
+            XmNlabelString = 
+            compound_string("Cancel");
+            XmNx = 34;
+            XmNy = 5;
+            };
+        };
+    WWWParamApply: XmPushButtonGadget 
+        {
+        arguments
+            {
+            XmNx = 35;
+            XmNy = 6;
+            XmNlabelString = 
+            compound_string("Apply");
+            };
+        };
+    WWWParamSave: XmPushButtonGadget 
+        {
+        arguments
+            {
+            XmNx = 99;
+            XmNy = 10;
+            XmNlabelString = 
+            compound_string("Save");
+            };
+        };
+    WWWParamReset: XmPushButtonGadget 
+        {
+        arguments
+            {
+            XmNx = 204;
+            XmNy = 11;
+            XmNlabelString = 
+            compound_string("Reset");
+            };
+        };
+    WWWParamHelp: XmPushButtonGadget 
+        {
+        arguments
+            {
+            XmNlabelString = 
+            compound_string("Help");
+            XmNy = 5;
+            XmNx = 257;
+            };
+        };
+    WWWKey: XmForm 
+        {
+        arguments
+            {
+            XmNborderWidth = 0;
+            };
+        controls
+            {
+            XmRowColumn WWWButtons;
+            XmForm WWWCommand;
+            XmDrawnButton WWWHome;
+            XmDrawnButton WWWHotList;
+            XmDrawnButton WWWHistoryButton;
+            };
+        };
+    WWWButtons: XmRowColumn 
+        {
+        arguments
+            {
+            XmNborderWidth = 0;
+            XmNleftAttachment = XmATTACH_FORM;
+            XmNtopAttachment = XmATTACH_WIDGET;
+            XmNleftOffset = -3;
+            XmNtopOffset = 0;
+            XmNtopWidget = XmForm WWWCommand;
+            XmNrightAttachment = XmATTACH_WIDGET;
+            XmNrightWidget = XmDrawnButton WWWHotList;
+            XmNrightOffset = 7;
+            };
+        };
+    WWWHome: XmDrawnButton 
+        {
+        arguments
+            {
+            XmNleftAttachment = XmATTACH_NONE;
+            XmNtopAttachment = XmATTACH_FORM;
+            XmNleftOffset = 435;
+            XmNtopOffset = 5;
+            XmNx = 435;
+            XmNrightAttachment = XmATTACH_FORM;
+            XmNrightOffset = 5;
+            XmNlabelPixmap = MidasWWWHome;
+            XmNlabelType = XmPIXMAP;
+            XmNpushButtonEnabled = true;
+            };
+        };
+    WWWMailToText: XmTextField 
+        {
+        arguments
+            {
+            XmNx = 240;
+            XmNy = 15;
+            XmNcolumns = 1;
+            };
+        };
+    WWWMailDismiss: XmPushButtonGadget 
+        {
+        arguments
+            {
+            XmNx = 34;
+            XmNlabelString = 
+            compound_string("Cancel");
+            XmNy = 6;
+            };
+        };
+    WWWMailHelp: XmPushButtonGadget 
+        {
+        arguments
+            {
+            XmNx = 58;
+            XmNlabelString = 
+            compound_string("Help");
+            XmNy = 62;
+            };
+        };
+    WWWOpenHelp: XmPushButtonGadget 
+        {
+        arguments
+            {
+            XmNlabelString = 
+            compound_string("Help");
+            XmNx = 62;
+            XmNy = 35;
+            };
+        };
+    WWWDocInfoHelp: XmPushButtonGadget 
+        {
+        arguments
+            {
+            XmNx = 303;
+            XmNy = 2;
+            XmNlabelString = 
+            compound_string("Help");
+            };
+        };
+    WWWDisplayOptions: XmBulletinBoardDialog 
+        {
+        arguments
+            {
+            XmNx = 1041;
+            XmNy = 28;
+            XmNwidth = 489;
+            XmNheight = 422;
+            XmNborderWidth = 1;
+            XmNresizePolicy = XmRESIZE_NONE;
+            };
+        controls
+            {
+            XmFrame 
+                {
+                arguments
+                    {
+                    XmNx = 21;
+                    XmNy = 19;
+                    };
+                controls
+                    {
+                    XmBulletinBoard ColorBB;
+                    };
+                };
+            XmFrame 
+                {
+                arguments
+                    {
+                    XmNx = 211;
+                    XmNy = 20;
+                    };
+                controls
+                    {
+                    XmBulletinBoard 
+                        {
+                        arguments
+                            {
+                            XmNx = 10;
+                            XmNy = 3;
+                            XmNwidth = 251;
+                            XmNheight = 165;
+                            XmNborderWidth = 0;
+                            XmNresizePolicy = XmRESIZE_NONE;
+                            };
+                        controls
+                            {
+                            XmToggleButtonGadget OutlineToggle;
+                            XmToggleButtonGadget UnderlineToggle;
+                            XmOptionMenu UnderlineNumber;
+                            XmOptionMenu UnderlinbeThickness;
+                            };
+                        };
+                    };
+                };
+            XmFrame 
+                {
+                arguments
+                    {
+                    XmNx = 21;
+                    XmNy = 207;
+                    };
+                controls
+                    {
+                    XmBulletinBoard 
+                        {
+                        arguments
+                            {
+                            XmNx = 9;
+                            XmNy = 13;
+                            XmNwidth = 443;
+                            XmNheight = 132;
+                            XmNborderWidth = 0;
+                            XmNresizePolicy = XmRESIZE_NONE;
+                            };
+                        controls
+                            {
+                            XmToggleButtonGadget FontToggle;
+                            XmRowColumn 
+                                {
+                                arguments
+                                    {
+                                    XmNx = 16;
+                                    XmNy = 50;
+                                    XmNborderWidth = 1;
+                                    XmNwidth = 25;
+                                    XmNheight = 25;
+                                    XmNorientation = XmHORIZONTAL;
+                                    XmNnumColumns = 2;
+                                    XmNpacking = XmPACK_COLUMN;
+                                    };
+                                controls
+                                    {
+                                    XmOptionMenu Family;
+                                    XmOptionMenu Slant;
+                                    XmOptionMenu Weight;
+                                    XmOptionMenu Width;
+                                    XmOptionMenu Size;
+                                    };
+                                };
+                            };
+                        };
+                    };
+                };
+            XmOptionMenu Object;
+            };
+        };
+    FontToggle: XmToggleButtonGadget 
+        {
+        arguments
+            {
+            XmNx = 8;
+            XmNy = 10;
+            XmNlabelString = 
+            compound_string("Font");
+            };
+        };
+    OutlineToggle: XmToggleButtonGadget 
+        {
+        arguments
+            {
+            XmNx = 16;
+            XmNy = 13;
+            XmNlabelString = 
+            compound_string("Outline");
+            };
+        };
+    UnderlineToggle: XmToggleButtonGadget 
+        {
+        arguments
+            {
+            XmNx = 17;
+            XmNy = 44;
+            XmNlabelString = 
+            compound_string("Underline");
+            XmNwidth = 97;
+            };
+        };
+    ColorToggle: XmToggleButtonGadget 
+        {
+        arguments
+            {
+            XmNx = 2;
+            XmNy = 2;
+            XmNlabelString = 
+            compound_string("Color");
+            };
+        };
+    UnderlineNumber: XmOptionMenu 
+        {
+        arguments
+            {
+            XmNx = 48;
+            XmNy = 76;
+            XmNborderWidth = 1;
+            XmNwidth = 25;
+            XmNheight = 25;
+            XmNlabelString = 
+            compound_string("Number");
+            };
+        controls
+            {
+            XmPulldownMenu 
+                {
+                arguments
+                    {
+                    XmNx = 18;
+                    XmNy = 16;
+                    XmNborderWidth = 1;
+                    };
+                controls
+                    {
+                    XmPushButtonGadget Number0;
+                    XmPushButtonGadget Number1;
+                    XmPushButtonGadget Number2;
+                    XmPushButtonGadget Number3;
+                    };
+                };
+            };
+        };
+    UnderlinbeThickness: XmOptionMenu 
+        {
+        arguments
+            {
+            XmNx = 48;
+            XmNy = 118;
+            XmNborderWidth = 1;
+            XmNwidth = 25;
+            XmNheight = 25;
+            XmNlabelString = 
+            compound_string("Thickness");
+            };
+        controls
+            {
+            XmPulldownMenu 
+                {
+                arguments
+                    {
+                    XmNx = 23;
+                    XmNy = 21;
+                    XmNborderWidth = 1;
+                    };
+                controls
+                    {
+                    XmPushButtonGadget Thinkness1;
+                    XmPushButtonGadget Thickness2;
+                    XmPushButtonGadget Thickness3;
+                    XmPushButtonGadget Thickness4;
+                    XmPushButtonGadget Thickness6;
+                    XmPushButtonGadget Thickness8;
+                    };
+                };
+            };
+        };
+    Family: XmOptionMenu 
+        {
+        arguments
+            {
+            XmNx = 12;
+            XmNy = 9;
+            XmNborderWidth = 1;
+            XmNwidth = 25;
+            XmNheight = 25;
+            XmNlabelString = 
+            compound_string("Family");
+            };
+        controls
+            {
+            XmPulldownMenu FamilyMenu;
+            };
+        };
+    Slant: XmOptionMenu 
+        {
+        arguments
+            {
+            XmNx = 4;
+            XmNy = 39;
+            XmNborderWidth = 1;
+            XmNwidth = 25;
+            XmNheight = 25;
+            XmNlabelString = 
+            compound_string("Slant");
+            };
+        controls
+            {
+            XmPulldownMenu SlantMenu;
+            };
+        };
+    Weight: XmOptionMenu 
+        {
+        arguments
+            {
+            XmNx = 2;
+            XmNy = 38;
+            XmNborderWidth = 1;
+            XmNwidth = 25;
+            XmNheight = 25;
+            XmNlabelString = 
+            compound_string("Weight");
+            };
+        controls
+            {
+            XmPulldownMenu WeightMenu;
+            };
+        };
+    Width: XmOptionMenu 
+        {
+        arguments
+            {
+            XmNx = 348;
+            XmNy = 4;
+            XmNborderWidth = 1;
+            XmNwidth = 25;
+            XmNheight = 25;
+            XmNlabelString = 
+            compound_string("Width");
+            };
+        controls
+            {
+            XmPulldownMenu WidthMenu;
+            };
+        };
+    Size: XmOptionMenu 
+        {
+        arguments
+            {
+            XmNx = 347;
+            XmNy = 4;
+            XmNborderWidth = 1;
+            XmNwidth = 25;
+            XmNheight = 25;
+            XmNlabelString = 
+            compound_string("Size");
+            };
+        controls
+            {
+            XmPulldownMenu SizeMenu;
+            };
+        };
+    Object: XmOptionMenu 
+        {
+        arguments
+            {
+            XmNx = 21;
+            XmNy = 363;
+            XmNborderWidth = 1;
+            XmNwidth = 25;
+            XmNheight = 25;
+            XmNlabelString = 
+            compound_string("Object");
+            };
+        controls
+            {
+            XmPulldownMenu ObjectMenu;
+            };
+        };
+    ColorThing: XmDrawingArea 
+        {
+        arguments
+            {
+            XmNx = 115;
+            XmNy = 81;
+            XmNborderWidth = 1;
+            XmNresizePolicy = XmRESIZE_NONE;
+            XmNwidth = 25;
+            XmNheight = 25;
+            };
+        };
+    FamilyMenu: XmPulldownMenu 
+        {
+        arguments
+            {
+            XmNx = 14;
+            XmNy = 17;
+            XmNborderWidth = 1;
+            XmNheight = 17;
+            };
+        controls
+            {
+            };
+        };
+    SlantMenu: XmPulldownMenu 
+        {
+        arguments
+            {
+            XmNx = 19;
+            XmNy = 19;
+            XmNborderWidth = 1;
+            };
+        };
+    WeightMenu: XmPulldownMenu 
+        {
+        arguments
+            {
+            XmNx = 19;
+            XmNy = 19;
+            XmNborderWidth = 1;
+            };
+        };
+    WidthMenu: XmPulldownMenu 
+        {
+        arguments
+            {
+            XmNx = 19;
+            XmNy = 19;
+            XmNborderWidth = 1;
+            };
+        };
+    SizeMenu: XmPulldownMenu 
+        {
+        arguments
+            {
+            XmNx = 19;
+            XmNy = 19;
+            XmNborderWidth = 1;
+            };
+        };
+    ObjectMenu: XmPulldownMenu 
+        {
+        arguments
+            {
+            XmNx = 253;
+            XmNy = 18;
+            XmNborderWidth = 1;
+            };
+        };
+    Number0: XmPushButtonGadget 
+        {
+        arguments
+            {
+            XmNx = 6;
+            XmNy = 6;
+            XmNwidth = 16;
+            XmNheight = 16;
+            XmNlabelString = 
+            compound_string("None");
+            };
+        };
+    Number1: XmPushButtonGadget 
+        {
+        arguments
+            {
+            XmNx = 4;
+            XmNy = 19;
+            XmNwidth = 16;
+            XmNheight = 13;
+            XmNlabelPixmap = OneLine;
+            XmNlabelType = XmPIXMAP;
+            };
+        };
+    Number2: XmPushButtonGadget 
+        {
+        arguments
+            {
+            XmNlabelPixmap = TwoLines;
+            XmNlabelType = XmPIXMAP;
+            };
+        };
+    Number3: XmPushButtonGadget 
+        {
+        arguments
+            {
+            XmNx = 4;
+            XmNy = 58;
+            XmNwidth = 16;
+            XmNheight = 16;
+            XmNlabelType = XmPIXMAP;
+            XmNlabelPixmap = ThreeLines;
+            };
+        };
+    Thinkness1: XmPushButtonGadget 
+        {
+        arguments
+            {
+            XmNx = 9;
+            XmNy = 10;
+            XmNlabelPixmap = OnePixel;
+            XmNlabelType = XmPIXMAP;
+            };
+        };
+    Thickness2: XmPushButtonGadget 
+        {
+        arguments
+            {
+            XmNx = 2;
+            XmNy = 26;
+            XmNlabelPixmap = TwoPixels;
+            XmNlabelType = XmPIXMAP;
+            };
+        };
+    Thickness3: XmPushButtonGadget 
+        {
+        arguments
+            {
+            XmNx = 3;
+            XmNy = 55;
+            XmNlabelPixmap = ThreePixels;
+            XmNlabelType = XmPIXMAP;
+            };
+        };
+    Thickness4: XmPushButtonGadget 
+        {
+        arguments
+            {
+            XmNx = 4;
+            XmNy = 84;
+            XmNlabelPixmap = FourPixels;
+            XmNlabelType = XmPIXMAP;
+            };
+        };
+    Thickness6: XmPushButtonGadget 
+        {
+        arguments
+            {
+            XmNx = 4;
+            XmNy = 111;
+            XmNlabelPixmap = SixPixels;
+            XmNlabelType = XmPIXMAP;
+            };
+        };
+    Thickness8: XmPushButtonGadget 
+        {
+        arguments
+            {
+            XmNx = 2;
+            XmNy = 136;
+            XmNlabelPixmap = EightPixels;
+            XmNlabelType = XmPIXMAP;
+            };
+        };
+    ColorRed: XmScale 
+        {
+        arguments
+            {
+            XmNx = 12;
+            XmNy = 8;
+            XmNborderWidth = 1;
+            };
+        };
+    ColorGreen: XmScale 
+        {
+        arguments
+            {
+            XmNx = 25;
+            XmNy = 55;
+            XmNborderWidth = 1;
+            };
+        };
+    ColorBlue: XmScale 
+        {
+        arguments
+            {
+            XmNx = 50;
+            XmNy = 9;
+            XmNborderWidth = 1;
+            };
+        };
+    ColorBB: XmBulletinBoard 
+        {
+        arguments
+            {
+            XmNwidth = 172;
+            XmNheight = 165;
+            XmNborderWidth = 0;
+            XmNresizePolicy = XmRESIZE_NONE;
+            };
+        controls
+            {
+            XmToggleButtonGadget ColorToggle;
+            XmRowColumn 
+                {
+                arguments
+                    {
+                    XmNx = 16;
+                    XmNy = 41;
+                    XmNborderWidth = 1;
+                    XmNwidth = 25;
+                    XmNheight = 25;
+                    XmNorientation = XmHORIZONTAL;
+                    };
+                controls
+                    {
+                    XmScale ColorRed;
+                    XmScale ColorGreen;
+                    XmScale ColorBlue;
+                    };
+                };
+            XmDrawingArea ColorThing;
+            };
+        };
+!**VUIT_Manage false ***
+!**VUIT_Manage false ***
+!**VUIT_Manage false ***
+!**VUIT_Manage false ***
+!**VUIT_Manage false ***
+!**VUIT_Manage false ***
+!**VUIT_Manage false ***
+!**VUIT_Manage false ***
+!**VUIT_Manage false ***
+!**VUIT_Manage false ***
+!**VUIT_Manage false ***
+!**VUIT_Manage false ***
+!**VUIT_Manage false ***
+!**VUIT_Manage false ***
+!**VUIT_Manage false ***
+!**VUIT_Manage false ***
+!**VUIT_Manage false ***
+!**VUIT_Manage false ***
+!**VUIT_Manage false ***
+!**VUIT_Manage false ***
+!**VUIT_Manage false ***
+!**VUIT_Manage false ***
+!**VUIT_Manage false ***
+!**VUIT_Manage false ***
+!**VUIT_Manage false ***
+!***VUIT_Manage false ***
+    WWWOpenGopher: XmFormDialog 
+        {
+        arguments
+            {
+            XmNx = 85;
+            XmNy = 2040;
+            XmNwidth = 386;
+            XmNborderWidth = 1;
+            XmNautoUnmanage = false;
+            XmNdefaultButton = XmPushButtonGadget WWWOpenGopherOk;
+            };
+        controls
+            {
+            XmRowColumn VUITaaaaf;
+            XmRowColumn 
+                {
+                arguments
+                    {
+                    XmNborderWidth = 0;
+                    XmNleftAttachment = XmATTACH_FORM;
+                    XmNtopAttachment = XmATTACH_WIDGET;
+                    XmNleftOffset = 10;
+                    XmNtopWidget = XmSeparator VUITaaaad;
+                    XmNtopOffset = 2;
+                    XmNorientation = XmHORIZONTAL;
+                    XmNrightAttachment = XmATTACH_FORM;
+                    XmNrightOffset = 10;
+                    XmNmenuHelpWidget = XmPushButtonGadget WWWOpenGopherHelp;
+                    };
+                controls
+                    {
+                    XmPushButtonGadget WWWOpenGopherOk;
+                    XmPushButtonGadget WWWOpenGopherApply;
+                    XmPushButtonGadget WWWOpenGopherDismiss;
+                    XmPushButtonGadget WWWOpenGopherHelp;
+                    };
+                };
+            XmSeparator VUITaaaad;
+            };
+        };
+    VUITaaaaf: XmRowColumn 
+        {
+        arguments
+            {
+            XmNx = 13;
+            XmNy = 16;
+            XmNborderWidth = 0;
+            XmNorientation = XmVERTICAL;
+            XmNnumColumns = 2;
+            XmNpacking = XmPACK_COLUMN;
+            XmNwidth = 17;
+            XmNentryAlignment = XmALIGNMENT_END;
+            XmNleftAttachment = XmATTACH_FORM;
+            XmNleftOffset = 13;
+            XmNtopAttachment = XmATTACH_FORM;
+            XmNtopOffset = 16;
+            XmNrightAttachment = XmATTACH_FORM;
+            XmNrightOffset = 13;
+            };
+        controls
+            {
+            XmLabelGadget 
+                {
+                arguments
+                    {
+                    XmNx = 2;
+                    XmNy = 97;
+                    XmNlabelString = 
+                    compound_string("Name");
+                    };
+                };
+            XmLabelGadget 
+                {
+                arguments
+                    {
+                    XmNx = 2;
+                    XmNy = 13;
+                    XmNlabelString = 
+                    compound_string("Type");
+                    };
+                };
+            XmLabelGadget 
+                {
+                arguments
+                    {
+                    XmNx = 2;
+                    XmNy = 48;
+                    XmNlabelString = 
+                    compound_string("Host");
+                    };
+                };
+            XmLabelGadget 
+                {
+                arguments
+                    {
+                    XmNx = 2;
+                    XmNy = 89;
+                    XmNlabelString = 
+                    compound_string("Port");
+                    };
+                };
+            XmLabelGadget 
+                {
+                arguments
+                    {
+                    XmNx = 3;
+                    XmNy = 107;
+                    XmNlabelString = 
+                    compound_string("Path");
+                    };
+                };
+            XmTextField WWWOpenGopherName;
+            XmTextField WWWOpenGopherType;
+            XmTextField WWWOpenGopherHost;
+            XmTextField WWWOpenGopherPort;
+            XmTextField WWWOpenGopherPath;
+            };
+        };
+    WWWOpenGopherApply: XmPushButtonGadget 
+        {
+        arguments
+            {
+            XmNx = 62;
+            XmNy = 5;
+            XmNlabelString = 
+            compound_string("Apply");
+            };
+        };
+    WWWOpenGopherName: XmTextField 
+        {
+        arguments
+            {
+            XmNx = 14;
+            XmNy = 11;
+            XmNwidth = 175;
+            XmNheight = 25;
+            XmNcolumns = 1;
+            };
+        };
+    WWWOpenGopherType: XmTextField 
+        {
+        arguments
+            {
+            XmNx = 9;
+            XmNy = 39;
+            XmNwidth = 135;
+            XmNheight = 25;
+            XmNcolumns = 1;
+            };
+        };
+    WWWOpenGopherHost: XmTextField 
+        {
+        arguments
+            {
+            XmNx = 9;
+            XmNy = 76;
+            XmNwidth = 138;
+            XmNheight = 25;
+            XmNcolumns = 1;
+            };
+        };
+    WWWOpenGopherPort: XmTextField 
+        {
+        arguments
+            {
+            XmNx = 5;
+            XmNy = 113;
+            XmNwidth = 25;
+            XmNheight = 25;
+            XmNcolumns = 1;
+            };
+        };
+    WWWOpenGopherPath: XmTextField 
+        {
+        arguments
+            {
+            XmNx = 7;
+            XmNy = 151;
+            XmNwidth = 25;
+            XmNheight = 25;
+            XmNcolumns = 1;
+            };
+        };
+    WWWOpenGopherOk: XmPushButtonGadget 
+        {
+        arguments
+            {
+            XmNx = 11;
+            XmNy = 8;
+            XmNlabelString = 
+            compound_string("Ok");
+            };
+        };
+    WWWOpenGopherDismiss: XmPushButtonGadget 
+        {
+        arguments
+            {
+            XmNx = 59;
+            XmNy = 5;
+            XmNlabelString = 
+            compound_string("Cancel");
+            };
+        };
+    WWWOpenGopherHelp: XmPushButtonGadget 
+        {
+        arguments
+            {
+            XmNlabelString = 
+            compound_string("Help");
+            XmNx = 206;
+            XmNy = 2;
+            };
+        };
+!**VUIT_Manage false ***
+!**VUIT_Manage false ***
+!**VUIT_Manage false ***
+!**VUIT_Manage false ***
+!**VUIT_Manage false ***
+!**VUIT_Manage false ***
+!**VUIT_Manage false ***
+!**VUIT_Manage false ***
+!**VUIT_Manage false ***
+!**VUIT_Manage false ***
+!**VUIT_Manage false ***
+!**VUIT_Manage false ***
+!**VUIT_Manage false ***
+!**VUIT_Manage false ***
+!**VUIT_Manage false ***
+!**VUIT_Manage false ***
+!**VUIT_Manage false ***
+!**VUIT_Manage false ***
+!**VUIT_Manage false ***
+!**VUIT_Manage false ***
+!**VUIT_Manage false ***
+!**VUIT_Manage false ***
+!**VUIT_Manage false ***
+!**VUIT_Manage false ***
+!**VUIT_Manage false ***
+!***VUIT_Manage false ***
+    WWWOpenFTP: XmFormDialog 
+        {
+        arguments
+            {
+            XmNx = 44;
+            XmNy = 2094;
+            XmNwidth = 387;
+            XmNborderWidth = 1;
+            XmNautoUnmanage = false;
+            XmNdefaultButton = XmPushButtonGadget WWWOpenFTPOk;
+            };
+        controls
+            {
+            XmRowColumn VUITaaaan;
+            XmRowColumn 
+                {
+                arguments
+                    {
+                    XmNborderWidth = 0;
+                    XmNleftAttachment = XmATTACH_FORM;
+                    XmNtopAttachment = XmATTACH_WIDGET;
+                    XmNleftOffset = 10;
+                    XmNtopWidget = XmSeparator VUITaaaae;
+                    XmNtopOffset = 2;
+                    XmNorientation = XmHORIZONTAL;
+                    XmNrightAttachment = XmATTACH_FORM;
+                    XmNrightOffset = 10;
+                    XmNmenuHelpWidget = XmPushButtonGadget WWWOpenFTPHelp;
+                    };
+                controls
+                    {
+                    XmPushButtonGadget WWWOpenFTPOk;
+                    XmPushButtonGadget WWWOpenFTPApply;
+                    XmPushButtonGadget WWWOpenFTPDismiss;
+                    XmPushButtonGadget WWWOpenFTPHelp;
+                    };
+                };
+            XmSeparator VUITaaaae;
+            };
+        };
+    VUITaaaan: XmRowColumn 
+        {
+        arguments
+            {
+            XmNx = 13;
+            XmNy = 16;
+            XmNborderWidth = 0;
+            XmNorientation = XmVERTICAL;
+            XmNnumColumns = 2;
+            XmNpacking = XmPACK_COLUMN;
+            XmNwidth = 17;
+            XmNentryAlignment = XmALIGNMENT_END;
+            XmNleftAttachment = XmATTACH_FORM;
+            XmNleftOffset = 13;
+            XmNtopAttachment = XmATTACH_FORM;
+            XmNtopOffset = 16;
+            XmNrightAttachment = XmATTACH_FORM;
+            XmNrightOffset = 13;
+            };
+        controls
+            {
+            XmLabelGadget 
+                {
+                arguments
+                    {
+                    XmNx = 2;
+                    XmNy = 97;
+                    XmNlabelString = 
+                    compound_string("Host");
+                    };
+                };
+            XmLabelGadget 
+                {
+                arguments
+                    {
+                    XmNx = 2;
+                    XmNy = 13;
+                    XmNlabelString = 
+                    compound_string("Path");
+                    };
+                };
+            XmLabelGadget 
+                {
+                arguments
+                    {
+                    XmNx = 2;
+                    XmNy = 48;
+                    XmNlabelString = 
+                    compound_string("Port");
+                    };
+                };
+            XmLabelGadget 
+                {
+                arguments
+                    {
+                    XmNx = 2;
+                    XmNy = 89;
+                    XmNlabelString = 
+                    compound_string("Userid");
+                    XmNsensitive = false;
+                    };
+                };
+            XmLabelGadget 
+                {
+                arguments
+                    {
+                    XmNx = 3;
+                    XmNy = 107;
+                    XmNlabelString = 
+                    compound_string("Password");
+                    XmNsensitive = false;
+                    };
+                };
+            XmTextField WWWOpenFTPHost;
+            XmTextField WWWOpenFTPPath;
+            XmTextField WWWOpenFTPPort;
+            XmTextField WWWOpenFTPUserid;
+            XmTextField WWWOpenFTPPassword;
+            };
+        };
+    WWWOpenFTPHost: XmTextField 
+        {
+        arguments
+            {
+            XmNx = 14;
+            XmNy = 11;
+            XmNwidth = 175;
+            XmNheight = 25;
+            XmNcolumns = 1;
+            };
+        };
+    WWWOpenFTPPath: XmTextField 
+        {
+        arguments
+            {
+            XmNx = 9;
+            XmNy = 39;
+            XmNwidth = 135;
+            XmNheight = 25;
+            XmNcolumns = 1;
+            };
+        };
+    WWWOpenFTPPort: XmTextField 
+        {
+        arguments
+            {
+            XmNx = 9;
+            XmNy = 76;
+            XmNwidth = 138;
+            XmNheight = 25;
+            XmNcolumns = 1;
+            };
+        };
+    WWWOpenFTPUserid: XmTextField 
+        {
+        arguments
+            {
+            XmNx = 5;
+            XmNy = 113;
+            XmNwidth = 25;
+            XmNheight = 25;
+            XmNcolumns = 1;
+            XmNsensitive = false;
+            };
+        };
+    WWWOpenFTPPassword: XmTextField 
+        {
+        arguments
+            {
+            XmNx = 7;
+            XmNy = 151;
+            XmNwidth = 25;
+            XmNheight = 25;
+            XmNcolumns = 1;
+            XmNsensitive = false;
+            };
+        };
+    WWWOpenFTPOk: XmPushButtonGadget 
+        {
+        arguments
+            {
+            XmNx = 11;
+            XmNy = 8;
+            XmNlabelString = 
+            compound_string("Ok");
+            };
+        };
+    WWWOpenFTPApply: XmPushButtonGadget 
+        {
+        arguments
+            {
+            XmNx = 62;
+            XmNy = 5;
+            XmNlabelString = 
+            compound_string("Apply");
+            };
+        };
+    WWWOpenFTPDismiss: XmPushButtonGadget 
+        {
+        arguments
+            {
+            XmNx = 59;
+            XmNy = 5;
+            XmNlabelString = 
+            compound_string("Cancel");
+            };
+        };
+    WWWOpenFTPHelp: XmPushButtonGadget 
+        {
+        arguments
+            {
+            XmNlabelString = 
+            compound_string("Help");
+            XmNx = 242;
+            XmNy = 5;
+            };
+        };
+!**VUIT_Manage false ***
+!**VUIT_Manage false ***
+!**VUIT_Manage false ***
+!**VUIT_Manage false ***
+!**VUIT_Manage false ***
+!**VUIT_Manage false ***
+!**VUIT_Manage false ***
+!**VUIT_Manage false ***
+!**VUIT_Manage false ***
+!**VUIT_Manage false ***
+!**VUIT_Manage false ***
+!**VUIT_Manage false ***
+!**VUIT_Manage false ***
+!**VUIT_Manage false ***
+!**VUIT_Manage false ***
+!**VUIT_Manage false ***
+!**VUIT_Manage false ***
+!**VUIT_Manage false ***
+!**VUIT_Manage false ***
+!**VUIT_Manage false ***
+!**VUIT_Manage false ***
+!**VUIT_Manage false ***
+!**VUIT_Manage false ***
+!**VUIT_Manage false ***
+!**VUIT_Manage false ***
+!***VUIT_Manage false ***
+    WWWOpenLocal: XmFileSelectionDialog 
+        {
+        arguments
+            {
+            XmNx = 457;
+            XmNy = 1827;
+            XmNborderWidth = 1;
+            XmNdirMask = 
+            compound_string("");
+            };
+        };
+    WWWDocInfoDocFormatText: XmTextField 
+        {
+        arguments
+            {
+            XmNx = 91;
+            XmNy = 89;
+            XmNwidth = 25;
+            XmNheight = 25;
+            XmNcolumns = 1;
+            };
+        };
+    WWWHeader: XmRowColumn 
+        {
+        arguments
+            {
+            XmNborderWidth = 0;
+            XmNorientation = XmVERTICAL;
+            XmNpacking = XmPACK_COLUMN;
+            XmNnumColumns = 2;
+            XmNentryAlignment = XmALIGNMENT_END;
+            };
+        controls
+            {
+            unmanaged XmLabel WWWHeaderTitleLabel;
+            unmanaged XmLabel WWWHeaderDocumentLabel;
+            unmanaged XmTextField WWWHeaderTitleText;
+            unmanaged XmTextField WWWHeaderDocumentText;
+            };
+        };
+    WWWHeaderTitleLabel: XmLabel 
+        {
+        arguments
+            {
+            XmNx = 11;
+            XmNy = 75;
+            XmNlabelString = 
+            compound_string("Title:");
+            };
+        };
+    WWWHeaderDocumentLabel: XmLabel 
+        {
+        arguments
+            {
+            XmNx = 15;
+            XmNy = 97;
+            XmNlabelString = 
+            compound_string("Document:");
+            };
+        };
+    WWWHeaderTitleText: XmTextField 
+        {
+        arguments
+            {
+            XmNx = 35;
+            XmNy = 12;
+            XmNwidth = 25;
+            XmNheight = 25;
+            XmNcolumns = 1;
+            };
+        };
+    WWWHeaderDocumentText: XmTextField 
+        {
+        arguments
+            {
+            XmNx = 21;
+            XmNy = 39;
+            XmNwidth = 25;
+            XmNheight = 25;
+            XmNcolumns = 1;
+            };
+        };
+    WWWCommandText: XmCommand 
+        {
+        arguments
+            {
+            XmNx = 143;
+            XmNy = 11;
+            XmNselectionLabelString = 
+            compound_string("");
+            XmNtopAttachment = XmATTACH_FORM;
+            XmNtopOffset = 4;
+            XmNrightAttachment = XmATTACH_FORM;
+            XmNrightOffset = 0;
+            XmNleftAttachment = XmATTACH_WIDGET;
+            XmNleftWidget = XmLabelGadget VUITaaaag;
+            XmNleftOffset = 1;
+            };
+        };
+    VUITaaaag: XmLabelGadget 
+        {
+        arguments
+            {
+            XmNx = 16;
+            XmNy = 6;
+            XmNlabelString = 
+            compound_string("Keyword:");
+            XmNleftAttachment = XmATTACH_FORM;
+            XmNleftOffset = 16;
+            XmNtopAttachment = XmATTACH_FORM;
+            XmNtopOffset = 9;
+            };
+        };
+!**VUIT_Manage false ***
+!**VUIT_Manage false ***
+!**VUIT_Manage false ***
+!**VUIT_Manage false ***
+!**VUIT_Manage false ***
+!**VUIT_Manage false ***
+!**VUIT_Manage false ***
+!**VUIT_Manage false ***
+!**VUIT_Manage false ***
+!**VUIT_Manage false ***
+!**VUIT_Manage false ***
+!**VUIT_Manage false ***
+!**VUIT_Manage false ***
+!**VUIT_Manage false ***
+!**VUIT_Manage false ***
+!**VUIT_Manage false ***
+!**VUIT_Manage false ***
+!**VUIT_Manage false ***
+!**VUIT_Manage false ***
+!**VUIT_Manage false ***
+!**VUIT_Manage false ***
+!**VUIT_Manage false ***
+!**VUIT_Manage false ***
+!**VUIT_Manage false ***
+!**VUIT_Manage false ***
+!***VUIT_Manage false ***
+    WWWSaveFileAs: XmFileSelectionDialog 
+        {
+        arguments
+            {
+            XmNx = 533;
+            XmNy = 207;
+            XmNborderWidth = 0;
+            XmNdirMask = 
+            compound_string("");
+            };
+        controls
+            {
+            XmFrame 
+                {
+                arguments
+                    {
+                    XmNx = 19;
+                    XmNy = 279;
+                    };
+                controls
+                    {
+                    XmForm VUITaaaah;
+                    };
+                };
+            };
+        };
+    VUITaaaah: XmForm 
+        {
+        arguments
+            {
+            XmNborderWidth = 0;
+            XmNx = 36;
+            XmNy = 16;
+            };
+        controls
+            {
+            XmToggleButton WWWSaveAsBinary;
+            XmLabel VUITaaaal;
+            XmTextField WWWSaveFileAsText;
+            };
+        };
+    WWWSaveAsBinary: XmToggleButton 
+        {
+        arguments
+            {
+            XmNlabelString = 
+            compound_string("Binary Data");
+            XmNleftAttachment = XmATTACH_WIDGET;
+            XmNtopAttachment = XmATTACH_FORM;
+            XmNleftOffset = 80;
+            XmNtopOffset = 2;
+            XmNy = 20;
+            XmNsensitive = false;
+            XmNleftWidget = XmLabel VUITaaaal;
+            };
+        };
+    WWWSaveFileAsText: XmTextField 
+        {
+        arguments
+            {
+            XmNleftAttachment = XmATTACH_FORM;
+            XmNleftOffset = 3;
+            XmNtopAttachment = XmATTACH_WIDGET;
+            XmNtopOffset = 9;
+            XmNrightAttachment = XmATTACH_FORM;
+            XmNrightOffset = 4;
+            XmNtopWidget = XmLabel VUITaaaal;
+            XmNbottomAttachment = XmATTACH_FORM;
+            XmNbottomOffset = 3;
+            };
+        };
+    VUITaaaal: XmLabel 
+        {
+        arguments
+            {
+            XmNlabelString = 
+            compound_string("Source:");
+            XmNtopAttachment = XmATTACH_FORM;
+            XmNtopOffset = 5;
+            XmNleftAttachment = XmATTACH_FORM;
+            XmNleftOffset = 7;
+            };
+        };
+!**VUIT_Manage false ***
+!**VUIT_Manage false ***
+!**VUIT_Manage false ***
+!**VUIT_Manage false ***
+!**VUIT_Manage false ***
+!**VUIT_Manage false ***
+!**VUIT_Manage false ***
+!**VUIT_Manage false ***
+!**VUIT_Manage false ***
+!**VUIT_Manage false ***
+!**VUIT_Manage false ***
+!**VUIT_Manage false ***
+!**VUIT_Manage false ***
+!**VUIT_Manage false ***
+!**VUIT_Manage false ***
+!**VUIT_Manage false ***
+!**VUIT_Manage false ***
+!**VUIT_Manage false ***
+!**VUIT_Manage false ***
+!**VUIT_Manage false ***
+!**VUIT_Manage false ***
+!**VUIT_Manage false ***
+!**VUIT_Manage false ***
+!**VUIT_Manage false ***
+!**VUIT_Manage false ***
+!***VUIT_Manage false ***
+    WWWSave: XmFileSelectionDialog 
+        {
+        arguments
+            {
+            XmNx = 178;
+            XmNy = 398;
+            XmNborderWidth = 1;
+            XmNdirMask = 
+            compound_string("");
+            };
+        controls
+            {
+            XmFrame 
+                {
+                arguments
+                    {
+                    XmNx = 54;
+                    XmNy = 279;
+                    };
+                controls
+                    {
+                    XmOptionMenu WWWSaveFormat;
+                    };
+                };
+            };
+        };
+    WWWHotList: XmDrawnButton 
+        {
+        arguments
+            {
+            XmNleftAttachment = XmATTACH_NONE;
+            XmNtopAttachment = XmATTACH_NONE;
+            XmNleftOffset = 315;
+            XmNtopOffset = 79;
+            XmNx = 435;
+            XmNrightAttachment = XmATTACH_WIDGET;
+            XmNrightOffset = 4;
+            XmNlabelPixmap = flame;
+            XmNlabelType = XmPIXMAP;
+            XmNpushButtonEnabled = true;
+            XmNrightWidget = XmDrawnButton WWWHome;
+            XmNy = 79;
+            XmNbottomAttachment = XmATTACH_OPPOSITE_WIDGET;
+            XmNbottomWidget = XmDrawnButton WWWHome;
+            XmNbottomOffset = 0;
+            };
+        };
+    VUITaaaad: XmSeparator 
+        {
+        arguments
+            {
+            XmNleftAttachment = XmATTACH_FORM;
+            XmNtopAttachment = XmATTACH_WIDGET;
+            XmNleftOffset = 0;
+            XmNtopOffset = 1;
+            XmNtopWidget = XmRowColumn VUITaaaaf;
+            XmNrightAttachment = XmATTACH_FORM;
+            XmNrightOffset = 1;
+            };
+        };
+    VUITaaaae: XmSeparator 
+        {
+        arguments
+            {
+            XmNwidth = 16;
+            XmNheight = 16;
+            XmNleftAttachment = XmATTACH_FORM;
+            XmNtopAttachment = XmATTACH_WIDGET;
+            XmNleftOffset = -1;
+            XmNtopOffset = 2;
+            XmNrightAttachment = XmATTACH_FORM;
+            XmNrightOffset = 0;
+            XmNtopWidget = XmRowColumn VUITaaaan;
+            };
+        };
+    VUITaaaai: XmSeparator 
+        {
+        arguments
+            {
+            XmNwidth = 16;
+            XmNheight = 16;
+            XmNleftAttachment = XmATTACH_FORM;
+            XmNtopAttachment = XmATTACH_WIDGET;
+            XmNleftOffset = -1;
+            XmNtopOffset = 2;
+            XmNrightAttachment = XmATTACH_FORM;
+            XmNrightOffset = 0;
+            XmNtopWidget = XmRowColumn VUITaaaac;
+            };
+        };
+    VUITaaaam: XmSeparator 
+        {
+        arguments
+            {
+            XmNwidth = 16;
+            XmNheight = 16;
+            XmNleftAttachment = XmATTACH_FORM;
+            XmNtopAttachment = XmATTACH_WIDGET;
+            XmNleftOffset = 0;
+            XmNtopOffset = 0;
+            XmNtopWidget = XmBulletinBoard VUITaaaao;
+            XmNrightAttachment = XmATTACH_FORM;
+            XmNrightOffset = 0;
+            };
+        };
+    VUITaaaao: XmBulletinBoard 
+        {
+        arguments
+            {
+            XmNborderWidth = 0;
+            XmNresizePolicy = XmRESIZE_ANY;
+            XmNleftAttachment = XmATTACH_OPPOSITE_WIDGET;
+            XmNtopAttachment = XmATTACH_WIDGET;
+            XmNleftOffset = 0;
+            XmNtopOffset = 2;
+            XmNtopWidget = XmRowColumn WWWMailTo;
+            XmNleftWidget = XmRowColumn WWWMailTo;
+            XmNmarginHeight = 0;
+            XmNmarginWidth = 0;
+            };
+        controls
+            {
+            XmOptionMenu WWWMailFormat;
+            };
+        };
+    VUITaaaap: XmFrame 
+        {
+        arguments
+            {
+            XmNleftAttachment = XmATTACH_FORM;
+            XmNtopAttachment = XmATTACH_FORM;
+            XmNleftOffset = 10;
+            XmNtopOffset = 10;
+            XmNrightAttachment = XmATTACH_FORM;
+            XmNrightOffset = 10;
+            };
+        controls
+            {
+            XmRowColumn VUITaaaaa;
+            };
+        };
+    WWWPrintOptions: XmFormDialog 
+        {
+        arguments
+            {
+            XmNx = 676;
+            XmNy = 735;
+            XmNwidth = 359;
+            XmNborderWidth = 1;
+            };
+        controls
+            {
+            XmSeparator VUITaaaar;
+            XmRowColumn 
+                {
+                arguments
+                    {
+                    XmNborderWidth = 0;
+                    XmNleftAttachment = XmATTACH_FORM;
+                    XmNtopAttachment = XmATTACH_WIDGET;
+                    XmNleftOffset = 10;
+                    XmNtopOffset = 2;
+                    XmNorientation = XmHORIZONTAL;
+                    XmNmenuHelpWidget = XmPushButton WWWPrintOptionsHelp;
+                    XmNtopWidget = XmSeparator VUITaaaar;
+                    XmNrightAttachment = XmATTACH_FORM;
+                    XmNrightOffset = 10;
+                    XmNbottomAttachment = XmATTACH_NONE;
+                    XmNbottomOffset = 183;
+                    };
+                controls
+                    {
+                    XmPushButton WWWPrintOptionsOk;
+                    XmPushButton WWWPrintOptionsApply;
+                    XmPushButton WWWPrintOptionsReset;
+                    XmPushButton WWWPrintOptionsCancel;
+                    XmPushButton WWWPrintOptionsHelp;
+                    };
+                };
+            XmFrame VUITaaaas;
+            XmToggleButton WWWPrintOptionsConfirm;
+            };
+        };
+    VUITaaaaq: XmRowColumn 
+        {
+        arguments
+            {
+            XmNborderWidth = 0;
+            XmNnumColumns = 2;
+            XmNpacking = XmPACK_COLUMN;
+            XmNentryAlignment = XmALIGNMENT_END;
+            XmNtopAttachment = XmATTACH_WIDGET;
+            XmNtopWidget = XmLabel VUITaaaat;
+            XmNtopOffset = 1;
+            XmNrightAttachment = XmATTACH_FORM;
+            XmNrightOffset = 0;
+            XmNleftAttachment = XmATTACH_FORM;
+            XmNleftOffset = 0;
+            };
+        controls
+            {
+            XmLabel 
+                {
+                arguments
+                    {
+                    XmNlabelString = 
+                    compound_string("HTML");
+                    };
+                };
+            XmLabel 
+                {
+                arguments
+                    {
+                    XmNlabelString = 
+                    compound_string("Postscript");
+                    };
+                };
+            XmTextField WWWPrintOptionsHTMLText;
+            XmTextField WWWPrintOptionsPostscriptText;
+            };
+        };
+    WWWPrintOptionsOk: XmPushButton 
+        {
+        arguments
+            {
+            XmNx = 9;
+            XmNy = 7;
+            XmNlabelString = 
+            compound_string("Ok");
+            };
+        };
+    WWWPrintOptionsApply: XmPushButton 
+        {
+        arguments
+            {
+            XmNx = 6;
+            XmNy = 85;
+            XmNlabelString = 
+            compound_string("Apply");
+            };
+        };
+    WWWPrintOptionsReset: XmPushButton 
+        {
+        arguments
+            {
+            XmNx = 8;
+            XmNy = 62;
+            XmNlabelString = 
+            compound_string("Reset");
+            };
+        };
+    WWWPrintOptionsCancel: XmPushButton 
+        {
+        arguments
+            {
+            XmNx = 5;
+            XmNy = 95;
+            XmNlabelString = 
+            compound_string("Cancel");
+            };
+        };
+    WWWPrintOptionsHelp: XmPushButton 
+        {
+        arguments
+            {
+            XmNx = 4;
+            XmNy = 33;
+            XmNlabelString = 
+            compound_string("Help");
+            };
+        };
+    VUITaaaar: XmSeparator 
+        {
+        arguments
+            {
+            XmNleftAttachment = XmATTACH_FORM;
+            XmNtopAttachment = XmATTACH_WIDGET;
+            XmNleftOffset = 0;
+            XmNtopOffset = 0;
+            XmNrightAttachment = XmATTACH_FORM;
+            XmNrightOffset = 1;
+            XmNtopWidget = XmToggleButton WWWPrintOptionsConfirm;
+            };
+        };
+    VUITaaaas: XmFrame 
+        {
+        arguments
+            {
+            XmNleftAttachment = XmATTACH_FORM;
+            XmNtopAttachment = XmATTACH_FORM;
+            XmNleftOffset = 17;
+            XmNtopOffset = 16;
+            XmNrightAttachment = XmATTACH_FORM;
+            XmNrightOffset = 20;
+            };
+        controls
+            {
+            XmForm 
+                {
+                arguments
+                    {
+                    XmNborderWidth = 0;
+                    XmNresizePolicy = XmRESIZE_ANY;
+                    };
+                controls
+                    {
+                    XmRowColumn VUITaaaaq;
+                    XmLabel VUITaaaat;
+                    };
+                };
+            };
+        };
+    VUITaaaat: XmLabel 
+        {
+        arguments
+            {
+            XmNlabelString = 
+            compound_string("Print Command by Format");
+            XmNleftAttachment = XmATTACH_FORM;
+            XmNtopAttachment = XmATTACH_FORM;
+            XmNleftOffset = 10;
+            XmNtopOffset = 2;
+            XmNrightAttachment = XmATTACH_FORM;
+            XmNrightOffset = 11;
+            };
+        };
+    WWWPrintOptionsConfirm: XmToggleButton 
+        {
+        arguments
+            {
+            XmNlabelString = 
+            compound_string("Confirm Print Operation");
+            XmNleftAttachment = XmATTACH_FORM;
+            XmNtopAttachment = XmATTACH_WIDGET;
+            XmNleftOffset = 19;
+            XmNtopOffset = 6;
+            XmNtopWidget = XmFrame VUITaaaas;
+            };
+        };
+    WWWPrintOptionsHTMLText: XmTextField 
+        {
+        arguments
+            {
+            XmNx = 6;
+            XmNy = 6;
+            XmNwidth = 25;
+            XmNheight = 25;
+            XmNcolumns = 1;
+            };
+        };
+    WWWPrintOptionsPostscriptText: XmTextField 
+        {
+        arguments
+            {
+            XmNx = 8;
+            XmNy = 10;
+            XmNwidth = 25;
+            XmNheight = 25;
+            XmNcolumns = 1;
+            };
+        };
+!**VUIT_Manage false ***
+!**VUIT_Manage false ***
+!**VUIT_Manage false ***
+!**VUIT_Manage false ***
+!**VUIT_Manage false ***
+!**VUIT_Manage false ***
+!**VUIT_Manage false ***
+!**VUIT_Manage false ***
+!**VUIT_Manage false ***
+!**VUIT_Manage false ***
+!**VUIT_Manage false ***
+!**VUIT_Manage false ***
+!**VUIT_Manage false ***
+!**VUIT_Manage false ***
+!**VUIT_Manage false ***
+!**VUIT_Manage false ***
+!**VUIT_Manage false ***
+!**VUIT_Manage false ***
+!**VUIT_Manage false ***
+!**VUIT_Manage false ***
+!**VUIT_Manage false ***
+!**VUIT_Manage false ***
+!**VUIT_Manage false ***
+!**VUIT_Manage false ***
+!**VUIT_Manage false ***
+!***VUIT_Manage false ***
+    WWWPrintConfirm: XmInformationDialog 
+        {
+        arguments
+            {
+            XmNx = -89+106;
+            XmNy = 1046;
+            XmNborderWidth = 1;
+            XmNmessageString = 
+            compound_string("Information Dialog Label");
+            };
+        };
+!**VUIT_Manage false ***
+!**VUIT_Manage false ***
+!**VUIT_Manage false ***
+!**VUIT_Manage false ***
+!**VUIT_Manage false ***
+!**VUIT_Manage false ***
+!**VUIT_Manage false ***
+!**VUIT_Manage false ***
+!**VUIT_Manage false ***
+!**VUIT_Manage false ***
+!**VUIT_Manage false ***
+!**VUIT_Manage false ***
+!**VUIT_Manage false ***
+!**VUIT_Manage false ***
+!**VUIT_Manage false ***
+!**VUIT_Manage false ***
+!**VUIT_Manage false ***
+!**VUIT_Manage false ***
+!**VUIT_Manage false ***
+!**VUIT_Manage false ***
+!**VUIT_Manage false ***
+!**VUIT_Manage false ***
+!**VUIT_Manage false ***
+!**VUIT_Manage false ***
+!**VUIT_Manage false ***
+!***VUIT_Manage false ***
+    WWWPrint: XmFormDialog 
+        {
+        arguments
+            {
+            XmNx = 694;
+            XmNy = 963;
+            XmNwidth = 404;
+            XmNborderWidth = 1;
+            };
+        controls
+            {
+            XmRowColumn WWWPrintCommand;
+            XmRowColumn 
+                {
+                arguments
+                    {
+                    XmNborderWidth = 0;
+                    XmNleftAttachment = XmATTACH_FORM;
+                    XmNtopAttachment = XmATTACH_WIDGET;
+                    XmNleftOffset = 15;
+                    XmNtopOffset = 2;
+                    XmNorientation = XmHORIZONTAL;
+                    XmNmenuHelpWidget = XmPushButtonGadget WWWPrintHelp;
+                    XmNrightAttachment = XmATTACH_FORM;
+                    XmNrightOffset = 10;
+                    XmNtopWidget = XmSeparator VUITaaabd;
+                    };
+                controls
+                    {
+                    XmPushButtonGadget WWWPrintOk;
+                    XmPushButtonGadget WWWPrintCancel;
+                    XmPushButtonGadget WWWPrintHelp;
+                    };
+                };
+            XmSeparator VUITaaabd;
+            XmBulletinBoard VUITaaabe;
+            };
+        };
+    WWWPrintCommand: XmRowColumn 
+        {
+        arguments
+            {
+            XmNborderWidth = 0;
+            XmNleftAttachment = XmATTACH_FORM;
+            XmNtopAttachment = XmATTACH_FORM;
+            XmNleftOffset = 8;
+            XmNtopOffset = 10;
+            XmNrightAttachment = XmATTACH_FORM;
+            XmNrightOffset = 11;
+            XmNorientation = XmVERTICAL;
+            XmNpacking = XmPACK_COLUMN;
+            XmNnumColumns = 2;
+            XmNy = 93;
+            XmNheight = 40;
+            XmNbottomAttachment = XmATTACH_NONE;
+            XmNbottomOffset = 41;
+            };
+        controls
+            {
+            XmLabelGadget 
+                {
+                arguments
+                    {
+                    XmNx = 14;
+                    XmNy = 8;
+                    XmNlabelString = 
+                    compound_string("Print Command:");
+                    };
+                };
+            XmTextField WWWPrintCommandText;
+            };
+        };
+    WWWPrintCommandText: XmTextField 
+        {
+        arguments
+            {
+            XmNx = 240;
+            XmNy = 15;
+            XmNwidth = 25;
+            XmNheight = 25;
+            XmNcolumns = 1;
+            };
+        };
+    WWWPrintFormat: XmOptionMenu 
+        {
+        arguments
+            {
+            XmNborderWidth = 0;
+            XmNlabelString = 
+            compound_string("Format:");
+            };
+        controls
+            {
+            XmPulldownMenu WWWPrintFormatMenu;
+            };
+        };
+    WWWPrintFormatMenu: XmPulldownMenu 
+        {
+        arguments
+            {
+            XmNx = 111;
+            XmNy = 20;
+            XmNborderWidth = 1;
+            };
+        };
+    WWWPrintOk: XmPushButtonGadget 
+        {
+        arguments
+            {
+            XmNlabelString = 
+            compound_string("Ok");
+            XmNy = 5;
+            XmNx = 4;
+            };
+        };
+    WWWPrintCancel: XmPushButtonGadget 
+        {
+        arguments
+            {
+            XmNx = 34;
+            XmNlabelString = 
+            compound_string("Cancel");
+            XmNy = 6;
+            };
+        };
+    WWWPrintHelp: XmPushButtonGadget 
+        {
+        arguments
+            {
+            XmNx = 58;
+            XmNlabelString = 
+            compound_string("Help");
+            XmNy = 62;
+            };
+        };
+    VUITaaabd: XmSeparator 
+        {
+        arguments
+            {
+            XmNleftAttachment = XmATTACH_FORM;
+            XmNrightAttachment = XmATTACH_FORM;
+            XmNrightOffset = 0;
+            XmNleftOffset = 0;
+            XmNtopAttachment = XmATTACH_WIDGET;
+            XmNtopOffset = 3;
+            XmNtopWidget = XmBulletinBoard VUITaaabe;
+            };
+        };
+    VUITaaabe: XmBulletinBoard 
+        {
+        arguments
+            {
+            XmNborderWidth = 0;
+            XmNresizePolicy = XmRESIZE_ANY;
+            XmNleftAttachment = XmATTACH_FORM;
+            XmNtopAttachment = XmATTACH_WIDGET;
+            XmNleftOffset = 10;
+            XmNtopOffset = 6;
+            XmNmarginHeight = 0;
+            XmNmarginWidth = 0;
+            XmNy = 15;
+            XmNheight = 34;
+            XmNtopWidget = XmRowColumn WWWPrintCommand;
+            };
+        controls
+            {
+            XmOptionMenu WWWPrintFormat;
+            };
+        };
+!**VUIT_Manage false ***
+!**VUIT_Manage false ***
+!**VUIT_Manage false ***
+!**VUIT_Manage false ***
+!**VUIT_Manage false ***
+!**VUIT_Manage false ***
+!**VUIT_Manage false ***
+!**VUIT_Manage false ***
+!**VUIT_Manage false ***
+!**VUIT_Manage false ***
+!**VUIT_Manage false ***
+!**VUIT_Manage false ***
+!**VUIT_Manage false ***
+!**VUIT_Manage false ***
+!**VUIT_Manage false ***
+!**VUIT_Manage false ***
+!**VUIT_Manage false ***
+!**VUIT_Manage false ***
+!**VUIT_Manage false ***
+!**VUIT_Manage false ***
+!**VUIT_Manage false ***
+!**VUIT_Manage false ***
+!**VUIT_Manage false ***
+!**VUIT_Manage false ***
+!***VUIT_Manage false ***
+    WWWGateway: XmFormDialog 
+        {
+        arguments
+            {
+            XmNx = 40;
+            XmNy = 2378;
+            XmNwidth = 348;
+            XmNheight = 271;
+            XmNborderWidth = 1;
+            };
+        controls
+            {
+            XmList WWWGatewayList;
+            XmLabel VUITaaaav;
+            XmTextField WWWGatewayAddress;
+            XmSeparator VUITaaaaw;
+            XmRowColumn VUITaaaax;
+            };
+        };
+    WWWGatewayList: XmList 
+        {
+        arguments
+            {
+            XmNwidth = 69;
+            XmNheight = 174;
+            XmNleftAttachment = XmATTACH_FORM;
+            XmNtopAttachment = XmATTACH_FORM;
+            XmNleftOffset = 31;
+            XmNtopOffset = 29;
+            XmNbottomAttachment = XmATTACH_WIDGET;
+            XmNbottomWidget = XmSeparator VUITaaaaw;
+            XmNbottomOffset = 14;
+            };
+        };
+    VUITaaaav: XmLabel 
+        {
+        arguments
+            {
+            XmNlabelString = 
+            compound_string("Gateway Address:");
+            XmNleftAttachment = XmATTACH_WIDGET;
+            XmNtopAttachment = XmATTACH_FORM;
+            XmNleftOffset = 34;
+            XmNtopOffset = 14;
+            XmNwidth = 139;
+            XmNheight = 32;
+            XmNleftWidget = XmList WWWGatewayList;
+            };
+        };
+    VUITaaaaw: XmSeparator 
+        {
+        arguments
+            {
+            XmNwidth = 16;
+            XmNheight = 16;
+            XmNleftAttachment = XmATTACH_FORM;
+            XmNtopAttachment = XmATTACH_NONE;
+            XmNleftOffset = 0;
+            XmNtopOffset = 217;
+            XmNrightAttachment = XmATTACH_FORM;
+            XmNrightOffset = 0;
+            XmNy = 217;
+            XmNbottomAttachment = XmATTACH_WIDGET;
+            XmNbottomWidget = XmRowColumn VUITaaaax;
+            XmNbottomOffset = -3;
+            };
+        };
+    VUITaaaax: XmRowColumn 
+        {
+        arguments
+            {
+            XmNborderWidth = 0;
+            XmNleftAttachment = XmATTACH_FORM;
+            XmNtopAttachment = XmATTACH_NONE;
+            XmNleftOffset = 5;
+            XmNtopOffset = 230;
+            XmNrightAttachment = XmATTACH_FORM;
+            XmNrightOffset = 5;
+            XmNbottomAttachment = XmATTACH_FORM;
+            XmNbottomOffset = 1;
+            XmNorientation = XmHORIZONTAL;
+            XmNy = 230;
+            XmNmenuHelpWidget = XmPushButton WWWGatewayHelp;
+            };
+        controls
+            {
+            XmPushButton WWWGatewayOK;
+            XmPushButton WWWGatewayCancel;
+            XmPushButton WWWGatewayHelp;
+            };
+        };
+    WWWGatewayHelp: XmPushButton 
+        {
+        arguments
+            {
+            XmNx = 270;
+            XmNy = 12;
+            XmNlabelString = 
+            compound_string("Help");
+            };
+        };
+    WWWGatewayCancel: XmPushButton 
+        {
+        arguments
+            {
+            XmNx = 50;
+            XmNy = 6;
+            XmNlabelString = 
+            compound_string("Cancel");
+            };
+        };
+    WWWGatewayOK: XmPushButton 
+        {
+        arguments
+            {
+            XmNx = 15;
+            XmNy = 13;
+            XmNlabelString = 
+            compound_string("OK");
+            XmNheight = 27;
+            };
+        };
+    WWWGatewayAddress: XmTextField 
+        {
+        arguments
+            {
+            XmNwidth = 138;
+            XmNheight = 34;
+            XmNcolumns = 1;
+            XmNleftAttachment = XmATTACH_WIDGET;
+            XmNtopAttachment = XmATTACH_WIDGET;
+            XmNleftOffset = 36;
+            XmNtopOffset = 1;
+            XmNleftWidget = XmList WWWGatewayList;
+            XmNtopWidget = XmLabel VUITaaaav;
+            XmNrightAttachment = XmATTACH_FORM;
+            XmNrightOffset = 22;
+            };
+        };
+!**VUIT_Manage false ***
+!**VUIT_Manage false ***
+!**VUIT_Manage false ***
+!**VUIT_Manage false ***
+!**VUIT_Manage false ***
+!**VUIT_Manage false ***
+!**VUIT_Manage false ***
+!**VUIT_Manage false ***
+!**VUIT_Manage false ***
+!**VUIT_Manage false ***
+!**VUIT_Manage false ***
+!**VUIT_Manage false ***
+!**VUIT_Manage false ***
+!**VUIT_Manage false ***
+!**VUIT_Manage false ***
+!**VUIT_Manage false ***
+!**VUIT_Manage false ***
+!**VUIT_Manage false ***
+!**VUIT_Manage false ***
+!**VUIT_Manage false ***
+!**VUIT_Manage false ***
+!**VUIT_Manage false ***
+!**VUIT_Manage false ***
+!**VUIT_Manage false ***
+!***VUIT_Manage false ***
+    WWWFiletypes: XmFormDialog 
+        {
+        arguments
+            {
+            XmNx = 398;
+            XmNy = 2373;
+            XmNwidth = 493;
+            XmNheight = 273;
+            XmNborderWidth = 1;
+            };
+        controls
+            {
+            XmList WWWFiletypesList;
+            XmLabel VUITaaaay;
+            XmTextField WWWFiletypesCommand;
+            XmSeparator VUITaaaba;
+            XmRowColumn VUITaaabg;
+            XmToggleButton WWWFiletypesToggleBinary;
+            XmToggleButton WWWFiletypesToggleFilter;
+            XmLabel WWWFiletypesLabelIcon;
+            XmLabel WWWFiletypesLabelFormat;
+            XmOptionMenu 
+                {
+                arguments
+                    {
+                    XmNborderWidth = 0;
+                    XmNleftAttachment = XmATTACH_WIDGET;
+                    XmNtopAttachment = XmATTACH_OPPOSITE_WIDGET;
+                    XmNleftOffset = 0;
+                    XmNtopOffset = 0;
+                    XmNtopWidget = XmLabel WWWFiletypesLabelFormat;
+                    XmNleftWidget = XmLabel WWWFiletypesLabelFormat;
+                    };
+                controls
+                    {
+                    XmPulldownMenu 
+                        {
+                        arguments
+                            {
+                            XmNx = 60;
+                            XmNy = 7;
+                            XmNborderWidth = 1;
+                            };
+                        controls
+                            {
+                            XmPushButton WWWFiletypesFormatHTML;
+                            XmPushButton WWWFiletypesFormatText;
+                            XmPushButton WWWFiletypeFormatPostscript;
+                            XmPushButton WWWFiletypesFormatGIF;
+                            };
+                        };
+                    };
+                };
+            XmOptionMenu WWWFiletypesIcon;
+            };
+        };
+    WWWFiletypesList: XmList 
+        {
+        arguments
+            {
+            XmNwidth = 69;
+            XmNheight = 174;
+            XmNleftAttachment = XmATTACH_FORM;
+            XmNtopAttachment = XmATTACH_FORM;
+            XmNleftOffset = 31;
+            XmNtopOffset = 29;
+            XmNbottomAttachment = XmATTACH_WIDGET;
+            XmNbottomWidget = XmSeparator VUITaaaba;
+            XmNbottomOffset = 14;
+            };
+        };
+    VUITaaaay: XmLabel 
+        {
+        arguments
+            {
+            XmNlabelString = 
+            compound_string("Command:");
+            XmNleftAttachment = XmATTACH_WIDGET;
+            XmNtopAttachment = XmATTACH_FORM;
+            XmNleftOffset = 15;
+            XmNtopOffset = 20;
+            XmNwidth = 90;
+            XmNheight = 32;
+            XmNleftWidget = XmList WWWFiletypesList;
+            };
+        };
+    WWWFiletypesCommand: XmTextField 
+        {
+        arguments
+            {
+            XmNwidth = 138;
+            XmNheight = 34;
+            XmNcolumns = 1;
+            XmNleftAttachment = XmATTACH_WIDGET;
+            XmNtopAttachment = XmATTACH_OPPOSITE_WIDGET;
+            XmNleftOffset = 0;
+            XmNtopOffset = 0;
+            XmNrightAttachment = XmATTACH_FORM;
+            XmNrightOffset = 22;
+            XmNy = 48;
+            XmNx = 136;
+            XmNtopWidget = XmLabel VUITaaaay;
+            XmNleftWidget = XmLabel VUITaaaay;
+            };
+        };
+    VUITaaaba: XmSeparator 
+        {
+        arguments
+            {
+            XmNwidth = 16;
+            XmNheight = 16;
+            XmNleftAttachment = XmATTACH_FORM;
+            XmNtopAttachment = XmATTACH_NONE;
+            XmNleftOffset = 3;
+            XmNtopOffset = 217;
+            XmNrightAttachment = XmATTACH_FORM;
+            XmNrightOffset = 0;
+            XmNy = 217;
+            XmNbottomAttachment = XmATTACH_WIDGET;
+            XmNbottomWidget = XmRowColumn VUITaaabg;
+            XmNbottomOffset = -3;
+            };
+        };
+    VUITaaabg: XmRowColumn 
+        {
+        arguments
+            {
+            XmNborderWidth = 0;
+            XmNleftAttachment = XmATTACH_FORM;
+            XmNtopAttachment = XmATTACH_NONE;
+            XmNleftOffset = 5;
+            XmNtopOffset = 230;
+            XmNrightAttachment = XmATTACH_FORM;
+            XmNrightOffset = 5;
+            XmNbottomAttachment = XmATTACH_FORM;
+            XmNbottomOffset = 3;
+            XmNorientation = XmHORIZONTAL;
+            XmNy = 230;
+            XmNmenuHelpWidget = XmPushButton WWWFiletypesHelp;
+            };
+        controls
+            {
+            XmPushButton WWWFiletypesOK;
+            XmPushButton WWWFiletypesCancel;
+            XmPushButton WWWFiletypesHelp;
+            };
+        };
+    WWWFiletypesOK: XmPushButton 
+        {
+        arguments
+            {
+            XmNx = 15;
+            XmNy = 13;
+            XmNlabelString = 
+            compound_string("OK");
+            };
+        };
+    WWWFiletypesCancel: XmPushButton 
+        {
+        arguments
+            {
+            XmNx = 50;
+            XmNy = 6;
+            XmNlabelString = 
+            compound_string("Cancel");
+            };
+        };
+    WWWFiletypesHelp: XmPushButton 
+        {
+        arguments
+            {
+            XmNx = 270;
+            XmNy = 12;
+            XmNlabelString = 
+            compound_string("Help");
+            };
+        };
+    WWWFiletypesToggleBinary: XmToggleButton 
+        {
+        arguments
+            {
+            XmNlabelString = 
+            compound_string("Binary");
+            XmNleftAttachment = XmATTACH_WIDGET;
+            XmNtopAttachment = XmATTACH_FORM;
+            XmNleftOffset = 30;
+            XmNtopOffset = 85;
+            XmNleftWidget = XmList WWWFiletypesList;
+            };
+        };
+    WWWFiletypesToggleFilter: XmToggleButton 
+        {
+        arguments
+            {
+            XmNlabelString = 
+            compound_string("Filter");
+            XmNleftAttachment = XmATTACH_OPPOSITE_WIDGET;
+            XmNtopAttachment = XmATTACH_WIDGET;
+            XmNleftOffset = 0;
+            XmNtopOffset = 10;
+            XmNleftWidget = XmToggleButton WWWFiletypesToggleBinary;
+            XmNtopWidget = XmToggleButton WWWFiletypesToggleBinary;
+            };
+        };
+    WWWFiletypesLabelIcon: XmLabel 
+        {
+        arguments
+            {
+            XmNlabelString = 
+            compound_string("Icon:");
+            XmNleftAttachment = XmATTACH_WIDGET;
+            XmNtopAttachment = XmATTACH_FORM;
+            XmNleftOffset = 29;
+            XmNtopOffset = 157;
+            XmNwidth = 56;
+            XmNheight = 32;
+            XmNleftWidget = XmList WWWFiletypesList;
+            };
+        };
+    WWWFiletypesLabelFormat: XmLabel 
+        {
+        arguments
+            {
+            XmNlabelString = 
+            compound_string("Format:");
+            XmNleftAttachment = XmATTACH_FORM;
+            XmNtopAttachment = XmATTACH_FORM;
+            XmNleftOffset = 224;
+            XmNtopOffset = 81;
+            XmNwidth = 73;
+            XmNheight = 32;
+            XmNleftWidget = XmList WWWFiletypesList;
+            };
+        };
+    WWWFiletypesFormatHTML: XmPushButton 
+        {
+        arguments
+            {
+            XmNx = 1;
+            XmNy = 2;
+            XmNlabelString = 
+            compound_string("HTML");
+            };
+        };
+    WWWFiletypesFormatText: XmPushButton 
+        {
+        arguments
+            {
+            XmNx = 33;
+            XmNy = 15;
+            XmNlabelString = 
+            compound_string("Text");
+            };
+        };
+    WWWFiletypeFormatPostscript: XmPushButton 
+        {
+        arguments
+            {
+            XmNx = 31;
+            XmNy = 42;
+            XmNlabelString = 
+            compound_string("Postscript");
+            };
+        };
+    WWWFiletypesFormatGIF: XmPushButton 
+        {
+        arguments
+            {
+            XmNx = 33;
+            XmNy = 65;
+            XmNlabelString = 
+            compound_string("GIF");
+            };
+        };
+    WWWFiletypesIconDocument: XmDrawnButton 
+        {
+        arguments
+            {
+            XmNx = 3;
+            XmNy = 4;
+            XmNlabelType = XmPIXMAP;
+            XmNlabelPixmap = document;
+            };
+        };
+    WWWFiletypesIconCircle: XmDrawnButton 
+        {
+        arguments
+            {
+            XmNx = 4;
+            XmNy = 1;
+            XmNlabelPixmap = circle;
+            XmNlabelType = XmPIXMAP;
+            };
+        };
+    WWWFiletypesIcon: XmOptionMenu 
+        {
+        arguments
+            {
+            XmNborderWidth = 0;
+            XmNleftAttachment = XmATTACH_WIDGET;
+            XmNtopAttachment = XmATTACH_OPPOSITE_WIDGET;
+            XmNleftOffset = 0;
+            XmNtopOffset = 0;
+            XmNleftWidget = XmLabel WWWFiletypesLabelIcon;
+            XmNtopWidget = XmLabel WWWFiletypesLabelIcon;
+            };
+        controls
+            {
+            XmPulldownMenu 
+                {
+                arguments
+                    {
+                    XmNx = 89;
+                    XmNy = 10;
+                    XmNborderWidth = 1;
+                    };
+                controls
+                    {
+                    XmDrawnButton WWWFiletypesIconDocument;
+                    XmDrawnButton WWWFiletypesIconCircle;
+                    XmDrawnButton WWWFiletypesIconGraphics;
+                    XmDrawnButton WWWFiletypesIconDirectory;
+                    XmDrawnButton WWWFiletypesIconWeb;
+                    XmDrawnButton WWWFiletypesIconNoentry;
+                    };
+                };
+            };
+        };
+    WWWFiletypesIconGraphics: XmDrawnButton 
+        {
+        arguments
+            {
+            XmNx = 5;
+            XmNy = 1;
+            XmNlabelType = XmPIXMAP;
+            XmNlabelPixmap = graphics;
+            };
+        };
+    WWWFiletypesIconDirectory: XmDrawnButton 
+        {
+        arguments
+            {
+            XmNx = 4;
+            XmNy = 4;
+            XmNlabelType = XmPIXMAP;
+            XmNlabelPixmap = directory;
+            };
+        };
+    WWWFiletypesIconWeb: XmDrawnButton 
+        {
+        arguments
+            {
+            XmNx = 5;
+            XmNy = 2;
+            XmNlabelType = XmPIXMAP;
+            XmNlabelPixmap = web;
+            };
+        };
+    WWWFiletypesIconNoentry: XmDrawnButton 
+        {
+        arguments
+            {
+            XmNx = 9;
+            XmNy = 16;
+            XmNlabelType = XmPIXMAP;
+            XmNlabelPixmap = noEntry;
+            };
+        };
+    WWWHistory: XmFormDialog 
+        {
+        arguments
+            {
+            XmNx = 47;
+            XmNy = 440;
+            XmNborderWidth = 1;
+            XmNwidth = 505;
+            XmNheight = 387;
+            };
+        controls
+            {
+            XmMenuBar WWWHistoryMenu;
+            XmScrolledWindow WWWHistorySW;
+            };
+        };
+    WWWHistoryMenu: XmMenuBar 
+        {
+        arguments
+            {
+            XmNrightAttachment = XmATTACH_FORM;
+            XmNrightOffset = 0;
+            XmNtopAttachment = XmATTACH_FORM;
+            XmNtopOffset = 0;
+            XmNleftAttachment = XmATTACH_FORM;
+            XmNleftOffset = 0;
+            };
+        };
+    WWWHistorySW: XmScrolledWindow 
+        {
+        arguments
+            {
+            XmNwidth = 25;
+            XmNheight = 25;
+            XmNborderWidth = 0;
+            XmNleftAttachment = XmATTACH_FORM;
+            XmNtopAttachment = XmATTACH_WIDGET;
+            XmNleftOffset = 0;
+            XmNtopOffset = 1;
+            XmNtopWidget = XmMenuBar WWWHistoryMenu;
+            XmNrightAttachment = XmATTACH_FORM;
+            XmNrightOffset = 0;
+            XmNbottomAttachment = XmATTACH_FORM;
+            XmNbottomOffset = 0;
+            };
+        };
+    WWWHistoryButton: XmDrawnButton 
+        {
+        arguments
+            {
+            XmNleftAttachment = XmATTACH_NONE;
+            XmNtopAttachment = XmATTACH_NONE;
+            XmNleftOffset = 418;
+            XmNtopOffset = 8;
+            XmNrightAttachment = XmATTACH_OPPOSITE_WIDGET;
+            XmNrightWidget = XmDrawnButton WWWHotList;
+            XmNrightOffset = 0;
+            XmNx = 418;
+            XmNy = 8;
+            XmNbottomAttachment = XmATTACH_WIDGET;
+            XmNbottomWidget = XmDrawnButton WWWHotList;
+            XmNbottomOffset = 0;
+            XmNlabelPixmap = History;
+            XmNlabelType = XmPIXMAP;
+            XmNpushButtonEnabled = true;
+            };
+        };
+    WWWHotListDeleteConfirm: XmQuestionDialog 
+        {
+        arguments
+            {
+            XmNy = 1810;
+            XmNborderWidth = 1;
+            XmNmessageString = 
+            compound_string("Delete Item from HotList?");
+            XmNx = 76;
+            XmNsymbolPixmap = kill;
+            XmNdialogStyle = XmDIALOG_PRIMARY_APPLICATION_MODAL;
+            };
+        };
+    ConfirmExit: XmToggleButton 
+        {
+        arguments
+            {
+            XmNlabelString = 
+            compound_string("Confirm Exit From Midas WWW");
+            XmNleftAttachment = XmATTACH_OPPOSITE_WIDGET;
+            XmNtopAttachment = XmATTACH_WIDGET;
+            XmNleftOffset = 0;
+            XmNtopOffset = 0;
+            XmNtopWidget = XmToggleButton EnableHTTP2;
+            XmNleftWidget = XmToggleButton EnableHTTP2;
+            };
+        };
+    VUITaaaau: XmSeparator 
+        {
+        arguments
+            {
+            XmNleftAttachment = XmATTACH_FORM;
+            XmNtopAttachment = XmATTACH_WIDGET;
+            XmNleftOffset = 0;
+            XmNtopOffset = 5;
+            XmNrightAttachment = XmATTACH_FORM;
+            XmNrightOffset = 0;
+            XmNtopWidget = XmToggleButton ConfirmExit;
+            };
+        };
+    VUITaaaaz: XmFrame 
+        {
+        arguments
+            {
+            XmNleftAttachment = XmATTACH_FORM;
+            XmNtopAttachment = XmATTACH_WIDGET;
+            XmNleftOffset = 20;
+            XmNtopOffset = 12;
+            XmNrightAttachment = XmATTACH_NONE;
+            XmNrightOffset = 387;
+            XmNtopWidget = XmFrame VUITaaabb;
+            XmNy = 290;
+            };
+        controls
+            {
+            XmRowColumn 
+                {
+                arguments
+                    {
+                    XmNx = 13;
+                    XmNy = 10;
+                    XmNborderWidth = 0;
+                    };
+                controls
+                    {
+                    XmToggleButton WWWOptionShowProgress;
+                    XmScale WWWOptionShowProgressTime;
+                    XmScale WWWShowProgressUpdateTime;
+                    };
+                };
+            };
+        };
+    WWWOptionShowProgress: XmToggleButton 
+        {
+        arguments
+            {
+            XmNx = 9;
+            XmNy = 7;
+            XmNlabelString = 
+            compound_string("Show Document Fetch Progress");
+            };
+        };
+    WWWOptionShowProgressTime: XmScale 
+        {
+        arguments
+            {
+            XmNx = 6;
+            XmNy = 32;
+            XmNborderWidth = 0;
+            XmNorientation = XmHORIZONTAL;
+            XmNshowValue = true;
+            XmNtitleString = 
+            compound_string("Seconds before initial display");
+            XmNwidth = 326;
+            XmNminimum = 0;
+            XmNmaximum = 300;
+            XmNdecimalPoints = 1;
+            };
+        };
+    WWWShowProgressUpdateTime: XmScale 
+        {
+        arguments
+            {
+            XmNx = 2;
+            XmNy = 100;
+            XmNborderWidth = 0;
+            XmNorientation = XmHORIZONTAL;
+            XmNshowValue = true;
+            XmNtitleString = 
+            compound_string("Seconds between updates");
+            XmNdecimalPoints = 1;
+            XmNmaximum = 100;
+            XmNminimum = 1;
+            };
+        };
+    VUITaaabb: XmFrame 
+        {
+        arguments
+            {
+            XmNleftAttachment = XmATTACH_FORM;
+            XmNtopAttachment = XmATTACH_FORM;
+            XmNleftOffset = 21;
+            XmNtopOffset = 10;
+            XmNrightAttachment = XmATTACH_FORM;
+            XmNrightOffset = 16;
+            };
+        controls
+            {
+            XmRowColumn VUITaaaak;
+            };
+        };
+    ShowDocumentSource: XmToggleButton 
+        {
+        arguments
+            {
+            XmNlabelString = 
+            compound_string("Show Document Source");
+            XmNleftAttachment = XmATTACH_FORM;
+            XmNtopAttachment = XmATTACH_WIDGET;
+            XmNleftOffset = 13;
+            XmNtopOffset = 5;
+            XmNtopWidget = XmFrame VUITaaaap;
+            };
+        };
+    EnableHTTP2: XmToggleButton 
+        {
+        arguments
+            {
+            XmNlabelString = 
+            compound_string("Enable HTTP 1.0");
+            XmNleftAttachment = XmATTACH_FORM;
+            XmNtopAttachment = XmATTACH_WIDGET;
+            XmNleftOffset = 19;
+            XmNtopOffset = 3;
+            XmNtopWidget = XmFrame VUITaaaaz;
+            };
+        };
+    WWWSearch: XmFormDialog 
+        {
+        arguments
+            {
+            XmNx = 57;
+            XmNy = 2694;
+            XmNwidth = 370;
+            XmNborderWidth = 1;
+            XmNdefaultButton = XmPushButton WWWSearchFind;
+            };
+        controls
+            {
+            XmLabel VUITaaabf;
+            XmTextField WWWSearchText;
+            XmSeparator VUITaaaab;
+            XmRowColumn VUITaaabc;
+            XmToggleButton WWWSearchCaseSensitive;
+            XmToggleButton WWWSearchContinue;
+            };
+        };
+    VUITaaaab: XmSeparator 
+        {
+        arguments
+            {
+            XmNleftAttachment = XmATTACH_FORM;
+            XmNtopAttachment = XmATTACH_WIDGET;
+            XmNleftOffset = 0;
+            XmNtopOffset = 1;
+            XmNrightAttachment = XmATTACH_FORM;
+            XmNrightOffset = 0;
+            XmNbottomAttachment = XmATTACH_NONE;
+            XmNbottomOffset = 0;
+            XmNtopWidget = XmToggleButton WWWSearchCaseSensitive;
+            };
+        };
+    VUITaaabc: XmRowColumn 
+        {
+        arguments
+            {
+            XmNborderWidth = 0;
+            XmNleftAttachment = XmATTACH_FORM;
+            XmNtopAttachment = XmATTACH_WIDGET;
+            XmNleftOffset = 5;
+            XmNtopOffset = 2;
+            XmNrightAttachment = XmATTACH_FORM;
+            XmNrightOffset = 5;
+            XmNbottomAttachment = XmATTACH_NONE;
+            XmNbottomOffset = 3;
+            XmNorientation = XmHORIZONTAL;
+            XmNtopWidget = XmSeparator VUITaaaab;
+            XmNmenuHelpWidget = XmPushButton WWWSearchHelp;
+            XmNlabelString = 
+            compound_string("");
+            };
+        controls
+            {
+            XmPushButton WWWSearchFind;
+            XmPushButton WWWSearchCancel;
+            XmPushButton WWWSearchHelp;
+            };
+        };
+    WWWSearchFind: XmPushButton 
+        {
+        arguments
+            {
+            XmNx = 17;
+            XmNy = 10;
+            XmNlabelString = 
+            compound_string("Find");
+            };
+        };
+    WWWSearchCancel: XmPushButton 
+        {
+        arguments
+            {
+            XmNx = 60;
+            XmNy = 12;
+            XmNlabelString = 
+            compound_string("Cancel");
+            };
+        };
+    WWWSearchText: XmTextField 
+        {
+        arguments
+            {
+            XmNwidth = 254;
+            XmNheight = 36;
+            XmNcolumns = 1;
+            XmNleftAttachment = XmATTACH_FORM;
+            XmNtopAttachment = XmATTACH_WIDGET;
+            XmNleftOffset = 25;
+            XmNtopOffset = 0;
+            XmNrightAttachment = XmATTACH_FORM;
+            XmNrightOffset = 25;
+            XmNtopWidget = XmLabel VUITaaabf;
+            };
+        };
+    WWWSearchCaseSensitive: XmToggleButton 
+        {
+        arguments
+            {
+            XmNlabelString = 
+            compound_string("Case Sensitive");
+            XmNleftAttachment = XmATTACH_FORM;
+            XmNtopAttachment = XmATTACH_WIDGET;
+            XmNleftOffset = 25;
+            XmNtopOffset = 0;
+            XmNheight = 30;
+            XmNtopWidget = XmTextField WWWSearchText;
+            XmNwidth = 150;
+            XmNrightAttachment = XmATTACH_NONE;
+            XmNrightOffset = 210;
+            };
+        };
+    VUITaaabf: XmLabel 
+        {
+        arguments
+            {
+            XmNlabelString = 
+            compound_string("String to find:");
+            XmNleftAttachment = XmATTACH_FORM;
+            XmNtopAttachment = XmATTACH_FORM;
+            XmNleftOffset = 20;
+            XmNtopOffset = 1;
+            XmNwidth = 109;
+            XmNheight = 36;
+            };
+        };
+    WWWTruncate: XmWarningDialog 
+        {
+        arguments
+            {
+            XmNx = 44;
+            XmNy = 2442;
+            XmNborderWidth = 1;
+            XmNmessageString = 
+            compound_string("The document was too long, and has been truncated.");
+            };
+        };
+    WWWSearchContinue: XmToggleButton 
+        {
+        arguments
+            {
+            XmNlabelString = 
+            compound_string("Continue Search");
+            XmNleftAttachment = XmATTACH_WIDGET;
+            XmNtopAttachment = XmATTACH_WIDGET;
+            XmNleftOffset = 29;
+            XmNtopOffset = 0;
+            XmNheight = 30;
+            XmNtopWidget = XmTextField WWWSearchText;
+            XmNwidth = 150;
+            XmNrightAttachment = XmATTACH_NONE;
+            XmNrightOffset = 210;
+            XmNset = true;
+            XmNleftWidget = XmToggleButton WWWSearchCaseSensitive;
+            };
+        };
+    WWWSearchHelp: XmPushButton 
+        {
+        arguments
+            {
+            XmNx = 98;
+            XmNy = 3;
+            XmNlabelString = 
+            compound_string("Help");
+            };
+        };
+    WWWDocInfoSearch: XmPushButtonGadget 
+        {
+        arguments
+            {
+            XmNx = 8;
+            XmNy = 2;
+            XmNlabelString = 
+            compound_string("Search...");
+            };
+        };
+    WWWGhostviewErrors: XmFormDialog 
+        {
+        arguments
+            {
+            XmNx = 108;
+            XmNy = 148;
+            XmNwidth = 576;
+            XmNheight = 270;
+            XmNborderWidth = 1;
+            };
+        controls
+            {
+            XmLabel VUITaaabh;
+            XmScrolledWindow VUITaaabi;
+            XmSeparator VUITaaabj;
+            XmRowColumn VUITaaabk;
+            };
+        };
+    VUITaaabh: XmLabel 
+        {
+        arguments
+            {
+            XmNlabelString = 
+            compound_string("Ghostscript reports the following errors:");
+            XmNleftAttachment = XmATTACH_FORM;
+            XmNtopAttachment = XmATTACH_FORM;
+            XmNleftOffset = 17;
+            XmNtopOffset = 8;
+            };
+        };
+    VUITaaabi: XmScrolledWindow 
+        {
+        arguments
+            {
+            XmNwidth = 25;
+            XmNheight = 25;
+            XmNborderWidth = 0;
+            XmNleftAttachment = XmATTACH_FORM;
+            XmNtopAttachment = XmATTACH_WIDGET;
+            XmNleftOffset = 8;
+            XmNtopOffset = 1;
+            XmNtopWidget = XmLabel VUITaaabh;
+            XmNrightAttachment = XmATTACH_FORM;
+            XmNrightOffset = 8;
+            XmNbottomAttachment = XmATTACH_WIDGET;
+            XmNbottomWidget = XmSeparator VUITaaabj;
+            XmNbottomOffset = 2;
+            };
+        controls
+            {
+            XmText WWWGhostscriptErrorText;
+            };
+        };
+    VUITaaabj: XmSeparator 
+        {
+        arguments
+            {
+            XmNleftAttachment = XmATTACH_FORM;
+            XmNtopAttachment = XmATTACH_NONE;
+            XmNleftOffset = 0;
+            XmNtopOffset = 2;
+            XmNrightAttachment = XmATTACH_FORM;
+            XmNrightOffset = 1;
+            XmNy = 65;
+            XmNbottomAttachment = XmATTACH_WIDGET;
+            XmNbottomWidget = XmRowColumn VUITaaabk;
+            XmNbottomOffset = -1;
+            };
+        };
+    GhostviewErrorsHelp: XmPushButton 
+        {
+        arguments
+            {
+            XmNx = 14;
+            XmNy = 30;
+            XmNlabelString = 
+            compound_string("Help");
+            };
+        };
+    GhostscriptErrorCancel: XmPushButton 
+        {
+        arguments
+            {
+            XmNx = 7;
+            XmNy = 11;
+            XmNlabelString = 
+            compound_string("Cancel");
+            };
+        };
+    VUITaaabk: XmRowColumn 
+        {
+        arguments
+            {
+            XmNborderWidth = 0;
+            XmNleftAttachment = XmATTACH_FORM;
+            XmNtopAttachment = XmATTACH_NONE;
+            XmNleftOffset = 17;
+            XmNtopOffset = 0;
+            XmNorientation = XmHORIZONTAL;
+            XmNmenuHelpWidget = XmPushButton GhostviewErrorsHelp;
+            XmNrightAttachment = XmATTACH_FORM;
+            XmNrightOffset = 13;
+            XmNy = 81;
+            XmNbottomAttachment = XmATTACH_FORM;
+            XmNbottomOffset = 0;
+            };
+        controls
+            {
+            XmPushButton GhostscriptErrorCancel;
+            XmPushButton GhostviewErrorsHelp;
+            };
+        };
+    WWWGhostscriptErrorText: XmText 
+        {
+        arguments
+            {
+            XmNwidth = 25;
+            XmNheight = 25;
+            XmNcolumns = 1;
+            XmNeditable = false;
+            };
+        };
+    WWWWaiting: XmFormDialog 
+        {
+        arguments
+            {
+            XmNx = 77;
+            XmNy = 157;
+            XmNwidth = 459;
+            XmNheight = 117;
+            XmNborderWidth = 1;
+            };
+        controls
+            {
+            XmDrawingArea WWWWaitingDraw;
+            XmSeparator VUITaaabl;
+            XmPushButton WWWWaitingCancel;
+            };
+        };
+    VUITaaabl: XmSeparator 
+        {
+        arguments
+            {
+            XmNleftAttachment = XmATTACH_FORM;
+            XmNtopAttachment = XmATTACH_NONE;
+            XmNleftOffset = 0;
+            XmNtopOffset = 104;
+            XmNy = 104;
+            XmNbottomAttachment = XmATTACH_WIDGET;
+            XmNbottomWidget = XmPushButton WWWWaitingCancel;
+            XmNbottomOffset = 3;
+            XmNrightAttachment = XmATTACH_FORM;
+            XmNrightOffset = 1;
+            };
+        };
+    WWWWaitingCancel: XmPushButton 
+        {
+        arguments
+            {
+            XmNlabelString = 
+            compound_string("Cancel Document Fetch");
+            XmNleftAttachment = XmATTACH_FORM;
+            XmNbottomAttachment = XmATTACH_FORM;
+            XmNbottomOffset = 5;
+            XmNy = 163;
+            XmNleftOffset = 14;
+            XmNrightAttachment = XmATTACH_FORM;
+            XmNrightOffset = 15;
+            };
+        };
+    WWWWaitingDraw: XmDrawingArea 
+        {
+        arguments
+            {
+            XmNborderWidth = 0;
+            XmNresizePolicy = XmRESIZE_GROW;
+            XmNleftAttachment = XmATTACH_FORM;
+            XmNtopAttachment = XmATTACH_FORM;
+            XmNleftOffset = 5;
+            XmNtopOffset = 6;
+            XmNrightAttachment = XmATTACH_FORM;
+            XmNrightOffset = 5;
+            XmNbottomAttachment = XmATTACH_WIDGET;
+            XmNbottomOffset = 6;
+            XmNbottomWidget = XmSeparator VUITaaabl;
+            };
+        };
+
+value
+    MidasColorMap: color_table(background color = ' ', 
+        foreground color = '*', 
+        color('Green4', foreground) = 'F', 
+        color('NavajoWhite', foreground) = 'E', 
+        color('Red', foreground) = 'D', 
+        color('Cyan', foreground) = 'C', 
+        color('Yellow2', foreground) = 'B', 
+        color('Red', foreground) = 'A', 
+        color('Green4', background) = 'f', 
+        color('NavajoWhite', background) = 'e', 
+        color('Red', background) = 'd', 
+        color('Cyan', background) = 'c', 
+        color('Yellow2', background) = 'b', 
+        color('Red', background) = 'a', 
+        color('NavajoWhite', background) = 'K', 
+        color('white', foreground) = 'p', 
+        color('black', foreground) = 'k', 
+        color('red', background) = 'o', 
+        color('gray94', background) = 'w', 
+        color('light slate blue', background) = 's', 
+        color('light slate blue', foreground) = 'S', 
+        color('gray94', foreground) = 'O', 
+        color('black', foreground) = '+', 
+        color('cyan', background) = '#', 
+        color('yellow2', background) = '$', 
+        color('green4', foreground) = '%', 
+        color('white', background) = '7', 
+        color('gray', background) = '@', 
+        color('gray50', foreground) = '&', 
+        color('DarkOrange1', background) = 'J', 
+        color('orange', background) = 'I', 
+        color('gold', background) = 'i', 
+        color('NavajoWhite', background) = 'H', 
+        color('green4', foreground) = 'W', 
+        color('white', foreground) = 'y', 
+        color('black', foreground) = 'h');
+    MidasWWWIcon: exported icon(color_table = MidasColorMap, 
+        '                  ****************                ',
+        ' *****************               *                ',
+        ' **               *****************               ',
+        ' * ***************              ***               ',
+        ' * **                    *******  **              ',
+        ' * * *       ************     **  **              ',
+        ' * *  *******            ****** *  **             ',
+        ' * *  **      ***********    ** *  **             ',
+        ' * *  * ******           ***** * * * *            ',
+        ' * *  * **     **********   ** * *  **            ',
+        ' * *  * * *****          **** * **  **            ',
+        ' * *  * * **     ********   * * * *  **           ',
+        ' * *  * * * *****       **** * * **  **           ',
+        ' * *  * * * **    ******   * * * * * * *          ',
+        ' * *  * * * * ****        * * * ** *  **          ',
+        ' * *  * * * * **     ****** * * * * * * *         ',
+        ' * *  * * * * * *****    **  * ** * *  **         ',
+        ' * *  * * * * * **       **  * * * **  * *        ',
+        ' * *  * * * * * * ******** *  * ** * *  **        ',
+        '  * * * * * * * * **    * **  * * * **  * *       ',
+        '  * * * * * * * * * ***** * * * * * * * * *       ',
+        '  * * * * * * * * * ** * * * * * ** * *  **       ',
+        '  * * * * * * * * * * ** * * * * * * **  * *      ',
+        '  * * * * * * * * * * *** * * * * ** * *  **      ',
+        '  * * * * * * * * * ** * **** * * * * **  * *     ',
+        '  * * * * * * * * ** ***  *  ***** ** * * * *     ',
+        '  * * * * * * * ****   *** ****  ***** **  * *    ',
+        '  * * * * * * * **  ** * ** *  ** *  ***** * *    ',
+        '  * * * * * * **  **  *** ** ** **  * *  **** *   ',
+        '  * * * * * ***     ** ***  *  *  ****  *   ***   ',
+        '  * * * * **** ***    **  **  *  * *  **   * *    ',
+        '  * * * * **  **  ***  ***   *  * *  *   ** *     ',
+        '  * * * *** **  **   ***    * ** *  *   * **      ',
+        '  * * **   ** **  ***  *  ** * ** **   * *        ',
+        '  * ****     ** **   *** *  * *  *   ** *         ',
+        '  * *   **     ** **   ** ** *  *   *  *          ',
+        '  ****    ***    ** **  **  * **   *  *           ',
+        '  *   **     **    ** *** ** *   **  *            ',
+        '   **   **     ***   ** **  *   *  **             ',
+        '     **   ***     ***  ** **   *  *               ',
+        '       ***   **      ** **   **  *                ',
+        '          **   ***     **   *   *                 ',
+        '            **    **    *  *   *                  ',
+        '******  * *** **    **  ***   *   *   * *** ***   ',
+        '  *  *  * *     ***   ***   **    *   * *   *  *  ',
+        '  *  **** **       **   *  *      * * * **  ***   ',
+        '  *  *  * *          ** * *       ***** *   *  *  ',
+        '  *  *  * ***          ***         * *  *** ***   ',
+        '                                                  ',
+        '                                                  ');
+    MidasWWWHome: exported icon(color_table = MidasColorMap, 
+        '                                                            ',
+        '                                                            ',
+        '                                                            ',
+        '                                                            ',
+        '                                                            ',
+        '                       AAAAAAAAAAAAA                        ',
+        '                      AoooooooooooooA wOwOw                 ',
+        '                     Aooo++ooooooooooAOwOwO                 ',
+        '                    Aooo++o+oo+ooo+ooowOwOw                 ',
+        '                   Ao++++o+o+oooooooooOwOwO                 ',
+        '                  Aooo++o+o+o+ooo+oooowOwOw                 ',
+        '                 Aooo++o+o+o+o+oooooooOwOwO                 ',
+        '                Aooo++o+o+o+o++ooooooowOwOw                 ',
+        '               A+oo++o+o+o+o+o++ooooooOwOwOA                ',
+        '              Aooo++o+o+##o+o+o++ooo+ooOwOwoA               ',
+        '             Aooo++o+o+####o+o+o++oo++ooOwOooA              ',
+        '            Aooo++o+o+######o+o+o++o++oooOwoooA             ',
+        '           Aooo++o+o+########o+o+o++ooooooooo+oA            ',
+        '          Ao+o++o+o++########+o+o+o++ooooooooo+oA           ',
+        '         Aooo++o+o+o+########o+o+o+o++oooooooooooA          ',
+        '        Aooo++o+o+o++########+o+o+o+o++oooo+ooo+oA          ',
+        '       A++o++o+o+o+o+++++++++o+o+o+o+o++ooo+ooo+ooA         ',
+        '      Aooo++o+o+o+o+o+o+o+o+o+o+o+o+o+o+oooooooooooA        ',
+        '     Aooo++o+o+o+o+o+o+o+o+o+o+o+o+o+o+o+ooooo+oo+oA        ',
+        '    Aooo++o+o+o+o+o+o+o+o+o+o+o+o+o+o+o+o+oooooo++ooA       ',
+        '    Aoo++o+o+o+o+o+o+o+o+o+o+o+o+o+o+o+o+o+ooooooooooA      ',
+        '    Ao++o+o+o+o+o+o+o+o+o+o+o+o+o+o+o+o+o+o+++++++++oA      ',
+        '     ++o+o+o+o+o+o+o+o+o+o+o+o+o+o+o+o+o+o+++o+o+o++        ',
+        '     +o+o+o+o##+o+o+o+o+o+o+o+o+o+o+##o+o+o+o+o+o+o+        ',
+        '     ++o+o+o####+o+o+o+o+o+o+o+o+o+####o+o+++o+o+o++        ',
+        '     +o+o+o######+o+o+++++++o+o+o+######o+o+o+o+o+o+        ',
+        '     ++o+o+######o+o++$$$$$$+o+o++######+o+++o+o+o++        ',
+        '     +o+o++######+o+o+$$$$$$o+o+o+######o+o+o+o+o+o+        ',
+        '     ++o+o+######o+o++$$$$$$+o+o++######+o+++o+o+o++        ',
+        '     +o+o++######+o+o+$$$$$$o+o+o+######o+o+o+o+o+o+        ',
+        '     ++o+o+######o+o++$$$$$$+o+o++######+o+++o+o+o++        ',
+        '     +o+o++######+o+o+$$$$$$o+o+o+######o+o+o+o+o+o+        ',
+        '     ++o+o+++++++o+o++$OO$$$+o+o+++++++++o+++o+o+o++        ',
+        '     +o+o+o+o+o+o+o+o+$OO$$$o+o+o+o+o+o+o+o+o+o+o+o+        ',
+        '     ++o+o+o+o+o+o+o++$$$$$$+o+o+o+o+o+o+o+++o+o+o++        ',
+        '     +o+o+o+o+o+o+o+o+$$$$$$o+o+o+o+o+o+o+o+o+o+o+o+        ',
+        '     ++o+o+o+o+o+o+o++$$$$$$+o+o+o+o+o+o+o+++o+o+o++%%%     ',
+        '     +o+o+o+o+o+o+o+o+$$$$$$o+o+o+o+o+o+o+o+o+o+o+o+% %     ',
+        '   %%+++++++++++++++++$$$$$$++++++++++++++++++++++++%%%     ',
+        '   %%%%%%%%%%%%%%%%%%%%%%% % %%%%%%%%%%%%% %%%%%%%%%%%      ',
+        '   %%%%%%%%%%%%%%%%%% % %%   %%%%%%% % %%%%%%%%%% %%%%%     ',
+        '    % %%%%%   % %%   %%%  %%%%%%%%%%%%%%%%%%%%%%%%%% %      ',
+        '   %   % %%%%%%%%  %%% %%%   % %%%%%%%%%%%%%%%% %%%%% %     ',
+        '    %% %   %% %% %%%%%%%%%%%%%  %%% %%%% %   %%%%  %%       ',
+        '        %  %  %%%%% %      %  %%%%  %%     %% %%%%  %       ',
+        '             % %%%%     %%%%% %%%%%% %%%%%  %%%%%%%%        ',
+        '            %%%%    % %%%% %% %     %%%% % %%%% %           ',
+        '              % %%   %%%%  % %% %%%  %% %%%  %              ',
+        '                     %     %       %                        ',
+        '                                                            ',
+        '                                                            ',
+        '                                                            ',
+        '                                                            ');
+    noEntry: exported icon(color_table = MidasColorMap, 
+        '                                ',
+        '                                ',
+        '                    DdDdD       ',
+        '                  DdDdDdDdD     ',
+        '                 DdDdDdDdDdD    ',
+        '                DdDdDdDdDdDdD   ',
+        '               DdDdDdDdDdDdDdD  ',
+        '               DdDdDdDdDdDdDdD  ',
+        '              DdDdDdDdDdDdDdDdD ',
+        '              eeeeeeeeeeeeeeeee ',
+        '              eeeeeeeeeeeeeeeee ',
+        '              eeeeeeeeeeeeeeeee ',
+        '              DdDdDdDdDdDdDdDdD ',
+        '               DdDdDdDdDdDdDdD  ',
+        '               DdDdDdDdDdDdDdD  ',
+        '                DdDdDdDdDdDdD   ',
+        '                 DdDdDdDdDdD    ',
+        '                  DdDdDdDdD     ',
+        '                    DdDdD       ',
+        '                                ');
+    directory: exported icon(color_table = MidasColorMap, 
+        '                                ',
+        '                                ',
+        '                         *      ',
+        '                         **     ',
+        '                         ***    ',
+        '                         *cC*   ',
+        '                         *CcC*  ',
+        '             *************cCc** ',
+        '             *CcCcCcCcCcCcCcCc* ',
+        '             *cCcCcCcCcCcCcCcCc*',
+        '             *CcCcCcCcCcCcCcCc* ',
+        '             *************cCc** ',
+        '                         *CcC*  ',
+        '                         *cC*   ',
+        '                         ***    ',
+        '                         **     ',
+        '                         *      ',
+        '                                ',
+        '                                ',
+        '                                ');
+    document: exported icon(color_table = MidasColorMap, 
+        '                                ',
+        '                                ',
+        '                                ',
+        '                                ',
+        '                                ',
+        '                ***********     ',
+        '                *    *cCcC*     ',
+        '                *     *cCc*     ',
+        '                *      *cC*     ',
+        '                *       *c*     ',
+        '                *        **     ',
+        '                *         *     ',
+        '                *         *     ',
+        '                *         *     ',
+        '                *         *     ',
+        '                *         *     ',
+        '                ***********     ',
+        '                                ',
+        '                                ',
+        '                                ');
+    ps: exported icon(color_table = MidasColorMap, 
+        '         hhhhhhhhhhhhhhhhhh     ',
+        '         h77777777777777&h7h    ',
+        '        @h77777777777777&h77h   ',
+        '       &@h7hhhhh7h7AAAAA&h777h  ',
+        '       &@h7h&&&h7h777777&hhhhh  ',
+        '       &@h7hhhhh7h7AAAAA&&&&&h  ',
+        '       &@h7777777h77777777777h  ',
+        '       &@h7777777h77777777777h  ',
+        '       &@h7hhhhh7h7hhhhhhhh77h  ',
+        '       &@h7h&&&h7h77777777777h  ',
+        '       &@h7hhhhh7h7hhhhhhhh77h  ',
+        '       &@h7777777h77777777777h  ',
+        '       &@h7777777h7hhhhhhhh77h  ',
+        '       &@h7hhhhh7h77777777777h  ',
+        '       &@h7h&&&h7h77777777777h  ',
+        '       &@h7hhhhh7h7hhhhhhhh77h  ',
+        '       &@h7777777h77777777777h  ',
+        '       &@h7777777h7hhhh777777h  ',
+        '       &@h7hhhhh7h77777777777h  ',
+        '       &@h7h&&&h7h7hhhhhhh777h  ',
+        '       &@h7hhhhh7h77777777777h  ',
+        '       &@h7777777h7hhhhhhhhh7h  ',
+        '       &@h7777777h77777777777h  ',
+        '       &@h7hhhhh7h77777A777A7h  ',
+        '       &@h7h&&&h7h777AA7AAA77h  ',
+        '       &@h7hhhhh7h77777A7A7A7h  ',
+        '       &@h7777777h7777777A7A7h  ',
+        '       &@h7777777777777777777h  ',
+        '       &@hhhhhhhhhhhhhhhhhhhhh  ',
+        '       &@@@@@@@@@@@@@@@@@@@@    ',
+        '       &&&&&&&&&&&&&&&&&&&&     ');
+    search: exported icon(color_table = MidasColorMap, 
+        '                    *****       ',
+        '                 ****cCcC***    ',
+        '                **cCcCcCcCc**   ',
+        '                *cCc*****cCc*   ',
+        '                *Cc**    *cCc*  ',
+        '                *cC*     *CcC*  ',
+        '                ****    *CcCc*  ',
+        '                       *CcCc*   ',
+        '                      *CcCc*    ',
+        '                     *CcCc*     ',
+        '                     *cCc*      ',
+        '                     *Cc*       ',
+        '                     *cC*       ',
+        '                     ****       ',
+        '                                ',
+        '                                ',
+        '                     ****       ',
+        '                     *Cc*       ',
+        '                     *cC*       ',
+        '                     ****       ');
+    telnet: exported icon(color_table = MidasColorMap, 
+        '                                ',
+        '                                ',
+        '               @@@@@@@@@@       ',
+        '               @&&&&&&&&@hh     ',
+        '               @&ssssss&@hh     ',
+        '               @&spspss&@hh     ',
+        '               @&ssssss&@hh     ',
+        '               @&sspsps&@hh     ',
+        '               @&ssssss&@hh     ',
+        '               @&&&&&&&&@hh     ',
+        '               @@@@@@@@@@hh     ',
+        '                &&&&&&&&hhh     ',
+        '             @@@@@@@@@@@@@@@    ',
+        '             @h&&&&&&&&&&&&@h   ',
+        '             @@@@@@@@@@@@@@@h   ',
+        '            @&@&@&@&@&@&@&@&@hh ',
+        '             hhhhhhhhhhhhhhhhhh ',
+        '             hhhhhhhhhhhhhhhhhh ',
+        '                                ');
+    web: exported icon(color_table = MidasColorMap, 
+        '                                ',
+        '                                ',
+        '             ************       ',
+        '             *           *      ',
+        '             * ********* *      ',
+        '             * *        * *     ',
+        '             * * *****  * *     ',
+        '             * * *    *  * *    ',
+        '             * * * ** *  *  *   ',
+        '             * * * * * *  * *   ',
+        '             * * * * * *  *  *  ',
+        '             * * *  *  *  ** *  ',
+        '             * *  ** **  *    * ',
+        '             *  *   *   *   **  ',
+        '              *  **   **   *    ',
+        '               **  * *   **     ',
+        '                 *  *   *       ',
+        '                  *   **        ',
+        '                   ***          ',
+        '                    *           ');
+    music: exported icon(color_table = MidasColorMap, 
+        '                 kkkkkkkk&&&    ',
+        '                kkbbbbbAaAaA    ',
+        '               kkbbbkkkkk&&&    ',
+        '               kbbbb            ',
+        '               kbbkk            ',
+        '               kkCCk            ',
+        '         kk    kbbCkk           ',
+        '         k     kkbCkkk          ',
+        '         k      kbCCkk          ',
+        '       kkk      kbCbkkk         ',
+        '       kkk      kkCbCCk         ',
+        '                 kbbbCkk        ',
+        '          kk     kbbbbbk        ',
+        '          k       kCCCCkk       ',
+        '          k     kkkbCbbbkk      ',
+        '        kkk   kk@@bkkbbbbk      ',
+        '        kkk  kkb@kkkkbCbbk      ',
+        '            k@bkkkkkkbbCCkk     ',
+        '            k@bkkkkkkkCCCbk     ',
+        '            k@kkkkkbbkbbbbkk    ',
+        '            kkbkkbbbbbbbbbbk    ',
+        '             kkkCbbCbCbbbCbk    ',
+        '                kkbbbbbCCbbk    ',
+        '                 kCbbbbCbbkk    ',
+        '                  kkCbbbbbk     ',
+        '                   kkbCbCk      ',
+        '                     kkkk       ');
+    graphics: exported icon(color_table = MidasColorMap, 
+        '                                ',
+        '  hh         hh hh         hh   ',
+        ' hKKhhh     hKKhKKh     hhhKKh  ',
+        ' hKKKKKhhhhhKKKhKKKhhhhhKKKKKh  ',
+        '  hKKKKKKKKKKKKKKKKKKKKKKKKKh   ',
+        '  hKKKKKKKKKKKKKKKKKKKKKKKKKh   ',
+        '  hKKKKhhhhhhhhhhhhhhhhhKKKKh   ',
+        '   hKKhh777777777777777hhKKh    ',
+        '   hKKh77SS7777777777777hKKh    ',
+        '   hKKh77SSSSS777SSSSSS7hKKh    ',
+        '   hKKh7SSSSSSS7SSSSSSS7hKKh    ',
+        '   hKKh7SSS77SS7SS77SSS7hKKh    ',
+        '   hKKh77SS777ShSh777SS7hKKh    ',
+        '   hKKh77SSShSShSSSSSSh7hKKh    ',
+        '   hKKh77SSSSShSShShhh77hKKh    ',
+        '   hKKh77h7hShSSSSSSh777hKKh    ',
+        '   hKKh77777SSSS777SSS77hKKh    ',
+        '   hKKh77777SSSS777SSS77hKKh    ',
+        '   hKKh7777h7SSSSSSSShh7hKKh    ',
+        '   hKKh7777hh7hh77hhSh77hKKh    ',
+        '   hKKh7777h7h7h7hh7h777hKKh    ',
+        '   hKKh7777hh7h7hhhhh777hKKh    ',
+        '   hKKh77777hh7h7hhhh777hKKh    ',
+        '   hKKh777777hhhhhhh7777hKKh    ',
+        '   hKKhh777777777777777hhKKh    ',
+        '  hKKKKhhhhhhhhhhhhhhhhhKKKKh   ',
+        '  hKKKKKKKKKKKKKKKKKKKKKKKKKh   ',
+        '  hKKKKKKKKKKKKKKKKKKKKKKKKKh   ',
+        ' hKKKKKhhhhhhKKKKKKhhhhhKKKKKh  ',
+        ' hKKhhh      hhhhhh     hhhKKh  ',
+        '  hh                       hh   ');
+    floppy: exported icon(color_table = MidasColorMap, 
+        '   kkkkkkkkkkkkkkkkkkkkkkkkk    ',
+        '   kCsCkC7C7C7C7C7C7C7CkCsCk    ',
+        '   ksCsk7C7C7C7C7CkkkC7ksCskkk  ',
+        '   kCsCkC7C7C7C7C7ksk7CkCsCkkk  ',
+        '   ksCsk7C7C7C7C7CkskC7ksCskkk  ',
+        '   kCsCkC7C7C7C7C7kkk7CkCsCkkk  ',
+        '   ksCsk7C7C7C7C7C7C7C7ksCskkk  ',
+        '   kCsCkkkkkkkkkkkkkkkkkCsCkkk  ',
+        '   ksCsCsCsCsCsCsCsCsCsCsCskkk  ',
+        '   kCskkkkkkkkkkkkkkkkkkksCkkk  ',
+        '   ksCksCsCsCsCsCsCsCsCskCskkk  ',
+        '   kCskCsCsCsCsCsCsCsCsCksCkkk  ',
+        '   ksCksCsCsCsCsCsCsCsCskCskkk  ',
+        '   kCskCsCsCsCsCsCsCsCsCksCkkk  ',
+        '   ksCksCsCsCsCsCsCsCsCskCskkk  ',
+        '   kCskCsCsCsCsCsCsCsCsCksCkkk  ',
+        '   ksCksCsCsCsCsCsCsCsCskCskkk  ',
+        '   kCskCsCsCsCsCsCsCsCsCksCkkk  ',
+        '   ksCksCsCsCsCsCsCsCsCskCskkk  ',
+        '   kCskCsCsCsCsCsCsCsCsCksCkkk  ',
+        '   ksCksCsCsCsCsCsCsCsCskCskkk  ',
+        '   kCskCsCsCsCsCsCsCsCsCksCkkk  ',
+        '   ksCksCsCsCsCsCsCsCsCskCskkk  ',
+        '   kkkkkkkkkkkkkkkkkkkkkkkkkkk  ',
+        '     kkkkkkkkkkkkkkkkkkkkkkkkk  ',
+        '     kkkkkkkkkkkkkkkkkkkkkkkkk  ',
+        '                                ');
+    movie_icon: exported icon(color_table = MidasColorMap, 
+        '                                ',
+        '       hhhhhhhhhhhhhhhhhhh      ',
+        '       h  hhhhhhhhhhhhh  hh     ',
+        '       h  hh        hhh  hh     ',
+        '       hhhhh         hhhhhh     ',
+        '       h  hh        hhh  hh     ',
+        '       h  hh         hh  hh     ',
+        '       hhhhh        hhhhhhh     ',
+        '       h  hh h h h h hh  hh     ',
+        '       h  hhhhhhhhhhhhh  hh     ',
+        '       hhhhhhhhhhhhhhhhhhhh     ',
+        '       h  hh        hhh  hh     ',
+        '       h  hh         hh  hh     ',
+        '       hhhhh        hhhhhhh     ',
+        '       h  hh         hh  hh     ',
+        '       h  hh        hhh  hh     ',
+        '       hhhhh h h h h hhhhhh     ',
+        '       h  hhhhhhhhhhhhh  hh     ',
+        '       hhhhhhhhhhhhhhhhhhhh     ',
+        '        hhhhhhhhhhhhhhhhhhh     ',
+        '                                ');
+    OneLine: icon(color_table = MidasColorMap, 
+        '                                        ',
+        '                                        ',
+        '                                        ',
+        '   **********************************   ',
+        '   **********************************   ',
+        '   **********************************   ',
+        '                                        ',
+        '                                        ',
+        '                                        ');
+    TwoLines: icon(color_table = MidasColorMap, 
+        '                                        ',
+        '                                        ',
+        '                                        ',
+        '   **********************************   ',
+        '   **********************************   ',
+        '   **********************************   ',
+        '                                        ',
+        '                                        ',
+        '                                        ',
+        '   **********************************   ',
+        '   **********************************   ',
+        '   **********************************   ',
+        '                                        ',
+        '                                        ',
+        '                                        ');
+    ThreeLines: icon(color_table = MidasColorMap, 
+        '                                        ',
+        '                                        ',
+        '                                        ',
+        '   **********************************   ',
+        '   **********************************   ',
+        '   **********************************   ',
+        '                                        ',
+        '                                        ',
+        '                                        ',
+        '   **********************************   ',
+        '   **********************************   ',
+        '   **********************************   ',
+        '                                        ',
+        '                                        ',
+        '                                        ',
+        '   **********************************   ',
+        '   **********************************   ',
+        '   **********************************   ',
+        '                                        ',
+        '                                        ',
+        '                                        ');
+    ThreePixels: icon(color_table = MidasColorMap, 
+        '                                        ',
+        '                                        ',
+        '                                        ',
+        '   **********************************   ',
+        '   **********************************   ',
+        '   **********************************   ',
+        '                                        ',
+        '                                        ',
+        '                                        ');
+    TwoPixels: icon(color_table = MidasColorMap, 
+        '                                        ',
+        '                                        ',
+        '                                        ',
+        '   **********************************   ',
+        '   **********************************   ',
+        '                                        ',
+        '                                        ',
+        '                                        ');
+    OnePixel: icon(color_table = MidasColorMap, 
+        '                                        ',
+        '                                        ',
+        '                                        ',
+        '   **********************************   ',
+        '                                        ',
+        '                                        ',
+        '                                        ');
+    FourPixels: icon(color_table = MidasColorMap, 
+        '                                        ',
+        '                                        ',
+        '                                        ',
+        '   **********************************   ',
+        '   **********************************   ',
+        '   **********************************   ',
+        '   **********************************   ',
+        '                                        ',
+        '                                        ',
+        '                                        ');
+    SixPixels: icon(color_table = MidasColorMap, 
+        '                                        ',
+        '                                        ',
+        '                                        ',
+        '   **********************************   ',
+        '   **********************************   ',
+        '   **********************************   ',
+        '   **********************************   ',
+        '   **********************************   ',
+        '   **********************************   ',
+        '                                        ',
+        '                                        ',
+        '                                        ');
+    EightPixels: icon(color_table = MidasColorMap, 
+        '                                        ',
+        '                                        ',
+        '                                        ',
+        '   **********************************   ',
+        '   **********************************   ',
+        '   **********************************   ',
+        '   **********************************   ',
+        '   **********************************   ',
+        '   **********************************   ',
+        '   **********************************   ',
+        '   **********************************   ',
+        '                                        ',
+        '                                        ',
+        '                                        ');
+    circle: exported icon(color_table = MidasColorMap, 
+        '                    ',
+        '                    ',
+        '                    ',
+        '      BbBbBbB       ',
+        '     BbBbBbBbB      ',
+        '    BbBbBbBbBbB     ',
+        '   BbBbBbBbBbBbB    ',
+        '   bBbBbBbBbBbBb    ',
+        '   BbBbBbBbBbBbB    ',
+        '   bBbBbBbBbBbBb    ',
+        '   BbBbBbBbBbBbB    ',
+        '   bBbBbBbBbBbBb    ',
+        '   BbBbBbBbBbBbB    ',
+        '    BbBbBbBbBbB     ',
+        '     BbBbBbBbB      ',
+        '      BbBbBbB       ',
+        '                    ',
+        '                    ',
+        '                    ',
+        '                    ');
+    kill: exported icon(color_table = MidasColorMap, 
+        '            kkkkkkkkkk          ',
+        '          kkKKKKkKkKkKkk        ',
+        '         kKKKKKkKkKkKkKkk       ',
+        '         kKKKKkKkKkKkKkKk       ',
+        '        kKKkKkKkKkKkKkKkKk      ',
+        '        kKkKkKkKkKkKkKkKkkk     ',
+        '       kKkKKKKKkKkkKKKkkkKk     ',
+        '       kKKKkkkKKkKKkkkKKkkk     ',
+        '       kKKkkkkkKKKkkkkkKkkk     ',
+        '       kKKkkkkkKkKkkkkkKkkk     ',
+        '       kKKkkkkkKKKkkkkkKKKk     ',
+        '       kkKKKkkkKKKkkkKKkKkk     ',
+        '       kkKKKKKKKkKKKKKkkkk      ',
+        '        kkkKKKKkkkKkkkkkkk      ',
+        '         kkkKKKkkkKkkkkkk       ',
+        '  kkk     kkkKKkkkKkkkkk        ',
+        ' kkKKk    kkkkKkkkKKkkk         ',
+        ' kKkKKk    kkKKKKKKkkkk  kkkk   ',
+        ' kKKkKKkk  kkKKKkKkkkkk  kkKkk  ',
+        ' kKkKkKKKk  kkKkKkKkkk  kkKkKk  ',
+        ' kkKkKkKkKk   kkkkkkk  kkKkKKk  ',
+        '  kkkkkkKkKkk  kkkk  kkkKkKkkk  ',
+        '      kkkkkKkk     kkKkKkkkkk   ',
+        '        kkkkKKkkkkkkKkkkkk      ',
+        '           kkkKKkKkkkkk         ',
+        '          kKkKkkKkKKKkkk        ',
+        '       kkkKkKkkkkkkKkKKKkkkkk   ',
+        '   kkkkkKKkKkkk   kkKkKKKKKKKk  ',
+        '   kKKKkKkkkk       kkkKkKkKKkk ',
+        '   kKkkKkkk           kkKkKkKkk ',
+        '   kkKKkkk             kkKkKkk  ',
+        '   kkkkkk                kkkk   ');
+    flame: exported icon(color_table = MidasColorMap, 
+        '                                        ',
+        '                                 hh     ',
+        '        h                       hHHh    ',
+        '         h                     hHHhh    ',
+        '        hh                    hHHhh     ',
+        '       hih                   hHHhh      ',
+        '      hiih                  hHHhh       ',
+        '      hiih                 hHHhh        ',
+        '     hiiiih               hHHhh         ',
+        '     hiiiih              hHHhh          ',
+        '    hiiIIih             hHHhh           ',
+        '    hiiIIiih           hHHhh            ',
+        '    hiIIIIih          hHHhh             ',
+        '   hiiiIJiih         hHHhh              ',
+        '   hiiIJJIiih       hHHhh               ',
+        '   hiIIJJJiih      hHHhh                ',
+        '   hiiIJJIIih     hHHhh                 ',
+        '   hiIIJJJIih    hHHhh                  ',
+        '   hiIJhJJIih   hHHhh                   ',
+        '   hiIIJJIiih  hHHhh                    ',
+        '   hIIJhJIIih hHHhh                     ',
+        '   hIIhJJIIh hHHhh                      ',
+        '    hIJhJIh hHHhh                       ',
+        '    hJhJhJhhHHhh                        ',
+        '    hJJhJhhhHhh                         ',
+        '     hhJJhhhhh                          ',
+        '     hJhhhhhhh                          ',
+        '     hhhhhJhh                           ',
+        '     hhhhhJh                            ',
+        '     hhhhhh                             ',
+        '      hhhh                              ',
+        '                                        ');
+    History: exported icon(color_table = MidasColorMap, 
+        '                                        ',
+        '                                        ',
+        '          *               *             ',
+        '          *               **            ',
+        '          *               ***           ',
+        '          *               ****          ',
+        '          *               *****         ',
+        '          **********************        ',
+        '                          *****         ',
+        '                          ****          ',
+        '                          ***           ',
+        '                          **            ',
+        '                          *             ',
+        '                                        ');
+    Movie: exported icon(color_table = MidasColorMap, 
+        'hhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhh',
+        'hhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhh',
+        'hh   hhhhhhhhhhhhhhhhhhhhhhh   hh',
+        'hh   hhhh               hhhh   hh',
+        'hh   hhh h h h h h h h h hhh   hh',
+        'hh   hhhh                hhh   hh',
+        'hh   hhh h             h hhh   hh',
+        'hhhhhhhhh                hhhhhhhh',
+        'hhhhhhhh h             h hhhhhhhh',
+        'hh   hhhh                hhh   hh',
+        'hh   hhh h             h hhh   hh',
+        'hh   hhhh                hhh   hh',
+        'hh   hhh h             h hhh   hh',
+        'hh   hhhh                hhh   hh',
+        'hhhhhhhh h             h hhhhhhhh',
+        'hhhhhhhhh                hhhhhhhh',
+        'hh   hhh h             h hhh   hh',
+        'hh   hhhh                hhh   hh',
+        'hh   hhh h h h h h h h h hhh   hh',
+        'hh   hhhh h h h h h h h hhhh   hh',
+        'hh   hhhhhhhhhhhhhhhhhhhhhhh   hh',
+        'hhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhh',
+        'hhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhh',
+        'hh   hhhh               hhhh   hh',
+        'hh   hhh h h h h h h h h hhh   hh',
+        'hh   hhhh                hhh   hh',
+        'hh   hhh h             h hhh   hh',
+        'hh   hhhh                hhh   hh',
+        'hhhhhhhh h             h hhhhhhhh',
+        'hhhhhhhhh                hhhhhhhh',
+        'hh   hhh h             h hhh   hh',
+        'hh   hhhh                hhh   hh',
+        'hh   hhh h             h hhh   hh',
+        'hh   hhhh                hhh   hh',
+        'hh   hhh h             h hhh   hh',
+        'hhhhhhhhh                hhhhhhhh',
+        'hhhhhhhh h             h hhhhhhhh',
+        'hh   hhhh                hhh   hh',
+        'hh   hhh h h h h h h h h hhh   hh',
+        'hh   hhhh h h h h h h h hhhh   hh',
+        'hh   hhhhhhhhhhhhhhhhhhhhhhh   hh',
+        'hh   hhhhhhhhhhhhhhhhhhhhhhh   hh');
+    Sound: exported icon(color_table = MidasColorMap, 
+        '                                 ',
+        '   h h h h h h h h h h h h h h   ',
+        '  h h h h h h h h h h h h h h h  ',
+        '                                 ',
+        '                                 ',
+        '                 hhhhh           ',
+        '                 hhhhhhh         ',
+        '                     hhhh        ',
+        '                       hhh       ',
+        '              h  hhh    hhh      ',
+        '             hh  hhhhh   hhh     ',
+        '            hhh    hhhh   hhh    ',
+        '           hhhh      hhh   hh    ',
+        '          hhhhh       hhh   hh   ',
+        '         hhhhhh  hhh   hhh  hh   ',
+        '        hhhhhhh  hhhh   hh  hh   ',
+        '  hhhh hhhhhhhh    hhh  hh   hh  ',
+        '  hhhh hhhhhhhh     hhh  hh  hh  ',
+        '  hhhh hhhhhhhh      hh  hh  hh  ',
+        '  hhhh hhhhhhhh      hh  hh  hh  ',
+        '  hhhh hhhhhhhh      hh  hh  hh  ',
+        '  hhhh hhhhhhhh      hh  hh  hh  ',
+        '  hhhh hhhhhhhh      hh  hh  hh  ',
+        '   h h  hhhhhhh     hhh  hh  hh  ',
+        '  h h  h hhhhhh    hhh  hh   hh  ',
+        '        h hhhhh  hhhh   hh  hh   ',
+        '         h hhhh  hhh   hhh  hh   ',
+        '          h hhh       hhh   hh   ',
+        '           h hh      hhh   hh    ',
+        '            h h    hhhh   hhh    ',
+        '             h   hhhhh   hhh     ',
+        '              h  hhh    hhh      ',
+        '                       hhh       ',
+        '                     hhhh        ',
+        '                 hhhhhhh         ',
+        '                 hhhhh           ',
+        '                                 ',
+        '                                 ',
+        '  h h h h h h h h h h h h h h h  ',
+        '   h h h h h h h h h h h h h h   ',
+        '                                 ');
+    bomb: exported icon(color_table = MidasColorMap, 
+        '                               ',
+        '                               ',
+        '         A  A  A               ',
+        '          A   A                ',
+        '    A  AA   A                  ',
+        '          A  A                 ',
+        '         A   A                 ',
+        '              A                ',
+        '             kk                ',
+        '            kkkk               ',
+        '            kkkk               ',
+        '            kkkk               ',
+        '           kkkkkk              ',
+        '         kkkkkkkkkk            ',
+        '        kkkkkkk  kkk           ',
+        '       kkkkkkkkkk  kk          ',
+        '      kkkkkkkkkkkk  kk         ',
+        '     kkkkkkkkkkkkkk  kk        ',
+        '     kkkkkkkkkkkkkkk  k        ',
+        '    kkkkkkkkkkkkkkkkk kk       ',
+        '    kkkkkkkkkkkkkkkkk kk       ',
+        '    kkkkkkkkkkkkkkkkkkkk       ',
+        '    kkkkkkkkkkkkkkkkkkkk       ',
+        '    kkkkkkkkkkkkkkkkkkkk       ',
+        '    kkkkkkkkkkkkkkkkkkkk       ',
+        '     kkk kkkkkkkkkkkkkk        ',
+        '     kkkkkkkkkkkkkkkkkk        ',
+        '      kkkk kkkkkkkkkkk         ',
+        '       kkkkkkkkkkkkkk          ',
+        '        kkkkkkkkkkkk           ',
+        '         kkkkkkkkkk            ',
+        '           kkkkkk              ',
+        '                               ',
+        '                               ',
+        '                               ');
+    gopher: exported icon(color_table = MidasColorMap, 
+        '                                                                ',
+        '                                                                ',
+        '                             ***                                ',
+        '                           ******                               ',
+        '                          ***   ***                             ',
+        '                        ***        ***                          ',
+        '                       ***          ***                         ',
+        '                      ***             ***                       ',
+        '                     **** Way       Way **                      ',
+        '                    ****   Way Way Way   **                     ',
+        '                    ****    WaWaWaWay    ***                    ',
+        '                   *****     Way Way     ***                    ',
+        '                   *****             *  ****       ******       ',
+        '       *******     *****    *****************    **      **     ',
+        '      **      **   ************************ *  **         **    ',
+        '     *         **  ***********************   ***    ****   *    ',
+        '    *  ****     *****   ****************      *    ******   *   ',
+        '   ** *******    **  *     ***     ***    **  *   ****** *  *   ',
+        '   * *********   * **         *****         *  * ****  *     *  ',
+        '   * *   *****   ***   **             ****   * ******        *  ',
+        '   *     ******   *  ******         ***  ***   *****         *  ',
+        '   *      ***** *   **     *        *       *  ***           *  ',
+        '   *       ******   *       **     *        *   ***          *  ',
+        '   **      ******  *         *     *         *  ***          *  ',
+        '   **       *****  *   ****  **    * ****    *  **          *   ',
+        '    **       * **  * ******  **    * ******  *****          *   ',
+        '     *        ***             * ** *            **         *    ',
+        '     **      ****   **         ****        ** * ***       *     ',
+        '      ***     *               ******             **     **      ',
+        '        ***** ******          ******         ************       ',
+        '           ****                                   *             ',
+        '              *******                    **********             ',
+        '        *******                                   *****         ',
+        '      **      * ****             *          *******    **       ',
+        '             ***      **        ***       **     **             ',
+        '         ***** *        ******************   ***** ****         ',
+        '       **      ***  *    ****    *    ***   ****       **       ',
+        '                 *****     *     *    ***   *                   ',
+        '                    **     **    *    **   *                    ',
+        '                      **    *         *   *                     ',
+        '                        *   *    *   *   *                      ',
+        '                         *   *********  **                      ',
+        '                          *   *******   **                      ',
+        '                          **  ******   ***                      ',
+        '                           *          ****                      ',
+        '                           **         ****                      ',
+        '                           * *       ** **                      ',
+        '                           *  ***  ***  **                      ',
+        '                           *   ******** ***                     ',
+        '                           **         *  **                     ',
+        '                           **         ** ***                    ',
+        '                           **       * **  ***                   ',
+        '                           **       *****  **                   ',
+        '                           **        *  ** ***                  ',
+        '                          **         *   *  ***                 ');
+    tryagain: exported icon(color_table = MidasColorMap, 
+	'KKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKK',
+	'KKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKK',
+	'KKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKK',
+	'KKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKK',
+	'KKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKK',
+	'KKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKK',
+	'KKKKKkkkkkkkkKKKKKKKKKKKKKKKKKKKKkkKKKKKKKKKKKKKKKKKKKKKKkkKKKKKKKKKKKKkkKKKKKKK',
+	'KKKKKKKKkkKKKKKKKKKKKKKKKKKKKKKKkkkKKKKKKKKKKKKKKKKKKKKKKkkKKKKKKKKKKKKkkKKKKKKK',
+	'KKKKKKKKkkKKKKKKKKKKKKKKKKKKKKKkkKkkKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKkkKKKKKKKK',
+	'KKKKKKKkkKKKKkkKkkkkKKKkkKKKKKKkkKkkKKKKkkkKkkKKKkkkkKKKkkKKkkKkkkKKKKkkKKKKKKKK',
+	'KKKKKKKkkKKKKkkkkkkkKKKkkKKKKKkkKKkkKKKkkKKkkkKKkkKKkkKKkkKKkkkKKkkKKKkkKKKKKKKK',
+	'KKKKKKKkkKKKKkkKKKkkKKkkKKKKKKkkKKkkKKkkKKKKkkKKKKKKkkKKkkKKkkKKKkkKKkkKKKKKKKKK',
+	'KKKKKKkkKKKKkkKKKKkkKKkkKKKKKkkKKKkkKKkkKKKkkKKKkkkkkKKkkKKkkKKKkkKKKkkKKKKKKKKK',
+	'KKKKKKkkKKKKkkKKKKkkKkkKKKKKkkkkkkkkKkkKKKKkkKKkkKKkkKKkkKKkkKKKkkKKKkKKKKKKKKKK',
+	'KKKKKKkkKKKKkkKKKKkkKkkKKKKKkkKKKKkkKkkKKKKkkKkkKKKkkKKkkKKkkKKKkkKKKKKKKKKKKKKK',
+	'KKKKKkkKKKKkkKKKKKKkkkKKKKKkkKKKKKkkKkkKKkkkKKkkKKkkKKkkKKkkKKKkkKKKkkKKKKKKKKKK',
+	'KKKKKkkKKKKkkKKKKKKkkKKKKKKkkKKKKKkkKKkkkKkkKKKkkkKkkKkkKKkkKKKkkKKKkkKKKKKKKKKK',
+	'KKKKKKKKKKKKKKKKKKkkKKKKKKKKKKKKKKKKKKKKKKkkKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKK',
+	'KKKKKKKKKKKKKKKKKkkKKKKKKKKKKKKKKKKKkkKKKkkKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKK',
+	'KKKKKKKKKKKKKKKKkkKKKKKKKKKKKKKKKKKKKkkkkkKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKK',
+	'KKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKK',
+	'KKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKK',
+	'KKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKK',
+	'KKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKK',
+	'KKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKK');
+    MidasVersion: 
+    exported "2.1";
+
+end module;
+

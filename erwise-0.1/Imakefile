@@ -1,0 +1,29 @@
+#
+#
+#
+
+#define PassCDebugFlags 'CC=$(CC)' 'CDEBUGFLAGS=$(CDEBUGFLAGS)'
+#define IHaveSubdirs
+
+all::
+
+world::
+	make ${MFLAGS} mastermakefiles
+	make ${MFLAGS} depend
+	make ${MFLAGS} all
+
+        SUBDIRS	= Cl HText Xl Ui erwise
+
+MakeSubdirs($(SUBDIRS))
+
+DependSubdirs($(SUBDIRS))
+
+install::
+	$(MAKE) $(MFLAGS) install
+
+/**/# rebuild the makefiles at the master source tree
+mastermakefiles::
+	-$(MV)	Makefile Makefile.bak
+	$(MAKE) -f Makefile.bak Makefile
+	$(MAKE) Makefiles
+

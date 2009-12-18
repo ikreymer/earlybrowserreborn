@@ -1,0 +1,14 @@
+Changes by Pei:
+
+DONE:
+* Those lines marked by /*PYW*/, regarding push/pop input buff stuff
+  but havn't checked for any new places where this is requried.
+
+(DONE line by line patch)
+* SGML.c
+* SGML.h
+* HTML.c
+* HTML.h
+
+NOT DONE YET:
+

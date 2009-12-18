@@ -1,0 +1,6 @@
+This directory contains the Xmu include files. 
+These files are include here since they seem to be missing on hp-ux
+machines, even though the libXmu library is present.
+
+These files are only used when compiling under hp-ux.
+ 

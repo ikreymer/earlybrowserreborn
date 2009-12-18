@@ -1,0 +1,20 @@
+# Imakefile for XPA library.
+
+#if (ProjectX < 5)
+    STD_DEFINES = LibraryDefines
+    CDEBUGFLAGS = LibraryCDebugFlags
+#else
+#include <Library.tmpl>
+#endif
+
+CC            = cc
+CCOPTIONS = -g
+SRCS          = xpa.c
+
+OBJS          = xpa.o
+
+        DEPLIBS = libXpa.a $(DEPXLIB)
+LOCAL_LIBRARIES = libXpa.a $(XLIB)
+
+NormalLibraryObjectRule()
+NormalLibraryTarget(Xpa,$(OBJS))

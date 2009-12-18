@@ -1,0 +1,50 @@
+#! /bin/sh
+# this program is used for generating Imakefiles
+
+OUT=Imakefile
+
+cat > $OUT << END_OF_INPUT
+# Imakefile for building within the X11 source tree.
+# This Imakefile was automatically generated from Makefile.std.
+#
+# If you have problems building, you should read the README file and
+# consider using Makefile.std.
+#
+# If you use gcc, you should read the README file and consider using
+# Makefile.std.
+
+    SYSPATHFILE = $(XAPPLOADDIR)/Xloadimage
+        DEFINES = -DSYSPATHFILE=\"$(SYSPATHFILE)\"
+        DEPLIBS = $(DEPXLIB)
+LOCAL_LIBRARIES = $(XLIB)
+SYS_LIBRARIES   = -lm
+
+END_OF_INPUT
+
+echo "SRCS = $1" >> $OUT
+echo "OBJS = $2" >> $OUT
+
+cat >> $OUT << END_OF_INPUT
+
+ComplexProgramTarget(xloadimage)
+
+install:: $(SYSPATHFILE)
+	$(RM) $(BINDIR)/xview $(BINDIR)/xsetbg
+	$(LN) $(BINDIR)/xloadimage $(BINDIR)/xview
+	$(LN) $(BINDIR)/xloadimage $(BINDIR)/xsetbg
+
+$(SYSPATHFILE):
+	@echo "*** Creating default $(SYSPATHFILE) since you"
+	@echo "*** don't have one. This file is used to set up default places"
+	@echo "*** and names to look for images.  You probably want to edit"
+	@echo "*** it for your site.  See the xloadimage manual page for"
+	@echo "*** details on the contents of this file."
+	cp /dev/null $(SYSPATHFILE)
+	echo "path=$(INCDIR)/bitmaps $(INCDIR)/images" \
+		>> $(SYSPATHFILE)
+	echo "extension=.csun .msun .sun .face .xbm .bm .gif" \
+		>>$(SYSPATHFILE)
+
+END_OF_INPUT
+
+chmod 444 $OUT

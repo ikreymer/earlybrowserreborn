@@ -1,0 +1,13 @@
+midaswww/lib/inc=(tree,sgmlanchortext,sgmlcompositetext,sgmlplaintext, -
+                  sgmlformattedtext,sgmlhyper,sgmltext,sgmlmarkertext, -
+                  sgmlformtext,sgmlinputtext,sgmltabletext,sgmlcaptiontext, - 
+                  sgmlruletext,sgmllisttext,sgmlcontainertext,ghostviewplus)
+sys$share:ucx$ipc_shr/share
+sys$share:DECW$DXMLIBSHR/SHAREABLE
+sys$share:DECW$XMLIBSHR/SHAREABLE
+sys$share:DECW$XMULIBSHR/SHAREABLE
+sys$share:DECW$XTSHR/SHAREABLE
+sys$share:DECW$XLIBSHR/SHAREABLE
+sys$share:DECW$TERMINALSHR/SHAREABLE
+
+psect_attr = SYS_ERRLIST, shr, nowrt

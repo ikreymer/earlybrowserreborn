@@ -1,0 +1,41 @@
+* Added hook for viola to send messages to vw's active help field.
+  ie: for http progress report.
+
+* Removed (comment out) motif-side icon and title widget and associated 
+  supporting code. 
+
+  The globe-icon is now confusing since viola's takes you home, and 
+  xmosaic's is a http activity indicator. Also, it was taking up space.
+
+  Instead, viola now draws the title (instead of motif). Nice feature 
+  now in that when the title text is longer than width of the window, 
+  viola will use a smaller font to allow for the title to be drawn 
+  in two lines. Can also drag-cut from the field as one would expect.
+
+* Put in the toolbar frame, right under the menu bar, in which viola 
+  dynamically adds/deletes tools. The motif buttons "BackUp" "Previous"
+  "Next" "Show Source" and "Clone Page" I've stuck into the right side 
+  of the toobar as icons. Same features are also accessible from the 
+  'Navigation' menu. This frees up some vertical space.
+
+  User/document defined tools are tiled from the left side of the toolbar.
+
+* Improved the way motif-front sends messages to viola. Changed the 
+  calling methods (and associated data structures), from name string 
+  based to object pointer based. Using object pointers means viola no 
+  longer needs to translate string references to the actual object
+  pointers for every single message. This improves scrolling speed.
+
+* Misc stuff like commenting out code/functions that are already
+  in viola library and thus no need to duplicate in Motif-ViolaWWW.
+
+* More improvement in messaging between viola and vw.
+
+* History mechanism fixed. Was just not working except for the simplest
+  cases.
+
+* Added appropriate busy/idle cursor'ing.
+
+
+
+-Pei

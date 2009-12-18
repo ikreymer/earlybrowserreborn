@@ -1,0 +1,14 @@
+# Generic makefile - Unix (sgi) version
+#
+             SHELL = /bin/sh
+            LDLIBS = -lMrm -lXm_s -lXt_s -lXmu -lX11_s -lPW -lmalloc 
+         LDOPTIONS = 
+            CFLAGS = -O2 -prototypes -cckr -float -I/usr/include $(DEFINES) -DSYSV -DMALLOC_0_RETURNS_NULL -DFUNCPROTO -DNARROWPROTO 
+                RM = rm -f
+               UIL = uil
+
+include CommonMakefile
+
+$(PGM):: $(OBJS) 
+	$(RM) $@
+	$(CC) -o $@ $(OBJS) $(LDOPTIONS) $(LDLIBS)

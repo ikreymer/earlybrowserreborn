@@ -1,0 +1,28 @@
+#
+#
+#
+
+   	   OBJS = main.o Setup.o TopLevel.o Page.o Misc.o Help.o 	\
+		  Print.o Config.o
+	   SRCS = main.c Setup.c TopLevel.c Page.c Misc.c Help.c 	\
+		  Print.c Config.c
+
+	  XLDIR = ../Xl
+	  HTDIR = ../HText
+	  CLDIR = ../Cl
+	 WWWDIR = $(CLDIR)/WWWLibrary
+	  UIDIR = ../Ui
+
+     MOTIF_HDRS = -I/p/motif/include
+    ERWISE_HDRS = -I$(XLDIR) -I$(HTDIR) -I$(CLDIR) -I$(WWWDIR) -I$(UIDIR)
+	DEFINES = $(ERWISE_HDRS) $(MOTIF_HDRS)
+
+LOCAL_LIBRARIES = -L$(WWWDIR) -lWWW 	\
+		  -L$(UIDIR) -lUi 	\
+		  -L$(CLDIR) -lCl 	\
+		  -L$(XLDIR) -lXl 	\
+		  -L$(HTDIR) -lHt
+
+         LDLIBS = -L/p/motif/lib -lXm -lXt -lX11
+
+ComplexProgramTarget(erwise)

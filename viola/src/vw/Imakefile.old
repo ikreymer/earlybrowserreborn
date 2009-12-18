@@ -1,0 +1,153 @@
+# Imakefile
+# 
+# The Motif version of violaWWW browser
+# 
+# Make sure that you first BUILD viola binaries (in ../src)
+#
+
+CC            = cc
+
+LOCAL_LIBRARIES = ../libXPM/libXpm.a -lXm $(XTOOLLIB) $(XMULIB) $(XLIB)
+
+SYS_LIBRARIES = -lm
+
+TOP = 
+LDCOMBINEFLAGS = 
+
+#ifdef SunArchitecture
+CDEBUGFLAGS   = -g
+
+CCOPTIONS     = -Bstatic
+#CCOPTIONS    = -Wall
+
+#special case for our development machine
+#ifdef NEED_LDL
+CDEBUGFLAGS   = -g -ldl
+#endif
+
+WWW_BIN       = /usr/tmp/Library/sun4
+#endif
+
+#ifdef UltrixArchitecture
+CDEBUGFLAGS   = -Wf,-XNl10000
+WWW_BIN       = /usr/tmp/Library/decstation
+#endif
+
+CCOPTIONS     = -Bstatic -D_NO_PROTO -I/usr/include/X11 -I../viola -I../libXPM -I../libXPA/src -I../libWWW/src
+
+#WWW_BIN       = /usr/tmp/Library/sun4
+WWW_BIN       = ../libWWW/Library/Implementation
+
+XPM_BIN       = ../libXPM
+
+XPA_BIN       = ../libXPA/src
+
+GIF_BIN       = ../libGIF
+
+STG_BIN       = ../libStyle
+
+VWBROWSER_OBJ = box.o \
+		callbacks.o \
+		catalog.o \
+		cursor.o \
+		dialog.o \
+		edit.o \
+		fileIO.o \
+		fonts.o \
+		history.o \
+		menu.o \
+		mail.o \
+		selection.o \
+		vw.o
+
+OBJS	      = $(VWBROWSER_OBJ) $(OBJS_VIOLA) $(OBJS_WWW) $(OBJS_XPA) $(OBJS_GIF) $(OBJS_STG)
+
+VIOLA_DIR     = ../viola
+
+OBJS_VIOLA    = $(VIOLA_DIR)/DefaultStyles.o \
+		$(VIOLA_DIR)/HTML_style.o \
+		$(VIOLA_DIR)/ast.o \
+		$(VIOLA_DIR)/attr.o \
+		$(VIOLA_DIR)/biop.o \
+		$(VIOLA_DIR)/cexec.o \
+		$(VIOLA_DIR)/cgen.o \
+		$(VIOLA_DIR)/cl_PS.o \
+		$(VIOLA_DIR)/cl_AC_SGML_txt.o \
+		$(VIOLA_DIR)/cl_BCard.o \
+		$(VIOLA_DIR)/cl_FCard.o \
+		$(VIOLA_DIR)/cl_GIF.o \
+		$(VIOLA_DIR)/cl_HTML.o \
+		$(VIOLA_DIR)/cl_TTY.o \
+		$(VIOLA_DIR)/cl_XBM.o \
+		$(VIOLA_DIR)/cl_XBMBG.o \
+		$(VIOLA_DIR)/cl_XBMButton.o \
+		$(VIOLA_DIR)/cl_XPM.o \
+		$(VIOLA_DIR)/cl_XPMBG.o \
+		$(VIOLA_DIR)/cl_XPMButton.o \
+		$(VIOLA_DIR)/cl_client.o \
+		$(VIOLA_DIR)/cl_cosmic.o \
+		$(VIOLA_DIR)/cl_dial.o \
+		$(VIOLA_DIR)/cl_field.o \
+		$(VIOLA_DIR)/cl_generic.o \
+		$(VIOLA_DIR)/cl_glass.o \
+		$(VIOLA_DIR)/cl_hpane.o \
+		$(VIOLA_DIR)/cl_menu.o \
+		$(VIOLA_DIR)/cl_pane.o \
+		$(VIOLA_DIR)/cl_project.o \
+		$(VIOLA_DIR)/cl_radio.o \
+		$(VIOLA_DIR)/cl_rubber.o \
+		$(VIOLA_DIR)/cl_slider.o \
+		$(VIOLA_DIR)/cl_socket.o \
+		$(VIOLA_DIR)/cl_stack.o \
+		$(VIOLA_DIR)/cl_toggle.o \
+		$(VIOLA_DIR)/cl_tray.o \
+		$(VIOLA_DIR)/cl_txt.o \
+		$(VIOLA_DIR)/cl_txtButton.o \
+		$(VIOLA_DIR)/cl_txtDisp.o \
+		$(VIOLA_DIR)/cl_txtEdit.o \
+		$(VIOLA_DIR)/cl_txtLabel.o \
+		$(VIOLA_DIR)/cl_vpane.o \
+		$(VIOLA_DIR)/class.o \
+		$(VIOLA_DIR)/classlist.o \
+		$(VIOLA_DIR)/error.o \
+		$(VIOLA_DIR)/event.o \
+		$(VIOLA_DIR)/event_x.o \
+		$(VIOLA_DIR)/file.o \
+		$(VIOLA_DIR)/fosi.o \
+		$(VIOLA_DIR)/glib.o \
+		$(VIOLA_DIR)/glib_x.o \
+		$(VIOLA_DIR)/gram.o \
+		$(VIOLA_DIR)/hash.o \
+		$(VIOLA_DIR)/membership.o \
+		$(VIOLA_DIR)/html.o \
+		$(VIOLA_DIR)/html2.o \
+		$(VIOLA_DIR)/stgcall.o \
+		$(VIOLA_DIR)/sgml.o \
+		$(VIOLA_DIR)/ident.o \
+		$(VIOLA_DIR)/loader.o \
+		$(VIOLA_DIR)/method.o \
+		$(VIOLA_DIR)/misc.o \
+		$(VIOLA_DIR)/mystrings.o \
+		$(VIOLA_DIR)/obj.o \
+		$(VIOLA_DIR)/objs.o \
+		$(VIOLA_DIR)/packet.o \
+		$(VIOLA_DIR)/violalex.o \
+		$(VIOLA_DIR)/slib.o \
+		$(VIOLA_DIR)/sys.o \
+		$(VIOLA_DIR)/tfed.o \
+		$(VIOLA_DIR)/vlist.o \
+		$(VIOLA_DIR)/HTML_share.o \
+		$(VIOLA_DIR)/viola.o \
+		$(VIOLA_DIR)/msgHandler.o 
+
+OBJS_WWW      = $(WWW_BIN)/libwww.a
+
+OBJS_XPM      = $(XPM_BIN)/libXpm.a
+
+OBJS_XPA      =	$(XPA_BIN)/libXpa.a
+
+OBJS_GIF      =	$(GIF_BIN)/xgifload.o
+
+OBJS_STG      = $(STG_BIN)/libstg.o
+
+ComplexProgramTarget(vw)

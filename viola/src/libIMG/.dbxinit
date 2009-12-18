@@ -1,0 +1,9 @@
+
+alias c cont
+alias r run
+alias n next
+alias o next
+alias p print
+alias s step
+setenv PURIFYHOME "/usr/work/purify"
+alias make "sh make -e 'CC=purify cc' -e 'CDEBUGFLAGS=-g'"

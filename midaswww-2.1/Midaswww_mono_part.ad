@@ -1,0 +1,7 @@
+!
+! Color preferences
+!
+midaswww.sensitiveUnderline:	1
+midaswww.sensitiveUnderlineStyle:	SGMLLINE_STYLE_DASHED
+midaswww.visitedUnderline:	1
+midaswww.visitedUnderlineStyle:	SGMLLINE_STYLE_DOTTED

@@ -1,0 +1,2 @@
+int HTMLMathFormater();
+int HTMLMathDraw();

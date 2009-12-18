@@ -1,0 +1,24 @@
+#
+#
+#
+
+   	   OBJS = UiInit.o UiSelectionBox.o UiPage.o UiMisc.o 		\
+		  UiSearch.o UiPageSettings.o UiList.o UiInfo.o 	\
+		  UiControlPanel.o UiDefaults.o UiUtil.o UiPrint.o 	\
+		  UiConnections.o UiFileSelection.o UiRecall.o
+
+	   SRCS = UiInit.c UiSelectionBox.c UiPage.c UiMisc.c 		\
+		  UiSearch.c UiPageSettings.c UiList.c UiInfo.c 	\
+		  UiControlPanel.c UiDefaults.c UiUtil.c UiPrint.c 	\
+		  UiConnections.c UiFileSelection.c UiRecall.c
+
+	  XLDIR = ../Xl
+	  HTDIR = ../HText
+	 WWWDIR = ../Cl/WWWLibrary
+     MOTIF_HDRS = -I/p/motif/include
+    ERWISE_HDRS = -I$(XLDIR) -I$(HTDIR) -I$(WWWDIR)
+	DEFINES = $(ERWISE_HDRS) $(MOTIF_HDRS)  -DERWISE_UI
+
+NormalLibraryTarget(Ui, $(OBJS))
+
+DependTarget()

@@ -1,0 +1,99 @@
+Compiling and Running ViolaWWW
+==============================
+
+To compile, type 'BUILD' to run the compilation script. If the compilation
+process goes well, two executable program binaries will be generated
+and they can be found in:
+
+	viola/src/viola/viola		<-- the pure XLib version
+	viola/src/vw/vw			<-- the Motif version
+
+
+The 'viola' binary (in src/viola/viola) is the XLib-only version of
+ViolaWWW. It is provided because not everyone has Motif. Also, this 
+binary version is smaller. However, the GUIs on the Motif version of 
+viola is still more polished. 'vw' (in src/vw/vw) is the ViolaWWW 
+with the Motif shell. 
+
+If you do not have Motif installed on your system, the 'vw' binary
+will simply fail to build, but the production of the 'viola' binary 
+should not be affected.
+
+This package requires X11R5, and the Motif version of ViolaWWW 
+requires a Motif toolkit library. The libwww(2.14) that comes with 
+ViolaWWW is modified, so until the changes are integrated into CERN's, 
+don't use the libwww that didn't come with viola.
+
+I'd appreciate hearing about compilation success or horror stories 
+(and get patches) for platforms other than SunOS and Ultrix.
+
+
+Installing ViolaWWW
+===================
+
+Both binaries can be installed anywhere in your path.
+
+To ensure that the colors come out decent, insert the following 
+XWindows Resource into your "~/.Xdefaults" file. 
+
+------------------------------------------
+Viola.x:		550
+Viola.y:		10
+Viola.width:		620
+Viola.height:		700
+#ifdef COLOR
+Viola*foreground:	black
+Viola*background:	grey80
+Viola.foreground_doc:	black
+Viola.background_doc:	grey90
+#else
+Viola*foreground:	white
+Viola*background:	black
+Viola*borderColor:	white
+#endif
+------------------------------------------
+
+Then do this to update the X resources, to let it take effect:
+% xrdb -load ~/.Xresources
+
+
+Running ViolaWWW
+================
+
+Both ViolaWWW programs can take the start up document URL as an argument, 
+thusly:
+
+% viola [url]
+% vw [url]
+
+If you do not supply any argument, the default URL is taken from 
+the WWW_HOME environment variable. In liu of WWW_HOME, the fall back
+URL is "http://berkeley.ora.com/proj/viola/violaHome.html"
+
+
+Contact
+=======
+
+You can send mail to viola@ora.com. Feedbacks, bug reports, patches, 
+constructive criticisms, etc, are always welcome. Let me offer my 
+sincere apologies, in advance, in case I do not get back to you promptly--
+I am the whole viola development team, and I do have other things 
+to attend to... but I will try to be prompt.
+
+
+Acknowledgements
+================
+
+In particular, many thanks to: Tim Bernners-Lee for inventing the WWW;
+Tim and the CERN crew for the libwww; All the contributors on www-talk etc;
+Jon Blow (ORA) for the lexical analyzer used in viola; Scott Silvey (ORA)
+for creating the Motif front-end; Terry Allen (ORA) for lots of testings 
+and help with SGML; Dale Dougherty and Tim O'Reilly for supporting the 
+work on viola at ORA. 
+
+Also, grateful thanks are extended to the brave beta testers, listed in
+"http://xcf.berkeley.edu/ht/projects/viola/betaTesters.html".
+
+
+				Pei Y. Wei (wei@ora.com)
+				O'Reilly & Associates, Inc.

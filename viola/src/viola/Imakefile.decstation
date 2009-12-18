@@ -1,0 +1,192 @@
+LOCAL_LIBRARIES = $(LIBDIR)/libXpm.a $(XMULIB) $(XLIB)
+SYS_LIBRARIES = -lm
+LDCOMBINEFLAGS = 
+CDEBUGFLAGS   = -Wf,-XNl8048 -g
+
+WWW_DIR	      = ./www/Implementation
+
+SRCS	      = $(SRCS_VIOLA) $(SRCS_WWW) $(SRCS_XPA)
+
+SRCS_VIOLA    = DefaultStyles.c \
+		ast.c \
+		attr.c \
+		biop.c \
+		cexec.c \
+		cgen.c \
+		cl_glass.c \
+                cl_PS.c \
+                cl_XBMBG.c \
+                cl_XPMBG.c \
+                cl_radio.c \
+                cl_AC_SGML_txt.c \
+		cl_BCard.c \
+		cl_FCard.c \
+		cl_GIF.c \
+		cl_HTML.c \
+		cl_TTY.c \
+		cl_XBM.c \
+		cl_XBMButton.c \
+		cl_XPM.c \
+		cl_XPMButton.c \
+		cl_client.c \
+		cl_cosmic.c \
+		cl_dial.c \
+		cl_field.c \
+		cl_generic.c \
+		cl_hpane.c \
+		cl_menu.c \
+		cl_pane.c \
+		cl_project.c \
+		cl_rubber.c \
+		cl_slider.c \
+		cl_socket.c \
+		cl_stack.c \
+		cl_toggle.c \
+		cl_tray.c \
+		cl_txt.c \
+		cl_txtButton.c \
+		cl_txtDisp.c \
+		cl_txtEdit.c \
+		cl_txtLabel.c \
+		cl_vpane.c \
+		class.c \
+		classlist.c \
+		error.c \
+		event.c \
+		event_x.c \
+		file.c \
+		glib.c \
+		glib_x.c \
+		gram.c \
+		hash.c \
+		html.c \
+		ident.c \
+		loader.c \
+		main.c \
+		method.c \
+                membership.c \
+		misc.c \
+		mystrings.c \
+		obj.c \
+		packet.c \
+		scan.l \
+		scanutils.c \
+		slib.c \
+		sys.c \
+		tfed.c \
+		vlist.c
+
+SRCS_WWW      = $(WWW_DIR)/HTTP.c \
+		$(WWW_DIR)/HTML.c \
+		$(WWW_DIR)/HTAccess.c \
+		$(WWW_DIR)/HTAnchor.c \
+		$(WWW_DIR)/HTList.c \
+		$(WWW_DIR)/HTString.c \
+		$(WWW_DIR)/HTTCP.c \
+		$(WWW_DIR)/HTParse.c \
+		$(WWW_DIR)/HTHistory.c \
+		$(WWW_DIR)/HTStyle.c \
+		$(WWW_DIR)/HTChunk.c \
+		$(WWW_DIR)/HTNews.c \
+		$(WWW_DIR)/HTGopher.c \
+		$(WWW_DIR)/HTAtom.c \
+		$(WWW_DIR)/HTFTP.c \
+		$(WWW_DIR)/HTFile.c \
+		$(WWW_DIR)/HTFormat.c \
+		$(WWW_DIR)/SGML.c
+
+SRCS_XPA      =	xpa.c
+
+OBJS	      = $(OBJS_VIOLA) $(OBJS_WWW) $(OBJS_XPA)
+
+OBJS_VIOLA    = DefaultStyles.o \
+		ast.o \
+		attr.o \
+		biop.o \
+		cexec.o \
+		cgen.o \
+		cl_glass.o \
+                cl_PS.o \
+                cl_XBMBG.o \
+                cl_XPMBG.o \
+                cl_radio.o \
+                cl_AC_SGML_txt.o \
+		cl_BCard.o \
+		cl_FCard.o \
+		cl_GIF.o \
+		cl_HTML.o \
+		cl_TTY.o \
+		cl_XBM.o \
+		cl_XBMButton.o \
+		cl_XPM.o \
+		cl_XPMButton.o \
+		cl_client.o \
+		cl_cosmic.o \
+		cl_dial.o \
+		cl_field.o \
+		cl_generic.o \
+		cl_hpane.o \
+		cl_menu.o \
+		cl_pane.o \
+		cl_project.o \
+		cl_rubber.o \
+		cl_slider.o \
+		cl_socket.o \
+		cl_stack.o \
+		cl_toggle.o \
+		cl_tray.o \
+		cl_txt.o \
+		cl_txtButton.o \
+		cl_txtDisp.o \
+		cl_txtEdit.o \
+		cl_txtLabel.o \
+		cl_vpane.o \
+		class.o \
+		classlist.o \
+		error.o \
+		event.o \
+		event_x.o \
+		file.o \
+		glib.o \
+		glib_x.o \
+		gram.o \
+		hash.o \
+		html.o \
+		ident.o \
+		loader.o \
+		main.o \
+		method.o \
+                membership.o \
+		misc.o \
+		mystrings.o \
+		obj.o \
+		packet.o \
+		scan.o \
+		scanutils.o \
+		slib.o \
+		sys.o \
+		tfed.o \
+		vlist.o
+
+OBJS_WWW      = $(WWW_DIR)/HTTP.o \
+		$(WWW_DIR)/HTML.o \
+		$(WWW_DIR)/HTAccess.o \
+		$(WWW_DIR)/HTAnchor.o \
+		$(WWW_DIR)/HTList.o \
+		$(WWW_DIR)/HTString.o \
+		$(WWW_DIR)/HTTCP.o \
+		$(WWW_DIR)/HTParse.o \
+		$(WWW_DIR)/HTHistory.o \
+		$(WWW_DIR)/HTStyle.o \
+		$(WWW_DIR)/HTChunk.o \
+		$(WWW_DIR)/HTNews.o \
+		$(WWW_DIR)/HTGopher.o \
+		$(WWW_DIR)/HTAtom.o \
+		$(WWW_DIR)/HTFTP.o \
+		$(WWW_DIR)/HTFile.o \
+		$(WWW_DIR)/HTFormat.o \
+		$(WWW_DIR)/SGML.o
+
+OBJS_XPA      =	xpa.o
+
+ComplexProgramTarget(viola)

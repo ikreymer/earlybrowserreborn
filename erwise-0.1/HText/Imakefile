@@ -1,0 +1,12 @@
+#
+#
+#
+
+	   OBJS	= DefaultStyles.o HText.o dummy.o
+	   SRCS	= DefaultStyles.c HText.c dummy.c
+
+	DEFINES = -I../Cl/WWWLibrary
+
+NormalLibraryTarget(Ht, $(OBJS))
+
+DependTarget()

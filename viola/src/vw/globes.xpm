@@ -1,0 +1,98 @@
+/* XPM */
+static char * globe1 [] = {
+/* g30 pixmap
+ * width height ncolors chars_per_pixel */
+"32 32 7 1",
+" 	s c0	c black",
+".	s c23	c white",
+"X	s c5	c blue",
+"o	s c27	c #fbfbfb",
+"O	s c46	c darkgreen",
+"+	s c19	c lightblue",
+"@	s c11	c brown",
+/* pixels */
+"          .Xo.XooOo...          ",
+"        .OOoOOOOooOO..o.        ",
+"      O.O+OOOOOOOO+oooO...      ",
+"     ..XXXX+.OOOOooOOoo.+X.     ",
+"    ..ooXXXX.oooOOOOOOOO.o..    ",
+"   .XXXXXoXXOOoOOOOOOOO.XXX.+   ",
+"  .XXXoXXXXXOOooOOOOOOXXXX.XX   ",
+"  .XXXoXXXXXXOOOooO@OOOXX+XXX.  ",
+" ..XXXXXXXXXXXOOOo@@O...XXXXXX. ",
+" .oXXXXXXXXXXX.O.OOXX+OO+XXXXXX ",
+"X.oXXXXXXXXXXXXXOO+O.OO.OXXXXX..",
+".X+XXXXXXXXXXXXXX+OOO+X..X.XXXX.",
+".XXXXXXXXXXXXXXXXXXXO+.X.O.XXXXX",
+".XXXXXXXXXXXXXXXXXXXX+OOOOO+XXX.",
+".XXXXXXXXXXXXXXXXXXXX+X++OOOOOXX",
+".XXXXXXXXXXXXXXXXXX+XX+OOOOOOoX.",
+".X+XXXXXXXXXXXXXXXX.+XOOOOOOOoo.",
+"O.XXXXXXXXXXXXXXXXXXXX.OOOOOOooO",
+". .++XXXXXXXXXXXXXXXXO.OOOoOOOOO",
+"...XXXXXXXXXXXXXXXXXXXX+OOOOOOO.",
+".+XXX..+XXXXXXXXXXXXXXXXOOOOOOX.",
+"X..X.XXXXXXXXXXXXXXXXXXXXOOOOOO.",
+" .XXXX+XXoXXXXXXXXXXXXX+OOOOO.X ",
+" ..XXXX+XXXXXXXXXXXXXX+XOoOOO.. ",
+"  .XXXXXXXXXXXXXXXXXXX.OoOOOX.  ",
+"  .XXXXXXXXXXXXXXXXXXX+OOOX+X   ",
+"   OOXXXXXXXoXXXXoXXXX+OO.X..   ",
+"    OOXXXXXXXXXXXXXXX.O.XX..    ",
+"     .OXXXXXXXXXXXXXXOOO..      ",
+"      .XXXXXooXXXXXO+...        ",
+"        .ooXXooooooXoX.         ",
+"          ..ooooooo...          "};
+
+
+
+
+/* XPM */
+static char * globe2 [] = {
+/* gb pixmap
+ * width height ncolors chars_per_pixel */
+"32 32 9 1",
+" 	s c0	c black",
+".	s c23	c white",
+"X	s c19	c lightblue",
+"o	s c46	c darkgreen",
+"O	s c9	c gray",
+"+	s c5	c blue",
+"@	s c27	c #fbfbfb",
+"#	s c29	c gray97",
+"$	s c11	c brown",
+/* pixels */
+"           ...........          ",
+"        X..........oo...        ",
+"      XOO++.+.@...oo.oo..O      ",
+"     XOO++++X..ooo.o.o....O     ",
+"    XOO+O++#O..OO..oo.o....O    ",
+"   .XO+O+++X...O.OOo.oo.ooo..   ",
+"  .XO++OO++X+...OOOOXOOo.oo..O  ",
+"  .++++++@++ooo..+.XO.o.oo.o..  ",
+" ..+++++@++oooooooooo.oo...oo.O ",
+" .+X+++++Xooooooooooo..o...X....",
+" o+++++XXooooooooooooo..oo.XX..O",
+"oo++++XX.ooooooooooooo+..+...XX+",
+"oo++++++.ooooXoooo$oooo.XX++..X+",
+"X..+++++X.$$o$.$o$oX$$XoXX++++O+",
+"XX...++++X.XXX..Xo$$$$$ooX++++O+",
+".....X++.+++..X..$$o$$.oX.++++++",
+".oo....++++.++.XoooooooX..++++++",
+"oooo.X.X+++++++..oooooo.+.+@+@+O",
+"oooXo++..X+++++.Xoooooo.++.+++++",
+"ooooX++++XX+++++XooooooX+.+X+++O",
+"ooooo++++++++++XooooooXX..X++++O",
+"oooo.++++++++++XXooooX.....+++O ",
+" ooo.+++++++++++Xoooo....X+++++ ",
+" ooo++++++++++++XXoo..+OO++++O  ",
+"  oo+++++++++++++.oX.++OX++++O  ",
+"  ooO++++++++++++..++XOX+++++O  ",
+"   XX+++++++++++++++XO++++++O   ",
+"    oo+++++++++++++OO++++++O    ",
+"     o+X++++++++O+OO+++X++O     ",
+"      +X+OO++.OOXXXX+X+OOO      ",
+"        ++..OX...O.....O        ",
+"           ..........           "};
+
+

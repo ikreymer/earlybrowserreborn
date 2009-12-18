@@ -1,0 +1,32 @@
+#ifdef COLOR
+Viola*foreground:		white
+Viola*background:		AntiqueWhite4
+Viola*borderColor:		AntiqueWhite4
+!Viola*background:		grey55
+!Viola*borderColor:		grey55
+Viola*pointerColor:		blue
+Viola.background_toolbar:	AntiqueWhite4
+Viola.foreground_doc:		black
+Viola.background_doc:		grey80
+Viola.borderColor_doc:		grey80
+Viola.foreground_button:	black
+Viola.background_button:	grey95
+Viola.borderColor_button:	grey40
+Viola.foreground_example:	black
+Viola.background_example:	grey70
+Viola.borderColor_example:	grey40
+Viola.background_hr:		black
+Viola.borderColor_hr:		grey90
+Viola.foreground_caution:	white
+Viola.background_caution:	SlateGray4
+Viola.borderColor_caution:	SlateGray1
+Viola.foreground_input:		white
+Viola.background_input:		grey45
+Viola.borderColor_input:	white
+Viola.hotlink_visited:		blue
+Viola.hotlink_unvisited:	red
+#else
+Viola*foreground:		white
+Viola*background:		black
+Viola*borderColor:		white
+#endif

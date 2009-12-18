@@ -1,0 +1,990 @@
+CUSTOM.WWW.Menu.10:	Headings =>@-12#Paragraphs =>@-20
+CUSTOM.WWW.Menu.11:	GopherSpace Overview@36#Veronica Interface@115#......@0#Original UMN Gopher@73#UIUC Weather Machine@106
+CUSTOM.WWW.Menu.12:	Helvetica (Headings)@41#New Century (Headings)@59#Times (Headings)@102
+CUSTOM.WWW.Menu.13:	Overview@74#On Version@68#On WWW@69#On Help@66#......@0#On HTML@65#On URL's@67#......@0#On Context@64
+CUSTOM.WWW.Menu.14:	On Window@70#On Context@64
+CUSTOM.WWW.Menu.15:	-5@5#-4@4#-3@3#-2@2#-1@1#0@6#1@7#2@8#3@9#4@10#5@11
+CUSTOM.WWW.Menu.16:	SunOS 4.1.1 Man Pages@99#HP-UX 8.0.7 Man Pages@38#Ultrix 4.2a Man Pages@108#IRIX 4.0 Man Pages@47#Pyramid OSx Man Pages@84#......@0#VMS Help System@113#X11R5 Man Pages@126#GNU manu\
+als@33
+CUSTOM.WWW.Menu.17:	Visited Documents@116#Visited Documents...@117#......@0#Home Page@43#Go Back@34#Next@61#Previous@79#......@0#Hotlist@44#Add Document to Hotlist@14
+CUSTOM.WWW.Menu.18:	Document...@29#Gopher Document...@35#FTP Document...@30#Local Document...@52
+CUSTOM.WWW.Menu.19:	Portrait@76#Landscape@50#Seascape@96#Upside Down@111
+CUSTOM.WWW.Menu.1:	Go Back@34#Previous@79#Next@61#......@0#Save...@93#Search...@94#......@0#Clone @19#Close Window@21
+CUSTOM.WWW.Menu.20:	Helvetica (Text)@42#New Century (Text)@60#Times (Text)@103
+CUSTOM.WWW.Menu.21:	First Page@32#Next Page@62#Previous Page@80#Index@48#......@0#MagStep =>@-15#Orientation =>@-19
+CUSTOM.WWW.Menu.22:	Document Title@27#Document URL@28#......@0#Unrecognized Markup@109
+CUSTOM.WWW.Menu.23:	Headings (Underline)@40
+CUSTOM.WWW.Menu.2:	HTML@39#Text@101#Postscript@78
+CUSTOM.WWW.Menu.3:	File (History) =>@-8#Help (History) =>@-14
+CUSTOM.WWW.Menu.4:	File =>@-7#Postscript =>@-21#Navigate =>@-17#Customize =>@-5#Documents =>@-6#Manuals =>@-16#Help =>@-13
+CUSTOM.WWW.Menu.5:	Options...@72#Print Options...@82#Show =>@-22#......@0#Fonts =>@-10#Font Size =>@-9#Underline =>@-23
+CUSTOM.WWW.Menu.6:	MidasWWW Welcome Page@56#......@0#Web Overview@120#Web Project@121#Web Servers@122#Information by Subject@49#Data Sources by Service@23#W3 Catalog@118#......@0#What's New@123#......\
+@0#Wais Interface@119#Gopher Interface =>@-11#Usenet Interface@112#Finger Interface@31#HyTelnet Interface@45#Techinfo Interface@100#Archie Interface@15#X.500 Interface@125#Hyper-G Interface@46#......@\
+0#HEP Overview@37#......@0#CERN Home Page@16#SLAC Home Page@90#SSC Home Page@91#Ohio State Home Page@63
+CUSTOM.WWW.Menu.7:	Reread Document@86#Document Info...@25#Document Source...@26#......@0#Open Selected@71#Open =>@-18#......@0#Save...@93#Mail...@53#Print...@83#Search...@94#......@0#Clone@19#......@0\
+#Close Window@21#Quit@85
+CUSTOM.WWW.Menu.8:	Update@110#Search... (History)@95#Close@20
+CUSTOM.WWW.Menu.9:	Small@97#Medium@54#Large@51
+CUSTOM.WWW.Menus:	<buttons>#<format>#<history_menu>#<main_menu>#Customize#Documents#File#File (History)#Font Size#Fonts#Gopher Interface#Headings#Help#Help (History)#MagStep#Manuals#Navigate#Open#Orie\
+ntation#Paragraphs#Postscript#Show#Underline
+CUSTOM.WWW.Verb.100:	Set Ingot .^^^XmMainWindow WWWFileTemp "http://info.cern.ch:8004/"
+CUSTOM.WWW.Verb.101:	Set Ingot .^^^XmDiialogShell Format TEXT
+CUSTOM.WWW.Verb.102:	#Set Ingot .^^^WWWMain HeadingFont "times"\nStore App Resource .^^^midaswww headingFont "times"
+CUSTOM.WWW.Verb.103:	#Set Ingot .^^^WWWMain TextFont "times"\nStore App Resource .^^^midaswww textFont "times"
+CUSTOM.WWW.Verb.104:	Set Ingot .^^^XmMainWindow WWWFileTemp "gopher://gopher.uiuc.edu:70/1"
+CUSTOM.WWW.Verb.105:	Set Ingot .^^^XmMainWindow WWWFileTemp "gopher://gopher.uiuc.edu:70/1"
+CUSTOM.WWW.Verb.106:	Set Ingot .^^^XmMainWindow WWWFileTemp "gopher://wx.atmos.uiuc.edu:70/1"
+CUSTOM.WWW.Verb.107:	Set Ingot .^^^XmMainWindow WWWFileTemp "gopher://bigcheese.math.scarolina.edu:70/1"
+CUSTOM.WWW.Verb.108:	Set Ingot .^^^XmMainWindow WWWFileTemp "http://www.cis.ohio-state.edu:80/man/ultrix.top.html"
+CUSTOM.WWW.Verb.109:	#Set Ingot .^^^XmMainWindow ShowUnrecognizedMarkup GetValue(.,set)\nStore App Resource .^^^midaswww "ShowUnrecognizedMarkup" ShowUnrecognizedMarkup\nFor All .^^^XmMainWindow...hid\
+den Set Value . managed ShowUnrecognizedMarkup
+CUSTOM.WWW.Verb.10:	#Set Value PSState magstep 4
+CUSTOM.WWW.Verb.110:	Invoke Callback .^^^XmForm unmapCallback\nInvoke Callback .^^^XmForm mapCallback
+CUSTOM.WWW.Verb.111:	#Set Value PSState orientation "upside-down"
+CUSTOM.WWW.Verb.112:	Set Ingot .^^^XmMainWindow WWWFileTemp "http://info.cern.ch/hypertext/DataSources/News/Groups/Overview.html"
+CUSTOM.WWW.Verb.113:	Set Ingot .^^^XmMainWindow WWWFileTemp "http://www-midas.slac.stanford.edu:80/HELP"
+CUSTOM.WWW.Verb.114:	Custom Popup WWW
+CUSTOM.WWW.Verb.115:	Set Ingot .^^^XmMainWindow WWWFileTemp "gopher://gopher.tc.umn.edu:70/11/Other Gopher and Information Servers/Veronica"
+CUSTOM.WWW.Verb.116:	Set Ingot .^^^XmMainWindow WWWFileTemp "history:"
+CUSTOM.WWW.Verb.117:	Popup .^^^XmMainWindow###WWWHistory
+CUSTOM.WWW.Verb.118:	Set Ingot .^^^XmMainWindow WWWFileTemp "http://cui_www.unige.ch/w3catalog"
+CUSTOM.WWW.Verb.119:	Set Ingot .^^^XmMainWindow WWWFileTemp "http://info.cern.ch/hypertext/DataSources/WAIS/ByHost.html"
+CUSTOM.WWW.Verb.11:	#Set Value PSState magstep 5
+CUSTOM.WWW.Verb.120:	Set Ingot .^^^XmMainWindow WWWFileTemp "http://info.cern.ch/hypertext/WWW/LineMode/Defaults/default.html"
+CUSTOM.WWW.Verb.121:	Set Ingot .^^^XmMainWindow WWWFileTemp "http://info.cern.ch/hypertext/WWW/TheProject.html"
+CUSTOM.WWW.Verb.122:	Set Ingot .^^^XmMainWindow WWWFileTemp "http://info.cern.ch/hypertext/DataSources/WWW/Servers.html"
+CUSTOM.WWW.Verb.123:	Set Ingot .^^^XmMainWindow WWWFileTemp "http://www.ncsa.uiuc.edu/SDG/Software/Mosaic/Docs/whats-new.html"
+CUSTOM.WWW.Verb.124:	Set Ingot .^^^XmMainWindow WWWFileTemp "gopher://gopher.tc.umn.edu:70/11/Phone Books/WHOIS Searches"
+CUSTOM.WWW.Verb.125:	Set Ingot .^^^XmMainWindow WWWFileTemp "gopher://umich.edu:7777/"
+CUSTOM.WWW.Verb.126:	Set Ingot .^^^XmMainWindow WWWFileTemp "http://www.cis.ohio-state.edu:80/man/x11.top.html"
+CUSTOM.WWW.Verb.12:	Set Ingot .^^^XmMainWindow WWWFileTemp "http://hoohoo.ncsa.uiuc.edu:1235/man/index"
+CUSTOM.WWW.Verb.13:	Set Ingot .^^^XmMainWindow WWWFileTemp "http://info.cern.ch/hypertext/DataSources/bySubject/Overview.html"
+CUSTOM.WWW.Verb.14:	Set Ingot .^^^XmMainWindow HotList HotList++"<h6><kill><a href = %WWWParent(WWWFile) > %WWWTitle </a></h6>" \nStore App Resource .^^^midaswww hotList HotList \n
+CUSTOM.WWW.Verb.15:	Set Ingot .^^^XmMainWindow WWWFileTemp "http://web.nexor.co.uk/archie.html"
+CUSTOM.WWW.Verb.16:	Set Ingot .^^^XmMainWindow WWWFileTemp "http://info.cern.ch/"
+CUSTOM.WWW.Verb.17:	Set Ingot .^^^XmMainWindow WWWFileTemp "gopher://gopher.tc.cornell.edu:70/1"
+CUSTOM.WWW.Verb.18:	WWW Reset
+CUSTOM.WWW.Verb.19:	Set Ingot WWWMain WWWFileNew WWWFile
+CUSTOM.WWW.Verb.1:	#Set Value PSState magstep -1
+CUSTOM.WWW.Verb.20:	For All .^^^XmForm.XmDialogShell. PopDown .\nPopDown .^^^XmForm
+CUSTOM.WWW.Verb.21:	Quit Shell .
+CUSTOM.WWW.Verb.22:	Set Ingot .^^^XmMainWindow WWWFileTemp "http://fatty.law.cornell.edu.:80/usr2/wwwtext/lii.table.html"
+CUSTOM.WWW.Verb.23:	Set Ingot .^^^XmMainWindow WWWFileTemp "http://info.cern.ch/hypertext/DataSources/ByAccess.html"
+CUSTOM.WWW.Verb.24:	Popup .^^^XmMainWindow###WWWDisplayOptions
+CUSTOM.WWW.Verb.25:	Popup .^^^XmMainWindow###WWWDocInfo\nSet Ingot .^^^XmMainWindow###WWWDocInfo ShowSource False
+CUSTOM.WWW.Verb.26:	Popup .^^^XmMainWindow###WWWDocInfo\nSet Ingot .^^^XmMainWindow###WWWDocInfo ShowSource True
+CUSTOM.WWW.Verb.27:	#Set Ingot .^^^XmMainWindow ShowTitle GetValue(.,set)\nStore App Resource .^^^midaswww "ShowTitle" ShowTitle\nKick .^^^XmMainWindow
+CUSTOM.WWW.Verb.28:	#Set Ingot .^^^XmMainWindow ShowURL GetValue(.,set)\nStore App Resource .^^^midaswww "ShowURL" ShowURL\nkick .^^^XmMainWindow
+CUSTOM.WWW.Verb.29:	Popup .^^^XmMainWindow###WWWDocOpen
+CUSTOM.WWW.Verb.2:	#Set Value PSState magstep -2
+CUSTOM.WWW.Verb.30:	Popup .^^^XmMainWindow###WWWOpenFTP
+CUSTOM.WWW.Verb.31:	Set Ingot .^^^XmMainWindow WWWFileTemp "http://cs.indiana.edu/finger/gateway"
+CUSTOM.WWW.Verb.32:	WWW First Page PSState\nSet Sensitive .^.Next_Page True\nSet Sensitive . False 
+CUSTOM.WWW.Verb.33:	Set Ingot .^^^XmMainWindow WWWFileTemp "http://www.cis.ohio-state.edu:85/info/dir"
+CUSTOM.WWW.Verb.34:	Set Ingot . Temp WWWBack(HistoryList)\nWWW Delete History HistoryList\nWWW Link\nSet Ingot .^^^XmMainWindow WWWFileTemp Convert(Temp,"WWWFile")
+CUSTOM.WWW.Verb.35:	Popup .^^^XmMainWindow###WWWOpenGopher
+CUSTOM.WWW.Verb.36:	Set Ingot .^^^XmMainWindow WWWFileTemp "gopher://gopher.micro.umn.edu:70/11/Other Gopher and Information Servers"
+CUSTOM.WWW.Verb.37:	Set Ingot .^^^XmMainWindow WWWFileTemp "http://info.cern.ch/hypertext/DataSources/bySubject/Physics/HEP.html"
+CUSTOM.WWW.Verb.38:	Set Ingot .^^^XmMainWindow WWWFileTemp "http://www.cis.ohio-state.edu:80/man/hpux.top.html"
+CUSTOM.WWW.Verb.39:	Set Ingot .^^^XmDialogShell Format HTML
+CUSTOM.WWW.Verb.3:	#Set Value PSState magstep -3
+CUSTOM.WWW.Verb.40:	#Set Ingot .^^^WWWMain UnderlineHeadings GetValue(.,set)\nStore App Resource .^^^midaswww underlineHeadings UnderlineHeadings 
+CUSTOM.WWW.Verb.41:	#Set Ingot .^^^WWWMain HeadingFont helvetica\nStore App Resource .^^^midaswww headingFont helvetica
+CUSTOM.WWW.Verb.42:	#Set Ingot .^^^WWWMain TextFont helvetica\nStore App Resource .^^^midaswww textFont helvetica
+CUSTOM.WWW.Verb.43:	Set Ingot .^^^XmMainWindow WWWFileTemp WWW_Home
+CUSTOM.WWW.Verb.44:	Set Ingot .^^^XmMainWindow WWWFileTemp "ingot:HotList"
+CUSTOM.WWW.Verb.45:	Set Ingot .^^^XmMainWindow WWWFileTemp "http://www-midas.slac.stanford.edu/misc/hytelnet.html"
+CUSTOM.WWW.Verb.46:	Set Ingot .^^^XmMainWindow WWWFileTemp "http://iicm.tu-graz.ac.at:80/ROOT"
+CUSTOM.WWW.Verb.47:	Set Ingot .^^^XmMainWindow WWWFileTemp "http://z0.slac.stanford.edu:1234/man/index"
+CUSTOM.WWW.Verb.48:	Set Ingot . Temp WWWBack(HistoryList)\nWWW Delete History HistoryList\nWWW Link\nSet Ingot .^^^XmMainWindow WWWFileTemp Convert(Temp,"WWWFile")
+CUSTOM.WWW.Verb.49:	Set Ingot .^^^XmMainWindow WWWFileTemp "http://info.cern.ch/hypertext/DataSources/bySubject/Overview.html"
+CUSTOM.WWW.Verb.4:	#Set Value PSState magstep -4
+CUSTOM.WWW.Verb.50:	#Set Value PSState orientation landscape
+CUSTOM.WWW.Verb.51:	#Set Ingot .^^^WWWMain FontSize Large\nStore App Resource .^^^midaswww "fontSize" Large
+CUSTOM.WWW.Verb.52:	Popup .^^^XmMainWindow###WWWOpenLocal
+CUSTOM.WWW.Verb.53:	Popup .^^^XmMainWindow###WWWMail
+CUSTOM.WWW.Verb.54:	#Set Ingot .^^^WWWMain FontSize Medium\nStore App Resource .^^^midaswww "fontSize" Medium\n
+CUSTOM.WWW.Verb.55:	Popup Midas_Main
+CUSTOM.WWW.Verb.56:	Set Ingot .^^^XmMainWindow WWWFileTemp "http://www-midas.slac.stanford.edu:80/midasv21/welcome.html"
+CUSTOM.WWW.Verb.57:	Set Ingot .^^^XmMainWindow WWWFileTemp "gopher://gopher.ncsa.uiuc.edu:70/1"
+CUSTOM.WWW.Verb.58:	Set Ingot .^^^XmMainWindow WWWFileTemp "http://hoohoo.ncsa.uiuc.edu/welcome.html"
+CUSTOM.WWW.Verb.59:	#Set Ingot .^^^WWWMain HeadingFont "new century schoolbook"\nStore App Resource .^^^midaswww headingFont "new century schoolbook"
+CUSTOM.WWW.Verb.5:	#Set Value PSState magstep -5
+CUSTOM.WWW.Verb.60:	#Set Ingot .^^^WWWMain TextFont "new century schoolbook"\nStore App Resource .^^^midaswww textFont "new century schoolbook"
+CUSTOM.WWW.Verb.61:	Set Ingot . Temp WWWNext(WWWBack(HistoryList))\nWWW Delete History HistoryList\nWWW Link Temp \nSet Ingot .^^^XmMainWindow WWWFileTemp Convert(WWWDest(Temp),"WWWFile")
+CUSTOM.WWW.Verb.62:	If GetValue(PSState,"pages")>0 Invoke Callback .^^^WWWMain...Next activateCallback\nElse WWW Next Page PSState\nElse Set Sensitive .^.First_Page True 
+CUSTOM.WWW.Verb.63:	Set Ingot .^^^XmMainWindow WWWFileTemp "http://www.cis.ohio-state.edu:80/hypertext/information/information.html"
+CUSTOM.WWW.Verb.64:	Help On Context .
+CUSTOM.WWW.Verb.65:	Set Ingot .^^^XmMainWindow WWWFileTemp "http://www.ncsa.uiuc.edu/demoweb/html-primer.html"
+CUSTOM.WWW.Verb.66:	Set Ingot .^^^XmMainWindow WWWFileTemp "http://www-midas.slac.stanford.edu:80/midasv21/help.html"
+CUSTOM.WWW.Verb.67:	Set Ingot .^^^XmMainWindow WWWFileTemp "http://www.ncsa.uiuc.edu/demoweb/url-primer.html"
+CUSTOM.WWW.Verb.68:	Set Ingot .^^^XmMainWindow WWWFileTemp "http://www-midas.slac.stanford.edu:80/midasv21/about.html"
+CUSTOM.WWW.Verb.69:	Set Ingot .^^^XmMainWindow WWWFileTemp "http://info.cern.ch/hypertext/WWW/TheProject.html"
+CUSTOM.WWW.Verb.6:	#Set Value PSState magstep 0
+CUSTOM.WWW.Verb.70:	Invoke Callback .^^^XmForm helpCallback
+CUSTOM.WWW.Verb.71:	If GetSelection(.,"PRIMARY","STRING")!="" Set Ingot .^^^XmMainWindow WWWFileTemp GetSelection(.,"PRIMARY","STRING") \nElse Popup .^^^XmMainWindow###WWWDocOpen
+CUSTOM.WWW.Verb.72:	Popup .^^^XmMainWindow###WWWParameters
+CUSTOM.WWW.Verb.73:	Set Ingot .^^^XmMainWindow WWWFileTemp "gopher://gopher.micro.umn.edu:70/1"
+CUSTOM.WWW.Verb.74:	Set Ingot .^^^XmMainWindow WWWFileTemp "http://www-midas.slac.stanford.edu:80/midasv21/overview.html"
+CUSTOM.WWW.Verb.75:	Set Ingot .^^^XmMainWindow WWWFileTemp "gopher://pscuxb.psc.edu:1563/1"
+CUSTOM.WWW.Verb.76:	#Set Value PSState orientation portrait
+CUSTOM.WWW.Verb.77:	Set Ingot .^^^XmMainWindow WWWFileTemp "gopher://una.hh.lib.umich.edu:70/11/journals/pmc"
+CUSTOM.WWW.Verb.78:	Set Ingot .^^^XmDialogShell Format Postscript
+CUSTOM.WWW.Verb.79:	Set Ingot . Temp WWWPrev(WWWBack(HistoryList))\nWWW Delete History HistoryList\nWWW Link Temp \nSet Ingot .^^^XmMainWindow WWWFileTemp Convert(WWWDest(Temp),"WWWFile")
+CUSTOM.WWW.Verb.7:	#Set Value PSState magstep 1
+CUSTOM.WWW.Verb.80:	Set Ingot . Temp WWWPrev(WWWBack(HistoryList))\nWWW Delete History HistoryList\nWWW Link Temp \nSet Ingot .^^^XmMainWindow WWWFileTemp Convert(WWWDest(Temp),"WWWFile")
+CUSTOM.WWW.Verb.81:	Invoke Callback .^^^XmMainWindow###WWWPrint...WWWPrintOk activateCallback
+CUSTOM.WWW.Verb.82:	Popup .^^^XmMainWindow###WWWPrintOptions
+CUSTOM.WWW.Verb.83:	Popup .^^^XmMainWindow###WWWPrint
+CUSTOM.WWW.Verb.84:	Set Ingot .^^^XmMainWindow WWWFileTemp "http://www.cis.ohio-state.edu:80/man/pyramid.top.html"
+CUSTOM.WWW.Verb.85:	Quit Application .
+CUSTOM.WWW.Verb.86:	WWW Zap .^^^XmMainWindow...WWWHyper WWWFile\nWWW Link\nSet Ingot .^^^XmMainWindow WWWFileTemp Convert(WWWFile,"WWWNode")
+CUSTOM.WWW.Verb.87:	Set Ingot .^^^XmMainWindow WWWFileTemp "gopher://gopher.sdsc.edu:70/1"
+CUSTOM.WWW.Verb.88:	Set Ingot .^^^XmMainWindow WWWFileTemp "http://iicm.tu-graz.ac.at:80/CSIGGRAPHbib"
+CUSTOM.WWW.Verb.89:	Set Ingot .^^^XmMainWindow WWWFileTemp "http://slacvm.slac.stanford.edu:5080/FIND/SLAC.HTML"
+CUSTOM.WWW.Verb.8:	#Set Value PSState magstep 2
+CUSTOM.WWW.Verb.90:	Set Ingot .^^^XmMainWindow WWWFileTemp "http://slacvm.slac.stanford.edu./FIND/SLAC.HTML"
+CUSTOM.WWW.Verb.91:	Set Ingot .^^^XmMainWindow WWWFileTemp "http://www.ssc.gov/SSC.html"
+CUSTOM.WWW.Verb.92:	Custom Write WWW\nSave Stored Resources .
+CUSTOM.WWW.Verb.93:	Popup .^^^XmMainWindow###WWWSave
+CUSTOM.WWW.Verb.94:	Popup .^^^XmMainWindow###WWWSearch
+CUSTOM.WWW.Verb.95:	Popup .^^^WWWHistory###WWWSearch
+CUSTOM.WWW.Verb.96:	#Set Value PSState orientation seascape
+CUSTOM.WWW.Verb.97:	#Set Ingot .^^^WWWMain FontSize Small\nStore App Resource .^^^midaswww "fontSize" Small\n
+CUSTOM.WWW.Verb.98:	Popup WWWStartup
+CUSTOM.WWW.Verb.99:	Set Ingot .^^^XmMainWindow WWWFileTemp "http://www.cis.ohio-state.edu:80/man/sunos.top.html"
+CUSTOM.WWW.Verb.9:	#Set Value PSState magstep 3
+CUSTOM.WWW.Verbs:	-1#-2#-3#-4#-5#0#1#2#3#4#5#AIX 3.2 Man Pages#Academic Information#Add Document to Hotlist#Archie Interface#CERN Home Page#CTC Gopher#Clear Visited Documents#Clone#Close#Close Window#\
+Cornell Law School#Data Sources by Service#Display...#Document Info...#Document Source...#Document Title#Document URL#Document...#FTP Document...#Finger Interface#First Page#GNU manuals#Go Back#Gopher\
+ Document...#GopherSpace Overview#HEP Overview#HP-UX 8.0.7 Man Pages#HTML#Headings (Underline)#Helvetica (Headings)#Helvetica (Text)#Home Page#Hotlist#HyTelnet Interface#Hyper-G Interface#IRIX 4.0 Man\
+ Pages#Index#Information by Subject#Landscape#Large#Local Document...#Mail...#Medium#Midas...#MidasWWW Welcome Page#NCSA Gopher#NCSA Home Page#New Century (Headings)#New Century (Text)#Next#Next Page#\
+Ohio State Home Page#On Context#On HTML#On Help#On URL's#On Version#On WWW#On Window#Open Selected#Options...#Original UMN Gopher#Overview#PSC Gopher#Portrait#PostModern Culture#Postscript#Previous#Pr\
+evious Page#Print#Print Options...#Print...#Pyramid OSx Man Pages#Quit#Reread Document#SDSC Gopher#SIGGRAPH Bibliography#SLAC#SLAC Home Page#SSC Home Page#Save Current Settings#Save...#Search...#Searc\
+h... (History)#Seascape#Small#Startup...#SunOS 4.1.1 Man Pages#Techinfo Interface#Text#Times (Headings)#Times (Text)#UIUC  Gopher#UIUC Gopher#UIUC Weather Machine#USC Math Gopher#Ultrix 4.2a Man Pages\
+#Unrecognized Markup#Update#Upside Down#Usenet Interface#VMS Help System#Verbs and Menus...#Veronica Interface#Visited Documents#Visited Documents...#W3 Catalog#Wais Interface#Web Overview#Web Project\
+#Web Servers#What's New#Whois Interface#X.500 Interface#X11R5 Man Pages
+midaswww*Clone.helpCallback:	Set Ingot .^^^XmMainWindow WWWFileRequest "http://www-midas.slac.stanford.edu:80/midasv21/clone.html"
+midaswww*Close_Window.helpCallback:	Set Ingot .^^^XmMainWindow WWWFileRequest "http://www-midas.slac.stanford.edu:80/midasv21/quit.html"
+midaswww*ConfirmExit.valueChangedCallback:	Set Sensitive .^^^WWWParameters...WWWParamApply True\nSet Sensitive .^^^WWWParameters...WWWParamReset True\nSet Sensitive .^^^WWWParameters...WWWParamSave Fa\
+lse
+midaswww*Customize.helpCallback:	Set Ingot .^^^XmMainWindow WWWFileRequest "http://www-midas.slac.stanford.edu:80/midasv21/menus.html#Customize"
+midaswww*Document_Source___.DocFormat:	Set Sensitive . DocFormat=="HTML"
+midaswww*Document_Source___.DocFormatExecuteWhenCreated:	False
+midaswww*Document_Source___.midasIngots:	DocFormat
+midaswww*Document_Title.midasCreateCallback:	Set Value . set ShowTitle
+midaswww*Document_URL.midasCreateCallback:	set value . set ShowURL
+midaswww*Documents.helpCallback:	Set Ingot .^^^XmMainWindow WWWFileRequest "http://www-midas.slac.stanford.edu:80/midasv21/menus.html#Documents"
+midaswww*EnableHTTP2.valueChangedCallback:	Set Sensitive .^^^WWWParameters...WWWParamApply True\nSet Sensitive .^^^WWWParameters...WWWParamReset True\nSet Sensitive .^^^WWWParameters...WWWParamSave Fa\
+lse
+midaswww*File.helpCallback:	Set Ingot .^^^XmMainWindow WWWFileRequest "http://www-midas.slac.stanford.edu:80/midasv21/menus.html#File"
+midaswww*First_Page.WWWFile:	Set Sensitive . False
+midaswww*First_Page.midasIngots:	WWWFile
+midaswww*FontList:	-*-helvetica-bold-r-normal-*-14-*-*-*-*-*-iso8859-1
+midaswww*Font_Size.radioBehavior:	true
+midaswww*GhostscriptErrorCancel.activateCallback:	PopDown .^^
+midaswww*GhostviewErrorsHelp.activateCallback:	Invoke Callback .^^ helpCallback
+midaswww*Go_Back.WWWFile:	Set Sensitive . WWWBack(HistoryList)!=0
+midaswww*Go_Back.WWWFileExecuteWhenCreated:	True
+midaswww*Go_Back.helpCallback:	Set Ingot .^^^XmMainWindow WWWFileRequest "http://www-midas.slac.stanford.edu:80/midasv21/navigate.html#GoBack"
+midaswww*Go_Back.midasIngots:	WWWFile
+midaswww*HTML.DocFormat:	Set Sensitive . DocFormat=="HTML"\nIf DocFormat=="HTML" Set Value .^^^XmMenuShell^.XmRowColumn menuHistory .\nIf DocFormat=="HTML" Invoke Callback . activateCallback
+midaswww*HTML.DocFormatExecuteWhenCreated:	True
+midaswww*HTML.midasIngots:	DocFormat
+midaswww*Headings.radioBehavior:	true
+midaswww*Headings_(Underline).midasCreateCallback:	Set Value . set UnderlineHeadings
+midaswww*Helvetica_(Headings).midasCreateCallback:	Set Value . set HeadingFont=="helvetica"
+midaswww*Helvetica_(Text).midasCreateCallback:	Set Value . set TextFont=="helvetica"
+midaswww*Index.WWWFile:	Set Sensitive . PSState!=0&&GetValue(PSState,"pages")>1
+midaswww*Index.midasIngots:	WWWFile
+midaswww*Large.midasCreateCallback:	Set Value . set FontSize=="Large"
+midaswww*MagStep.XmToggleButtonGadget.PSState:	If PSState!=0 Set Value . set GetValue(PSState,magstep)==GetValue(.,labelString)
+midaswww*MagStep.XmToggleButtonGadget.midasIngots:	PSState
+midaswww*MagStep.radioBehavior:	true
+midaswww*Mail___.DocFormat:	Set Sensitive . DocFormat!="GIF Image"
+midaswww*Mail___.DocFormatExecuteWhenCreated:	False
+midaswww*Mail___.helpCallback:	Set Ingot .^^^XmMainWindow WWWFileRequest "http://www-midas.slac.stanford.edu:80/midasv21/slac_library.html#Mail"
+midaswww*Mail___.midasIngots:	DocFormat
+midaswww*Manuals.helpCallback:	Set Ingot .^^^XmMainWindow WWWFileRequest "http://www-midas.slac.stanford.edu:80/midasv21/menus.html#manuals"
+midaswww*Medium.midasCreateCallback:	Set Value . set FontSize=="Medium"
+midaswww*Navigate.helpCallback:	Set Ingot .^^^XmMainWindow WWWFileRequest "http://www-midas.slac.stanford.edu:80/midasv21/menus.html#Navigate"
+midaswww*New_Century_(Headings).midasCreateCallback:	Set Value . set HeadingFont=="new century schoolbook"
+midaswww*New_Century_(Text).midasCreateCallback:	Set Value . set TextFont=="new century schoolbook"
+midaswww*Next.WWWFile:	Set Sensitive . WWWDest(WWWNext(WWWBack(HistoryList)))!=0
+midaswww*Next.WWWFileExecuteWhenCreated:	True
+midaswww*Next.helpCallback:	Set Ingot .^^^XmMainWindow WWWFileRequest "http://www-midas.slac.stanford.edu:80/midasv21/navigate.html#NextPrevious"
+midaswww*Next.midasIngots:	WWWFile
+midaswww*Next_Page.WWWFile:	Set Sensitive . WWWDest(WWWNext(WWWBack(HistoryList)))!=0&&PSState!=0&&GetValue(PSState,"pages")!=1
+midaswww*Next_Page.midasIngots:	WWWFile
+midaswww*Orientation.XmToggleButtonGadget.PSState:	If PSState!=0 Set Value . set GetValueRaw(PSState,orientation)==GetValue(.,labelString)
+midaswww*Orientation.XmToggleButtonGadget.midasIngots:	PSState
+midaswww*Orientation.radioBehavior:	true
+midaswww*PSF.activateCallback:	WWW Next Page PSState
+midaswww*Paragraphs.radioBehavior:	true
+midaswww*Postscript.DocFormat:	Set Sensitive . DocFormat=="Postscript"
+midaswww*Postscript.DocFormatExecuteWhenCreated:	True
+midaswww*Postscript.midasIngots:	DocFormat
+midaswww*Previous.WWWFile:	Set Sensitive . WWWDest(WWWPrev(WWWBack(HistoryList)))!=0
+midaswww*Previous.WWWFileExecuteWhenCreated:	True
+midaswww*Previous.helpCallback:	Set Ingot .^^^XmMainWindow WWWFileRequest "http://www-midas.slac.stanford.edu:80/midasv21/navigate.html#NextPrevious"
+midaswww*Previous.midasIngots:	WWWFile
+midaswww*Previous_Page.WWWFile:	Set Sensitive . WWWDest(WWWPrev(WWWBack(HistoryList)))!=0&&PSState!=0&&GetValue(PSState,"pages")>1
+midaswww*Previous_Page.midasIngots:	WWWFile
+midaswww*Print.helpCallback:	Set Ingot .^^^XmMainWindow WWWFileRequest "http://www-midas.slac.stanford.edu:80/midasv21/slac_library.html#Print"
+midaswww*Print___.DocFormat:	Set Sensitive . DocFormat!="GIF Image"
+midaswww*Print___.DocFormatExecuteWhenCreated:	False
+midaswww*Print___.midasIngots:	DocFormat
+midaswww*Quit.helpCallback:	Set Ingot .^^^XmMainWindow WWWFileRequest "http://www-midas.slac.stanford.edu:80/midasv21/quit.html"
+midaswww*SGMLHyper.midasCreateCallback:	WWW CopyB . .^
+midaswww*SGMLMarkerText.bombPixmap:	bomb
+midaswww*Save___.DocFormat:	Set Sensitive . DocFormat!="GIF Image"
+midaswww*Save___.DocFormatExecuteWhenCreated:	False
+midaswww*Save___.helpCallback:	Set Ingot .^^^XmMainWindow WWWFileRequest "http://www-midas.slac.stanford.edu:80/midasv21/save.html"
+midaswww*Save___.midasIngots:	DocFormat
+midaswww*Search___.DocFormat:	Set Sensitive . DocFormat=="HTML"
+midaswww*Search___.helpCallback:	Set Ingot .^^^XmMainWindow WWWFileRequest "http://www-midas.slac.stanford.edu:80/midasv21/search_window.html"
+midaswww*Search___.midasIngots:	DocFormat
+midaswww*ShowDocumentSource.DocFormat:	Set Sensitive . DocFormat=="HTML"
+midaswww*ShowDocumentSource.DocFormatExecuteWhenCreated:	True
+midaswww*ShowDocumentSource.ShowSource:	Set Value . set ShowSource 
+midaswww*ShowDocumentSource.ShowSourceExecuteWhenCreated:	True
+midaswww*ShowDocumentSource.midasIngots:	ShowSource DocFormat
+midaswww*ShowDocumentSource.valueChangedCallback:	Set Ingot .^^^WWWDocInfo ShowSource GetValue(.,set) 
+midaswww*Small.midasCreateCallback:	Set Value . set FontSize=="Small"  
+midaswww*SourceTextSW.ShowSource:	If ShowSource Then PopUp .\nElse PopDown .\nIf ShowSource Set Value .^^ height 600\nElse Set Value .^^ height GetValue(.,y)\nIf ShowSource WWW Put ....WWWSource WWWSo\
+urce(.^^^XmMainWindow...WWWHyper)
+midaswww*SourceTextSW.ShowSourceExecuteWhenCreated:	False
+midaswww*SourceTextSW.midasCreateCallback:	Create Widget . SGMLHyper WWWSource
+midaswww*SourceTextSW.midasIngots:	ShowSource
+midaswww*Times_(Headings).midasCreateCallback:	Set Value . set HeadingFont=="times"
+midaswww*Times_(Text).midasCreateCallback:	Set Value . set TextFont=="times"
+midaswww*Unrecognized_Markup.midasCreateCallback:	set value . set ShowUnrecognizedMarkup
+midaswww*WWWButtons.helpCallback:	Set Ingot .^^^XmMainWindow WWWFileRequest "http://www-midas.slac.stanford.edu:80/midasv21/menus.html#Buttons"
+midaswww*WWWButtons.midasCreateCallback:	Custom Connect WWW "<buttons>" .
+midaswww*WWWButtons.orientation:	XMHORIZONTAL
+midaswww*WWWCommand.KeywordVisible:	Set Sensitive . KeywordVisible
+midaswww*WWWCommand.KeywordVisibleExecuteWhenCreated:	False
+midaswww*WWWCommand.midasIngots:	KeywordVisible
+midaswww*WWWCommand.sensitive:	false
+midaswww*WWWCommandText.KeywordVisible:	If KeywordVisible Grab Focus .
+midaswww*WWWCommandText.KeywordVisibleExecuteWhenCreated:	False
+midaswww*WWWCommandText.commandEnteredCallback:	If GetCommand()!="" Set Ingot . temp WWWCreateNodeFromKeyword(GetIngot(.^^^WWWMain...WWWHyper,WWWFileBase),WWWFile,WWWEncode(GetCommand()),"get")\n\
+If GetCommand()!="" WWW Link temp\nIf GetCommand()!="" S\
+et Ingot .^^^XmMainWindow WWWFileRequest WWWDest(temp)
+midaswww*WWWCommandText.marginHeight:	0
+midaswww*WWWCommandText.marginWidth:	2
+midaswww*WWWCommandText.midasCreateCallback:	PopDown ..XmScrolledWindow\nPopDown ..Selection  
+midaswww*WWWCommandText.midasIngots:	KeywordVisible
+midaswww*WWWDocInfo*WWWSearch.ShowSource:	If ShowSource==False PopDown .
+midaswww*WWWDocInfo*WWWSearch.ShowSourceExecuteWhenCreated:	False
+midaswww*WWWDocInfo*WWWSearch.dialogTitle:	Search Source
+midaswww*WWWDocInfo*WWWSearch.midasIngots:	ShowSource
+midaswww*WWWDocInfo.DocFormat:	If DocFormat!="HTML" Set Ingot . ShowSource False
+midaswww*WWWDocInfo.DocFormatExecuteWhenCreated:	False
+midaswww*WWWDocInfo.ShowSourceExecuteWhenCreated:	True
+midaswww*WWWDocInfo.dialogTitle:	Document Info.
+midaswww*WWWDocInfo.helpCallback:	Set Ingot .^^^XmMainWindow WWWFileRequest "http://www-midas.slac.stanford.edu:80/midasv21/docinfo.html"
+midaswww*WWWDocInfo.mapCallback:	Set Value ....SourceTextSW height 600\nSet Value ....SourceTextSW width 600
+midaswww*WWWDocInfo.midasCreateCallback:	Set Ingot . ShowSource False  
+midaswww*WWWDocInfo.midasIngots:	ShowSource DocFormat
+midaswww*WWWDocInfoCancel.activateCallback:	PopDown .^^
+midaswww*WWWDocInfoDismiss.activateCallback:	For All .^^.XmDialogShell. PopDown .\nPopDown .^^
+midaswww*WWWDocInfoDocFormatText.DocFormat:	Set Value . value DocFormat
+midaswww*WWWDocInfoDocFormatText.DocFormatExecuteWhenCreated:	True
+midaswww*WWWDocInfoDocFormatText.editable:	false
+midaswww*WWWDocInfoDocFormatText.midasIngots:	DocFormat
+midaswww*WWWDocInfoDocTitleText.WWWTitle:	Set Value . value WWWTitle
+midaswww*WWWDocInfoDocTitleText.WWWTitleExecuteWhenCreated:	True
+midaswww*WWWDocInfoDocTitleText.midasIngots:	WWWTitle
+midaswww*WWWDocInfoHelp.activateCallback:	Invoke Callback .^^ helpCallback
+midaswww*WWWDocInfoIndexToggle.IsIndexExecuteWhenCreated:	True
+midaswww*WWWDocInfoIndexToggle.KeywordVisible:	set Value . set KeywordVisible 
+midaswww*WWWDocInfoIndexToggle.midasIngots:	KeywordVisible
+midaswww*WWWDocInfoSearch.ShowSource:	Set Sensitive . ShowSource
+midaswww*WWWDocInfoSearch.activateCallback:	Popup .^^^WWWDocInfo###WWWSearch
+midaswww*WWWDocInfoSearch.midasIngots:	ShowSource
+midaswww*WWWDocOpen.autoUnmanage:	false
+midaswww*WWWDocOpen.dialogTitle:	Open Document
+midaswww*WWWDocOpen.helpCallback:	Set Ingot .^^^XmMainWindow WWWFileTemp "http://www-midas.slac.stanford.edu:80/midasv21/opendoc.html"
+midaswww*WWWDocOpenOk.activateCallback:	PopDown .^^ \nSet Ingot .^^^XmMainWindow WWWFileRequest GetValue(.^^...WWWDocOpenText,value)
+midaswww*WWWGhostviewErrors.dialogTitle:	Ghostscript Errors
+midaswww*WWWGhostviewErrors.helpCallback:	Set Ingot .^^^WWWMain WWWFileRequest "http://www-midas.slac.stanford.edu:80/midasv21/gs_error.html"
+midaswww*WWWGhostviewErrors.unmapCallback:	Set Value ....XmText value ""
+midaswww*WWWHeader.ShowTitle:	If ShowTitle||ShowURL PopUp .\nElse PopDown .
+midaswww*WWWHeader.ShowTitleExecuteWhenCreated:	True
+midaswww*WWWHeader.ShowURL:	If ShowTitle||ShowURL PopUp .\nElse PopDown .
+midaswww*WWWHeader.ShowURLExecuteWhenCreated:	True
+midaswww*WWWHeader.midasIngots:	ShowURL ShowTitle
+midaswww*WWWHeaderDocumentLabel.ShowURL:	If ShowURL PopUp .\nElse PopDown .
+midaswww*WWWHeaderDocumentLabel.ShowURLExecuteWhenCreated:	True
+midaswww*WWWHeaderDocumentLabel.midasIngots:	ShowURL
+midaswww*WWWHeaderDocumentText.ShowURL:	If ShowURL PopUp .\nElse Popdown .
+midaswww*WWWHeaderDocumentText.ShowURLExecuteWhenCreated:	True
+midaswww*WWWHeaderDocumentText.WWWFile:	Set Value . value WWWParent(WWWFile)
+midaswww*WWWHeaderDocumentText.WWWFileExecuteWhenCreated:	True
+midaswww*WWWHeaderDocumentText.editable:	false
+midaswww*WWWHeaderDocumentText.midasIngots:	WWWFile ShowURL
+midaswww*WWWHeaderTitleLabel.ShowTitle:	If ShowTitle Then Popup .\nElse PopDown .
+midaswww*WWWHeaderTitleLabel.ShowTitleExecuteWhenCreated:	True
+midaswww*WWWHeaderTitleLabel.midasIngots:	ShowTitle
+midaswww*WWWHeaderTitleText.ShowTitle:	If ShowTitle PopUp .\nElse PopDown .
+midaswww*WWWHeaderTitleText.ShowTitleExecuteWhenCreated:	True
+midaswww*WWWHeaderTitleText.WWWTitle:	Set Value . value WWWTitle
+midaswww*WWWHeaderTitleText.WWWTitleExecuteWhenCreated:	False
+midaswww*WWWHeaderTitleText.editable:	false
+midaswww*WWWHeaderTitleText.midasIngots:	WWWTitle ShowTitle
+midaswww*WWWHistory*Search___.midasIngots:	
+midaswww*WWWHistory*WWWHyper*a*activateCallback:	WWW Link\nSet Ingot .^^^WWWMain WWWFileTemp Convert(WWWDest(WWWNode(.^^^a)),"WWWFile")
+midaswww*WWWHistory*WWWHyper*a.createCallback:	WWW Anchor . "history:"\nSet Value . sensitive GetValue(.,href)!=""
+midaswww*WWWHistory*WWWHyper*title.createCallback:	
+midaswww*WWWHistory*WWWHyper*title.mapCallback:	
+midaswww*WWWHistory*WWWHyper.midasIngots:	
+midaswww*WWWHistory*WWWSearch.dialogTitle:	Search History
+midaswww*WWWHistory*WWWSearch.midasIngots:	
+midaswww*WWWHistory.dialogTitle:	Visited Documents 
+midaswww*WWWHistory.helpCallback:	Set Ingot .^^^WWWMain WWWFileRequest "http://www-midas.slac.stanford.edu:80/midasv21/visited_documents_window.html"
+midaswww*WWWHistory.mapCallback:	set value ....WWWHyper naturalWidth 0++(GetValue(.,width)-35)\nWWW Link\nWWW Get ....WWWHyper "history:" IncludeList ""
+midaswww*WWWHistory.unmapCallback:	WWW Zap ....WWWHyper "history:"\n
+midaswww*WWWHistoryButton.activateCallback:	Set Ingot .^^^XmMainWindow WWWFileRequest "history:"
+midaswww*WWWHistoryButton.helpCallback:	Set Ingot .^^^XmMainWindow WWWFileRequest "http://www-midas.slac.stanford.edu:80/midasv21/navigate.html#history"
+midaswww*WWWHistoryMenu*FontList:	-*-helvetica-bold-o-normal-*-14-*-iso8859-1
+midaswww*WWWHistoryMenu.midasCreateCallback:	Custom Connect WWW "<history_menu>" .\n
+midaswww*WWWHistorySW.midasCreateCallback:	Create Widget . SGMLHyper WWWHyper
+midaswww*WWWHistorySW.scrollingPolicy:	XMAUTOMATIC
+midaswww*WWWHistorySW.translations:	#override \n:<ConfigureNotify> : SendMidas("set value ....WWWHyper naturalWidth 0++(GetValue(.,width)-35)")
+midaswww*WWWHome.activateCallback:	Set Ingot .^^^XmMainWindow WWWFileRequest WWW_Home
+midaswww*WWWHome.helpCallback:	Set Ingot .^^^XmMainWindow WWWFileRequest "http://www-midas.slac.stanford.edu:80/midasv21/home.html"
+midaswww*WWWHotList.activateCallback:	Invoke Callback .^^^WWWMain...Hotlist activateCallback
+midaswww*WWWHotList.helpCallback:	Set Ingot .^^^WWWMain WWWFileRequest " http://www-midas.slac.stanford.edu:80/midasv21/hotlist.html"
+midaswww*WWWHotListDeleteConfirm.dialogTitle:	Delete Item? 
+midaswww*WWWHotListDeleteConfirm.helpCallback:	PopDown .\nSet Ingot .^^^WWWMain WWWFileNew "http://www-midas.slac.stanford.edu:80/midasv21/hotlist.html"
+midaswww*WWWHotListDeleteConfirm.mapCallback:	Set Ingot . result false
+midaswww*WWWHotListDeleteConfirm.okCallback:	Set Ingot . result true
+midaswww*WWWHyper*SGMLPlainText.tabs:	8
+midaswww*WWWHyper*a*activateCallback:	WWW Link WWWNode(.^^^a)\nSet Ingot .^^^WWWMain NewTitle GetValue(.^^^a,"title")\n\
+if WWWIsMap(.)!="" Set Ingot .^^^WWWMain WWWFileTemp WWWDest(WWWCreateNodeFromKeyword(WWWFileBase,WWWDest(WWWNode(.^^^a)),WWWIsMap(.),"get"))\nelse Set Ingot .^^^WWWMain WWWFileTemp Convert(WWWDest(WWWNode(.^^^a)),"WWWFile")
+midaswww*WWWHyper*a*img.outline:	true
+midaswww*WWWHyper*a*img.underlineHeight:	2
+midaswww*WWWHyper*a.createCallback:	WWW Anchor . WWWFileBase\nSet Value . sensitive GetValue(.,href)!=""\nIf WWWParam(.,"redirect")!="" WWW Redirect WWWFileRequest WWWDest(WWWNode(.))
+midaswww*WWWHyper*a.tagList:	* SGMLAnchorText: -a
+midaswww*WWWHyper*address.breakAfter:	SGMLBREAK_ALWAYS
+midaswww*WWWHyper*address.breakBefore:	SGMLBREAK_ALWAYS
+midaswww*WWWHyper*address.fontSlant:	i
+midaswww*WWWHyper*address.spaceAfter:	10
+midaswww*WWWHyper*address.spaceBefore:	10
+midaswww*WWWHyper*b.fontWeight:	bold
+midaswww*WWWHyper*base.createCallback:	Set Ingot .^^^WWWHyper WWWFileBase WWWParse(WWWParam(.,"href"),WWWFileBase)
+midaswww*WWWHyper*blockquote.breakAfter:	SGMLBREAK_ALWAYS
+midaswww*WWWHyper*blockquote.breakBefore:	SGMLBREAK_ALWAYS
+midaswww*WWWHyper*blockquote.leftIndent:	20
+midaswww*WWWHyper*blockquote.rightIndent:	20
+midaswww*WWWHyper*blockquote.spaceAfter:	10
+midaswww*WWWHyper*blockquote.spaceBefore:	10
+midaswww*WWWHyper*br.breakBefore:	SGMLBREAK_ALWAYS
+midaswww*WWWHyper*cite.fontSlant:	i
+midaswww*WWWHyper*code.fontFamily:	courier
+midaswww*WWWHyper*code.fontSpacing:	m
+midaswww*WWWHyper*dd.position:	0
+midaswww*WWWHyper*default.FontRegistry:	iso8859
+midaswww*WWWHyper*default.color:	Black
+midaswww*WWWHyper*default.exactTerminator:	True
+midaswww*WWWHyper*default.fontSlant:	r
+midaswww*WWWHyper*default.fontSpacing:	p
+midaswww*WWWHyper*default.fontWeight:	medium
+midaswww*WWWHyper*default.hideIllegalTags:	True
+midaswww*WWWHyper*default.leftIndent:	20
+midaswww*WWWHyper*default.supportsEntities:	True
+midaswww*WWWHyper*default.tagList:	SGMLMarkerText: %tryagain %!-- %img %p %br %isindex %base %nextid %kill %nocache SGMLFormText: form SGMLCompositeText: html body head header address dl dlc dl_compact h1 h2 h3 h4 h5 h6 dir menu pre b\
+ i tt u em strong code samp kbd var dfn cite blockquote xmp listing plaintext SGMLAnchorText: a SGMLListText: ul ol SGMLText: comment title SGMLRuleText:	%hr SGMLTableText:	table
+midaswww*WWWHyper*dfn.fontWeight:	bold
+midaswww*WWWHyper*dir.breakAfter:	SGMLBREAK_ALWAYS
+midaswww*WWWHyper*dir.breakBefore:	SGMLBREAK_ALWAYS
+midaswww*WWWHyper*dir.li.breakBefore:	SGMLBREAK_NEVER
+midaswww*WWWHyper*dir.li.columnAlign:	125
+midaswww*WWWHyper*dir.spaceAfter:	6
+midaswww*WWWHyper*dir.spaceBefore:	6
+midaswww*WWWHyper*dir.tagList:	* SGMLMarkerText: +%li
+midaswww*WWWHyper*dl.breakAfter:	SGMLBREAK_ALWAYS
+midaswww*WWWHyper*dl.breakBefore:	SGMLBREAK_ALWAYS
+midaswww*WWWHyper*dl.dd.breakBefore:	SGMLBREAK_ALWAYS
+midaswww*WWWHyper*dl.dt.position:	-50
+midaswww*WWWHyper*dl.leftIndent:	50
+midaswww*WWWHyper*dl.spaceAfter:	6
+midaswww*WWWHyper*dl.spaceBefore:	6
+midaswww*WWWHyper*dl.tagList:	* SGMLMarkerText: +%dt +%dd
+midaswww*WWWHyper*dl_compact.breakAfter:	SGMLBREAK_ALWAYS
+midaswww*WWWHyper*dl_compact.breakBefore:	SGMLBREAK_ALWAYS
+midaswww*WWWHyper*dl_compact.dt.position:	-150
+midaswww*WWWHyper*dl_compact.leftIndent:	150
+midaswww*WWWHyper*dl_compact.spaceAfter:	6
+midaswww*WWWHyper*dl_compact.spaceBefore:	6
+midaswww*WWWHyper*dl_compact.tagList:	* SGMLMarkerText: +%dt +%dd
+midaswww*WWWHyper*dlc.breakAfter:	SGMLBREAK_ALWAYS
+midaswww*WWWHyper*dlc.breakBefore:	SGMLBREAK_ALWAYS
+midaswww*WWWHyper*dlc.dt.position:	-150
+midaswww*WWWHyper*dlc.leftIndent:	150
+midaswww*WWWHyper*dlc.spaceAfter:	6
+midaswww*WWWHyper*dlc.spaceBefore:	6
+midaswww*WWWHyper*dlc.tagList:	* SGMLMarkerText: +%dt +%dd
+midaswww*WWWHyper*dt.breakBefore:	SGMLBREAK_ALWAYS
+midaswww*WWWHyper*dt.spaceBefore:	6
+midaswww*WWWHyper*em.fontSlant:	i
+midaswww*WWWHyper*form.tagList:	* SGMLInputText:	+%input +textarea SGMLCompositeText:	+select	-form
+midaswww*WWWHyper*form.activateCallback:	Set Ingot . temp WWWCreateNodeFromKeyword(WWWFileBase,WWWParse(GetValue(.,action),WWWFileBase),GetValue(.,result),GetValue(.,method))\nWWW Link temp\nSet Ingot .^^^XmMainWindow WWWFileRequest WWWDest(temp)
+midaswww*WWWHyper*h1.breakAfter:	SGMLBREAK_ALWAYS
+midaswww*WWWHyper*h1.breakBefore:	SGMLBREAK_ALWAYS
+midaswww*WWWHyper*h1.fontWeight:	bold
+midaswww*WWWHyper*h1.leftIndent:	-20
+midaswww*WWWHyper*h1.spaceAfter:	20
+midaswww*WWWHyper*h1.spaceBefore:	40
+midaswww*WWWHyper*h1.underlineHeight:	3
+midaswww*WWWHyper*h1.tagList:	* SGMLCompositeText: -h1 -h2 -h3 -h4 -h5 -h6
+midaswww*WWWHyper*h2.breakAfter:	SGMLBREAK_ALWAYS
+midaswww*WWWHyper*h2.breakBefore:	SGMLBREAK_ALWAYS
+midaswww*WWWHyper*h2.fontWeight:	bold
+midaswww*WWWHyper*h2.leftIndent:	-20
+midaswww*WWWHyper*h2.spaceAfter:	10
+midaswww*WWWHyper*h2.spaceBefore:	20
+midaswww*WWWHyper*h2.tagList:	* SGMLCompositeText: -h1 -h2 -h3 -h4 -h5 -h6
+midaswww*WWWHyper*h3.breakAfter:	SGMLBREAK_ALWAYS
+midaswww*WWWHyper*h3.breakBefore:	SGMLBREAK_ALWAYS
+midaswww*WWWHyper*h3.fontWeight:	bold
+midaswww*WWWHyper*h3.spaceAfter:	6 
+midaswww*WWWHyper*h3.spaceBefore:	12 
+midaswww*WWWHyper*h3.tagList:	* SGMLCompositeText: -h1 -h2 -h3 -h4 -h5 -h6
+midaswww*WWWHyper*h4.breakAfter:	SGMLBREAK_ALWAYS
+midaswww*WWWHyper*h4.breakBefore:	SGMLBREAK_ALWAYS
+midaswww*WWWHyper*h4.fontWeight:	bold
+midaswww*WWWHyper*h4.spaceBefore:	8
+midaswww*WWWHyper*h4.underline:	1
+midaswww*WWWHyper*h4.tagList:	* SGMLCompositeText: -h1 -h2 -h3 -h4 -h5 -h6
+midaswww*WWWHyper*h5.breakAfter:	SGMLBREAK_ALWAYS
+midaswww*WWWHyper*h5.breakBefore:	SGMLBREAK_ALWAYS
+midaswww*WWWHyper*h5.tagList:	* SGMLCompositeText: -h1 -h2 -h3 -h4 -h5 -h6
+midaswww*WWWHyper*h6.breakAfter:	SGMLBREAK_ALWAYS
+midaswww*WWWHyper*h6.breakBefore:	SGMLBREAK_ALWAYS
+midaswww*WWWHyper*h6.tagList:	* SGMLCompositeText: -h1 -h2 -h3 -h4 -h5 -h6
+midaswww*WWWHyper*head.tagList:	* SGMLCompositeText: -body -head -header
+midaswww*WWWHyper*header.tagList:	* SGMLCompositeText: -body -head -header
+midaswww*WWWHyper*hidden.color:	red
+midaswww*WWWHyper*hidden.createCallback:	Set Value . managed ShowUnrecognizedMarkup
+midaswww*WWWHyper*hidden.fontWeight:	bold
+midaswww*WWWHyper*hidden.sensitiveColor:	red
+midaswww*WWWHyper*hr.leftIndent:	30
+midaswww*WWWHyper*hr.rightIndent:	30
+midaswww*WWWHyper*hr.spaceAfter:	12
+midaswww*WWWHyper*hr.spaceBefore:	12
+midaswww*WWWHyper*i.fontSlant:	i
+midaswww*WWWHyper*image.mapCallback:	Set Ingot .^^^WWWMain IsGIF  true
+midaswww*WWWHyper*img.createCallback:	if WWWParam(.,"src")!="" WWW Include IncludeList . WWWParse(WWWParam(.,"src"),WWWFileBase)
+midaswww*WWWHyper*img.pixmap:	bomb
+midaswww*WWWHyper*input.bombPixmap:	bomb
+midaswww*WWWHyper*input.createCallback: if WWWParam(.,"src")!="" WWW Include IncludeList . WWWParse(WWWParam(.,"src"),WWWFileBase)
+midaswww*WWWHyper*isindex.mapCallback:	Set Ingot .^^^XmMainWindow IsIndex True
+midaswww*WWWHyper*kbd.color:	dark green
+midaswww*WWWHyper*kbd.fontFamily:	courier
+midaswww*WWWHyper*kbd.fontSpacing:	m
+midaswww*WWWHyper*kill.activateCallback:	if QueryUser(.^^^XmMainWindow###WWWHotListDeleteConfirm) Destroy .^\nSet Ingot .^^^XmMainWindow HotList WWWSource(.^^^XmMainWindow...WWWHyper)\nStore App Resou\
+rce .^^^midaswww hotList HotList 
+midaswww*WWWHyper*kill.outline:	true
+midaswww*WWWHyper*kill.pixmap:	kill
+midaswww*WWWHyper*kill.sensitive:	true
+midaswww*WWWHyper*kill.underlineHeight:	3
+midaswww*WWWHyper*li.breakBefore:	SGMLBREAK_ALWAYS
+midaswww*WWWHyper*li.spaceBefore:	6
+midaswww*WWWHyper*listing.breakAfter:	SGMLBREAK_ALWAYS
+midaswww*WWWHyper*listing.breakBefore:	SGMLBREAK_ALWAYS
+midaswww*WWWHyper*listing.defaultClass:	SGMLPlainText
+midaswww*WWWHyper*listing.exactTerminator:	True
+midaswww*WWWHyper*listing.fontFamily:	courier
+midaswww*WWWHyper*listing.fontSize:	12
+midaswww*WWWHyper*listing.fontSpacing:	m
+midaswww*WWWHyper*listing.hideIllegalTags:	False
+midaswww*WWWHyper*listing.supportsEntities:	False
+midaswww*WWWHyper*listing.tagList:	
+midaswww*WWWHyper*menu.breakAfter:	SGMLBREAK_ALWAYS
+midaswww*WWWHyper*menu.breakBefore:	SGMLBREAK_ALWAYS
+midaswww*WWWHyper*menu.spaceAfter:	4
+midaswww*WWWHyper*menu.spaceBefore:	4
+midaswww*WWWHyper*menu.tagList:	* SGMLMarkerText: +%li
+midaswww*WWWHyper*nocache.unmapCallback:	Destroy .^^^default
+midaswww*WWWHyper*ol.breakAfter:	SGMLBREAK_ALWAYS
+midaswww*WWWHyper*ol.breakBefore:	SGMLBREAK_ALWAYS
+midaswww*WWWHyper*ol.bulletMarker:	li
+midaswww*WWWHyper*ol.bulletType:	ordered
+midaswww*WWWHyper*ol.leftIndent:	20
+midaswww*WWWHyper*ol.spaceAfter:	6
+midaswww*WWWHyper*ol.spaceBefore:	6
+midaswww*WWWHyper*select*option.type:	option
+midaswww*WWWHyper*ol.tagList:	* SGMLMarkerText: +%li
+midaswww*WWWHyper*p.breakBefore:	SGMLBREAK_ALWAYS
+midaswww*WWWHyper*p.spaceBefore:	6
+midaswww*WWWHyper*plaintext.defaultClass:	SGMLPlainText
+midaswww*WWWHyper*plaintext.exactTerminator:	True
+midaswww*WWWHyper*plaintext.fontFamily:	courier
+midaswww*WWWHyper*plaintext.fontSpacing:	m
+midaswww*WWWHyper*plaintext.hideIllegalTags:	False
+midaswww*WWWHyper*plaintext.supportsEntities:	False
+midaswww*WWWHyper*plaintext.tagList:	
+midaswww*WWWHyper*pre*h1.breakAfter:	SGMLBREAK_NEVER
+midaswww*WWWHyper*pre*h1.breakBefore:	SGMLBREAK_NEVER
+midaswww*WWWHyper*pre*h1.fontFamlily:	courier
+midaswww*WWWHyper*pre*h2.breakAfter:	SGMLBREAK_NEVER
+midaswww*WWWHyper*pre*h2.breakBefore:	SGMLBREAK_NEVER
+midaswww*WWWHyper*pre*h2.fontFamlily:	courier
+midaswww*WWWHyper*pre*h3.breakAfter:	SGMLBREAK_NEVER
+midaswww*WWWHyper*pre*h3.breakBefore:	SGMLBREAK_NEVER
+midaswww*WWWHyper*pre*h3.fontFamlily:	courier
+midaswww*WWWHyper*pre*h4.breakAfter:	SGMLBREAK_NEVER
+midaswww*WWWHyper*pre*h4.breakBefore:	SGMLBREAK_NEVER
+midaswww*WWWHyper*pre*h4.fontFamlily:	courier
+midaswww*WWWHyper*pre*h5.breakAfter:	SGMLBREAK_NEVER
+midaswww*WWWHyper*pre*h5.breakBefore:	SGMLBREAK_NEVER
+midaswww*WWWHyper*pre*h5.fontFamlily:	courier
+midaswww*WWWHyper*pre*h6.breakAfter:	SGMLBREAK_NEVER
+midaswww*WWWHyper*pre*h6.breakBefore:	SGMLBREAK_NEVER
+midaswww*WWWHyper*pre*h6.fontFamlily:	courier
+midaswww*WWWHyper*pre*p.breakBefore:	SGMLBREAK_NEVER
+midaswww*WWWHyper*pre*SGMLInputText.breakBefore:	SGMLBREAK_NEVER
+midaswww*WWWHyper*pre.FontSpacing:	m
+midaswww*WWWHyper*pre.breakAfter:	SGMLBREAK_ALWAYS
+midaswww*WWWHyper*pre.breakBefore:	SGMLBREAK_ALWAYS
+midaswww*WWWHyper*pre.defaultClass:	SGMLPlainText
+midaswww*WWWHyper*pre.fontFamily:	courier
+midaswww*WWWHyper*samp.fontFamily:	courier
+midaswww*WWWHyper*samp.fontSpacing:	m
+midaswww*WWWHyper*strong.fontWeight:	bold
+midaswww*WWWHyper*table.tagList:	* SGMLMarkerText: +tr +%th +%td SGMLCompositeText: +caption
+midaswww*WWWHyper*table.spaceBefore:	20
+midaswww*WWWHyper*table.spaceAfter:	20
+midaswww*WWWHyper*table.caption.breakAfter:	SGMLBREAK_ALWAYS
+midaswww*WWWHyper*table.caption.spaceAfter:	10
+midaswww*WWWHyper*table.caption.fontWeight:	bold
+midaswww*WWWHyper*table.caption.createCallback: Set Ingot .^ caption .
+midaswww*WWWHyper*title.mapCallback:	Set Ingot .^^^WWWMain NewTitle HyperGetText()
+midaswww*WWWHyper*textarea.type:	textarea
+midaswww*WWWHyper*select.tagList:	SGMLInputText:	%option
+midaswww*WWWHyper*select.defaultClass:	SGMLInputText
+midaswww*WWWHyper*select*SGMLInputText.type:	select
+midaswww*WWWHyper*tryagain.activateCallback:	Invoke Callback .^^^WWWMain...Reread_Document activateCallback
+midaswww*WWWHyper*tryagain.breakAfter:	SGMLBREAK_ALWAYS
+midaswww*WWWHyper*tryagain.breakBefore:	SGMLBREAK_ALWAYS
+midaswww*WWWHyper*tryagain.outline:	true
+midaswww*WWWHyper*tryagain.pixmap:	tryagain
+midaswww*WWWHyper*tryagain.sensitive:	true
+midaswww*WWWHyper*tryagain.spaceAfter:	20
+midaswww*WWWHyper*tryagain.spaceBefore:	20
+midaswww*WWWHyper*tryagain.underlineHeight:	2
+midaswww*WWWHyper*tt.fontFamily:	courier
+midaswww*WWWHyper*tt.fontSpacing:	m
+midaswww*WWWHyper*u.underline:	1
+midaswww*WWWHyper*ul.breakAfter:	SGMLBREAK_ALWAYS
+midaswww*WWWHyper*ul.breakBefore:	SGMLBREAK_ALWAYS
+midaswww*WWWHyper*ul.bulletMarker:	li
+midaswww*WWWHyper*ul.bulletType:	unordered
+midaswww*WWWHyper*ul.leftIndent:	20
+midaswww*WWWHyper*ul.spaceAfter:	6
+midaswww*WWWHyper*ul.spaceBefore:	6
+midaswww*WWWHyper*ul.tagList:	* SGMLMarkerText: +%li
+midaswww*WWWHyper*var.fontFamily:	courier
+midaswww*WWWHyper*var.fontSpacing:	m
+midaswww*WWWHyper*var.fontWeight:	bold
+midaswww*WWWHyper*xmp.breakAfter:	SGMLBREAK_ALWAYS
+midaswww*WWWHyper*xmp.breakBefore:	SGMLBREAK_ALWAYS
+midaswww*WWWHyper*xmp.defaultClass:	SGMLPlainText
+midaswww*WWWHyper*xmp.exactTerminator:	True
+midaswww*WWWHyper*xmp.fontFamily:	courier
+midaswww*WWWHyper*xmp.fontSpacing:	m
+midaswww*WWWHyper*xmp.hideIllegalTags:	False
+midaswww*WWWHyper*xmp.supportsEntities:	False
+midaswww*WWWHyper*xmp.tagList:	
+midaswww*WWWHyper.WWWFileRequest:	Set Cursor .^^^midaswww watch\nSet Cursor . ""\nSet Ingot .^^^XmMainWindow IsIndex False\nSet Ingot .^^^XmMainWindow IsGIF False\nSet Ingot . WWWFileBase WWWFileRequest\n\
+WWW Get . WWWFileRequest IncludeList NewTitle\nSet Ingot .^^^XmMainWindow WWWFile WWWRedirect(WWWFileRequest)
+midaswww*WWWHyper.WWWFile:	If NewTitle=="" Set Ingot .^^^WWWMain NewTitle "Untitled ("++WWWParent(WWWFile)++")"\nWWW Set Title WWWFile NewTitle\nWWW Add History HistoryList NewTitle\nif IsIndex!=KeywordVisible Set Ingot .^^^XmMain\
+Window KeywordVisible IsIndex\nif IsPS!=PSState Set Ingot .^^^XmMainWindow PSState IsPS\nif IsPS!=0 Set Ingot .^^^XmMainWindow DocFormat "Postscript"\nelse if IsGIF Set Ingot .^^^XmMainWindow DocForma\
+t "GIF Image"\nelse Set Ingot .^^^XmMainWindow DocFormat "HTML"\nSet Ingot .^^^XmMainWindow WWWTitle NewTitle\nSet Ingot .^^^WWWMain NewTitle ""\nSet Cursor .^^^midaswww ""
+midaswww*WWWHyper.WWWFileExecuteWhenCreated:	False
+midaswww*WWWHyper.WWWFileRequestExecuteWhenCreated:	False
+midaswww*WWWHyper.borderWidth:	0 
+midaswww*WWWHyper.cacheSize:	10
+midaswww*WWWHyper.midasIngots:	WWWFileRequest WWWFileBase WWWFile
+midaswww*WWWKey.translations:	#override \n Shift <Btn1Down>	:	SendMidas("Custom Popup WWW")
+midaswww*WWWMail.dialogTitle:	WWW Mail
+midaswww*WWWMail.helpCallback:	Set Ingot .^^^XmMainWindow WWWFileRequest "http://www-midas.slac.stanford.edu:80/midasv21/mail_window.html"
+midaswww*WWWMail.mapCallback:	Set Sensitive ....WWWMailOk GetValue(....WWWMailToText,value)!=""
+midaswww*WWWMailDismiss.activateCallback:	PopDown .^^
+midaswww*WWWMailFormatMenu.midasCreateCallback:	Custom Connect WWW "<format>" .
+midaswww*WWWMailHelp.activateCallback:	Invoke Callback .^^ helpCallback
+midaswww*WWWMailOk.activateCallback:	Set Ingot . Tempfile WWWTempFile()\nIf Format=="Postscript" Set Ingot .^^^WWWMail FileSpec GetValue(IsPS,file)\nIf Format=="HTML" WWW Dump .^^^XmMainWindow...WWWHy\
+per Tempfile\nIf Format=="HTML" Set Ingot .^^^WWWMail FileSpec Tempfile\nif uname()=="VMS" system "MAIL/NOEDIT %FileSpec %GetValue(.^^^WWWMail...WWWMailToText,value)"\nelse system "mail %GetValue(.^^^\
+WWWMail...WWWMailToText,value) < %FileSpec"\nIf Format=="HTML" system "%delete %Tempfile "\nPopDown .^^
+midaswww*WWWMailToText.valueChangedCallback:	Invoke Callback .^^^WWWMail mapCallback
+midaswww*WWWMain.ConfirmPrint:	
+midaswww*WWWMain.ConfirmPrintExecuteWhenCreated:	True
+midaswww*WWWMain.FontSize:	If FontSize=="Small" For All ....WWWHyper...default Set Value . fontSize 12\nElse If FontSize=="Medium" For All ....WWWHyper...default Set Value . fontSize 14\nElse If FontS\
+ize=="Large" For All ....WWWHyper...default Set Value . fontSize 17\nIf FontSize=="Small" For All ....WWWHyper...h2 Set Value . fontSize 14\nElse If FontSize=="Medium" For All ....WWWHyper...h2 Set Va\
+lue . fontSize 17\nElse If FontSize=="Large" For All ....WWWHyper...h2 Set Value . fontSize 20\nIf FontSize=="Small" For All ....WWWHyper...h1 Set Value . fontSize 17\nElse If FontSize=="Medium" For A\
+ll ....WWWHyper...h1 Set Value . fontSize 20\nElse If FontSize=="Large" For All ....WWWHyper...h1 Set Value . fontSize 24\nIf FontSize=="Small" Update Named Resource . "midaswww*WWWHyper*default.fontS\
+ize" 12\nElse If FontSize=="Medium" Update Named Resource . "midaswww*WWWHyper*default.fontSize" 14\nElse If FontSize=="Large" Update Named Resource . "midaswww*WWWHyper*default.fontSize" 17\nIf FontS\
+ize=="Small" Update Named Resource . "midaswww*WWWHyper*h2.fontSize" 14\nElse If FontSize=="Medium" Update Named Resource . "midaswww*WWWHyper*h2.fontSize" 17\nElse If FontSize=="Large" Update Named R\
+esource . "midaswww*WWWHyper*h2.fontSize" 20\nIf FontSize=="Small" Update Named Resource . "midaswww*WWWHyper*h1.fontSize" 17\nElse If FontSize=="Medium" Update Named Resource . "midaswww*WWWHyper*h1.\
+fontSize" 20\nElse If FontSize=="Large" Update Named Resource . "midaswww*WWWHyper*h1.fontSize" 24\n
+midaswww*WWWMain.FontSizeExecuteWhenCreated:	False
+midaswww*WWWMain.HeadingFont:	For All ....WWWHyper...h1 Set Value . fontFamily HeadingFont \nFor All ....WWWHyper...h2 Set Value . fontFamily HeadingFont\nFor All ....WWWHyper...h3 Set Value . fontFam\
+ily HeadingFont \nFor All ....WWWHyper...h4 Set Value . fontFamily HeadingFont\nUpdate Named Resource . "midaswww*WWWHyper*h1.fontFamily" HeadingFont\nUpdate Named Resource . "midaswww*WWWHyper*h2.fon\
+tFamily" HeadingFont\nUpdate Named Resource . "midaswww*WWWHyper*h3.fontFamily" HeadingFont\nUpdate Named Resource . "midaswww*WWWHyper*h4.fontFamily" HeadingFont
+midaswww*WWWMain.HeadingFontExecuteWhenCreated:	False
+midaswww*WWWMain.IsIndexExecuteWhenCreated:	True
+midaswww*WWWMain.PrintCommandHTML:	
+midaswww*WWWMain.PrintCommandHTMLExecuteWhenCreated:	True
+midaswww*WWWMain.PrintCommandPS:	
+midaswww*WWWMain.PrintCommandPSExecuteWhenCreated:	True
+midaswww*WWWMain.ShowUnrecognizedMarkupExecuteWhenCreated:	False
+midaswww*WWWMain.TextFont:	For All ....WWWHyper...default Set Value . fontFamily TextFont\nUpdate Named Resource . "midaswww*WWWHyper*default.fontFamily" TextFont
+midaswww*WWWMain.TextFontExecuteWhenCreated:	False
+midaswww*WWWMain.UnderlineHeadings:	If UnderlineHeadings For All ....WWWHyper...h1 Set Value . underline 2\nElse For All ....WWWHyper...h1 Set Value . underline 0\nIf UnderlineHeadings For All ....WWW\
+Hyper...h2 Set Value . underline 1\nElse For All ....WWWHyper...h2 Set Value . underline 0\nIf UnderlineHeadings For All ....WWWHyper...h3 Set Value . underline 1\nElse For All ....WWWHyper...h3 Set V\
+alue . underline 0\nIf UnderlineHeadings Update Named Resource . "midaswww*WWWHyper*h1.underline" 2\nElse Update Named Resource . "midaswww*WWWHyper*h1.underline" 0\nIf UnderlineHeadings Update Named \
+Resource . "midaswww*WWWHyper*h2.underline" 1\nElse Update Named Resource . "midaswww*WWWHyper*h2.underline" 0\nIf UnderlineHeadings Update Named Resource . "midaswww*WWWHyper*h3.underline" 1\nElse Up\
+date Named Resource . "midaswww*WWWHyper*h3.underline" 0
+midaswww*WWWMain.UnderlineHeadingsExecuteWhenCreated:	False
+midaswww*WWWMain.WWWFileExecuteWhenCreated:	False
+midaswww*WWWMain.WWWFileNew:	Set Cursor .^^^midaswww watch\nSet Cursor ....WWWHyper ""\nUpdate Named Resource . midaswww.iconic false\nCreate Shell midaswww\nSet Value midaswww x GetValue(.^^^midaswww\
+,x)+40\nSet Value midaswww y GetValue(.^^^midaswww,y)+40\nFetch WWWMain:parent=midaswww\nPopup WWWMain\nSet value WWWMain...WWWHyper naturalWidth 0++(GetValue(WWWMain,width)-40)\nSet Ingot WWWMain PSS\
+tate 0\nDispatch Queued Commands\nSet Ingot WWWMain WWWFileRequest WWWFileNew\nSet Cursor .^^^midaswww ""\nWWW Register midaswww False
+midaswww*WWWMain.WWWFileNewExecuteWhenCreated:	False
+midaswww*WWWMain.WWWFileTemp:	if Modifier("shift") Set Ingot . WWWFileNew WWWFileTemp\nelse Set Ingot . WWWFileRequest WWWFileTemp
+midaswww*WWWMain.WWWFileTempExecuteWhenCreated:	False
+midaswww*WWWMain.WWWTitle:	Set Value .^ title WWWTitle 
+midaswww*WWWMain.WWWTitleExecuteWhenCreated:	False
+midaswww*WWWMain.WWW_Gateway:	WWW Set Gateway WWW_Gateway
+midaswww*WWWMain.WWW_GatewayExecuteWhenCreated:	False
+midaswww*WWWMain.WWW_Home:	
+midaswww*WWWMain.WWW_HomeExecuteWhenCreated:	True
+midaswww*WWWMain.helpCallback:	Set Ingot . WWWFileRequest "http://www-midas.slac.stanford.edu:80/midasv21/overview.html"
+midaswww*WWWMain.mainWindowMarginWidth:	2
+midaswww*WWWMain.midasCreateCallback:	Set Value .^ iconPixmap MidasWWWIcon\nCustom Create WWW .\nFetch WWWSearch .\nCreate Widget . SGMLHyper WWWHyper\nSet Ingot . IncludeList CreateList("IncludeList"\
+)\nSet Ingot . HistoryList CreateList(HistoryList)\nSet Ingot . IsPS 0\nSet Ingot .^ Popup Convert(0,"Int")\nif argc>1 Set ingot . WWW_Home argv[1]\nelse if getenv(WWW_HOME)!="" Set ingot . WWW_Home g\
+etenv(WWW_HOME)\nelse Set ingot . WWW_Home GetAppResource(.^,home)\nSet Confirm Exit . GetAppResource(.^,confirmExit)\nSet ingot . ShowTitle GetAppResource(.^,"ShowTitle")\nSet ingot . ShowURL GetAppR\
+esource(.^,"ShowURL")\nSet ingot . WWW_Gateway GetAppResource(.^,gateway)\nSet ingot . HotList GetAppResource(.^,hotList)\nSet ingot . PrintCommandHTML GetAppResource(.^,printCommandHTML)\nSet ingot .\
+ PrintCommandPS GetAppResource(.^,printCommandPS)\nSet ingot . ConfirmPrint GetAppResource(.^,confirmPrint)\nSet ingot . ShowUnrecognizedMarkup GetAppResource(.^,"ShowUnrecognizedMarkup")\nSet Ingot .\
+ FontSize GetAppResource(.^,"fontSize")\nSet Ingot . HeadingFont GetAppResource(.^,"headingFont")\nSet Ingot . TextFont GetAppResource(.^,"textFont")\nSet Ingot . UnderlineHeadings GetAppResource(.^,"\
+underlineHeadings")\nif uname()=="VMS" Set Ingot . delete "delete/noconfirm"\nelse Set Ingot . delete "rm -f"\nif uname()=="VMS" Set Ingot . copy "copy"\nelse Set Ingot . copy "cp"
+midaswww*WWWMain.midasIngots:	WWWFile WWWFileNew WWWFileTemp WWWFileRequest IsIndex IsPS IsGIF KeywordVisible PSState WWWTitle WWW_Home WWW_Gateway DocFormat ShowUnrecognizedMarkup ShowTitle ShowURL PrintCommandPS F\
+ontSize HeadingFont TextFont UnderlineHeadings
+midaswww*WWWMain.scrollingPolicy:	XMAUTOMATIC
+midaswww*WWWMain.translations:	#override \n:<ConfigureNotify> : SendMidas("set value ....WWWHyper naturalWidth 0++(GetValue(.,width)-35)")
+midaswww*WWWMenu*FontList:	-*-helvetica-bold-o-normal-*-14-*-iso8859-1
+midaswww*WWWMenu*XmToggleButtonGadget.visibleWhenOff:	True
+midaswww*WWWMenu.midasCreateCallback:	Custom Connect WWW "<main_menu>" .
+midaswww*WWWOpenFTP.dialogTitle:	Open FTP Document
+midaswww*WWWOpenFTP.helpCallback:	Set Ingot .^^^XmMainWindow WWWFileTemp "http://www-midas.slac.stanford.edu:80/midasv21/open_ftp_doc.html"
+midaswww*WWWOpenFTPApply.activateCallback:	Set Ingot .^^^WWWMain WWWFileRequest "ftp://"++GetValue(.^^...WWWOpenFTPHost,value)++":"++GetValue(.^^...WWWOpenFTPPort,value)++GetValue(.^^...WWWOpenFTPPath,value)
+midaswww*WWWOpenFTPDismiss.activateCallback:	PopDown  .^^
+midaswww*WWWOpenFTPHelp.activateCallback:	Invoke Callback .^^ helpCallback
+midaswww*WWWOpenFTPHost.value:	info.cern.ch
+midaswww*WWWOpenFTPOk.activateCallback:	Popdown .^^\nInvoke Callback .^.WWWOpenFTPApply activateCallback
+midaswww*WWWOpenFTPPassword.value:	%u@%h
+midaswww*WWWOpenFTPPath.value:	/
+midaswww*WWWOpenFTPPort.value:	21
+midaswww*WWWOpenFTPUserid.value:	anonymous
+midaswww*WWWOpenGopher.dialogTitle:	Open Gopher Document
+midaswww*WWWOpenGopher.helpCallback:	Set Ingot .^^^XmMainWindow WWWFileRequest Temp "http://www-midas.slac.stanford.edu:80/midasv21/open_gopher_doc.html"
+midaswww*WWWOpenGopherApply.activateCallback:	Set Ingot .^^^WWWMain WWWFileRequest "gopher://"++GetValue(.^^...WWWOpenGopherHost,value)++":"++GetValue(.^^...WWWOpenGopherPort,value)++"/"++GetValue(.^^...WWWO\
+penGopherType,value)++GetValue(.^^...WWWOpenGopherPath,value)
+midaswww*WWWOpenGopherDismiss.activateCallback:	PopDown .^^
+midaswww*WWWOpenGopherHelp.activateCallback:	Invoke Callback .^^ helpCallback
+midaswww*WWWOpenGopherHost.value:	gopher.micro.umn.edu
+midaswww*WWWOpenGopherName.value:	Home of Gopher
+midaswww*WWWOpenGopherOk.activateCallback:	PopDown .^^\nInvoke Callback .^.WWWOpenGopherApply activateCallback
+midaswww*WWWOpenGopherPath.value:	/
+midaswww*WWWOpenGopherPort.value:	70
+midaswww*WWWOpenGopherType.value:	1
+midaswww*WWWOpenHelp.activateCallback:	Invoke Callback .^^ helpCallback
+midaswww*WWWOpenLocal.applyCallback:	
+midaswww*WWWOpenLocal.cancelCallback:	Popdown .
+midaswww*WWWOpenLocal.dialogTitle:	Open Local Document
+midaswww*WWWOpenLocal.helpCallback:	Set Ingot .^^^XmMainWindow WWWFileTemp "http://www-midas.slac.stanford.edu:80/midasv21/open_local_doc.html"
+midaswww*WWWOpenLocal.okCallback:	PopDown . \nSet Ingot .^^^WWWMain WWWFileRequest "local:"++GetValue(.,dirSpec)
+midaswww*WWWOptionShowProgress.valueChangedCallback:	Set Sensitive .^.WWWOptionShowProgressTime GetValue(.,set)\nSet Sensitive .^.WWWShowProgressUpdateTime GetValue(.,set)\nSet Sensitive .^^^WWWParame\
+ters...WWWParamApply True\nSet Sensitive .^^^WWWParameters...WWWParamReset True\nSet Sensitive .^^^WWWParameters...WWWParamSave False
+midaswww*WWWOptionShowProgressTime.valueChangedCallback:	Set Sensitive .^^^WWWParameters...WWWParamApply True\nSet Sensitive .^^^WWWParameters...WWWParamReset True\nSet Sensitive .^^^WWWParameters...W\
+WWParamSave False\n
+midaswww*WWWPS.PSState:	Set Sensitive . PSState!=0
+midaswww*WWWPS.PSStateExecuteWhenCreated:	False
+midaswww*WWWPS.midasIngots:	PSState
+midaswww*WWWParamApply.activateCallback:	If GetValue(.^^^...WWWParamCacheEnable,set) Set Value .^^^XmMainWindow...WWWHyper cacheSize GetValue(.^^^...WWWParamCacheSize,value)\nElse Set Value .^^^XmMain\
+Window...WWWHyper cacheSize 0\nSet Ingot .^^^XmMainWindow WWW_Home GetValue(.^^^...WWWParamHome,value)\nSet Ingot .^^^XmMainWindow WWW_Gateway GetValue(.^^^...WWWParamGate,value)\nSet Confirm Exit . G\
+etValue( .^^^...ConfirmExit,set)\nif GetValue(.^^^...WWWOptionShowProgress,set) WWW Set Waiting Time GetValue(.^^^...WWWOptionShowProgressTime,value)*100\nelse WWW Set Waiting Time -1\nif GetValue(.^^\
+^...EnableHTTP2,set) WWW Set HTTP Level 1.0\nelse WWW Set HTTP Level 0.9\nWWW Set Update Time GetValue(.^^^...WWWShowProgressUpdateTime,value)*100\nInvoke Callback .^^^^WWWParameters mapCallback
+midaswww*WWWParamApply.helpCallback:	Set Ingot .^^^XmMainWindow WWWFileRequest "http://www-midas.slac.stanford.edu:80/midasv21/options.html#Apply"
+midaswww*WWWParamCache.helpCallback:	Set Ingot .^^^XmMainWindow WWWFileRequest "http://www-midas.slac.stanford.edu:80/midasv21/options.html#Caching"
+midaswww*WWWParamCacheEnable.valueChangedCallback:	Set Sensitive .^.WWWParamCacheSize GetValue(.,set)\nSet Sensitive .^^^WWWParameters...WWWParamApply True\nSet Sensitive .^^^WWWParameters...WWWParamR\
+eset True\nSet Sensitive .^^^WWWParameters...WWWParamSave False
+midaswww*WWWParamCacheSize.valueChangedCallback:	Set Sensitive .^^^WWWParameters...WWWParamApply True\nSet Sensitive .^^^WWWParameters...WWWParamReset True\nSet Sensitive .^^^WWWParameters...WWWParamS\
+ave False
+midaswww*WWWParamDismiss.activateCallback:	PopDown .^^^WWWParameters
+midaswww*WWWParamDismiss.helpCallback:	Set Ingot .^^^XmMainWindow WWWFileRequest "http://www-midas.slac.stanford.edu:80/midasv21/options.html#Dismiss"
+midaswww*WWWParamGate.helpCallback:	Set Ingot .^^^XmMainWindow WWWFileRequest "http://www-midas.slac.stanford.edu:80/midasv21/options.html#Gateway"
+midaswww*WWWParamGate.valueChangedCallback:	Set Sensitive .^^^WWWParameters...WWWParamApply True\nSet Sensitive .^^^WWWParameters...WWWParamReset True\nSet Sensitive .^^^WWWParameters...WWWParamSave F\
+alse
+midaswww*WWWParamHelp.activateCallback:	Invoke Callback .^^ helpCallback
+midaswww*WWWParamHome.helpCallback:	Set Ingot .^^^XmMainWindow WWWFileRequest "http://www-midas.slac.stanford.edu:80/midasv21/options.html#Home"
+midaswww*WWWParamHome.valueChangedCallback:	Set Sensitive .^^^WWWParameters...WWWParamApply True\nSet Sensitive .^^^WWWParameters...WWWParamReset True\nSet Sensitive .^^^WWWParameters...WWWParamSave F\
+alse
+midaswww*WWWParamOk.activateCallback:	If GetValue(.^.WWWParamApply,sensitive) Invoke Callback .^.WWWParamApply activateCallback\nPopDown .^^^WWWParameters 
+midaswww*WWWParamOk.helpCallback:	Set Ingot .^^^XmMainWindow WWWFileRequest "http://www-midas.slac.stanford.edu:80/midasv21/options.html#Ok"
+midaswww*WWWParamReset.activateCallback:	Invoke Callback .^^^WWWParameters mapCallback
+midaswww*WWWParamReset.helpCallback:	Set Ingot .^^^XmMainWindow WWWFileRequest "http://www-midas.slac.stanford.edu:80/midasv21/options.html#Reset"
+midaswww*WWWParamSave.activateCallback:	Store App Resource .^^^midaswww confirmExit GetConfirmExit(.)\nStore App Resource .^^^midaswww home WWW_Home\nStore App Resource .^^^midaswww gateway WWW_Gatewa\
+y\nStore App Resource .^^^midaswww waitingTimeOut WWWWaitingTime()\nStore App Resource .^^^midaswww updateTimeOut WWWUpdateTime()\nStore App Resource .^^^midaswww defaultHTTPProtocol WWWHTTPLevel()\nS\
+tore Resource .^^^XmMainWindow...WWWHyper cacheSize 
+midaswww*WWWParamSave.helpCallback:	Set Ingot .^^^XmMainWindow WWWFileRequest "http://www-midas.slac.stanford.edu:80/midasv21/options.html#Save"
+midaswww*WWWParameters.dialogTitle:	WWW Options
+midaswww*WWWParameters.helpCallback:	Set Ingot .^^^XmMainWindow WWWFileRequest "http://www-midas.slac.stanford.edu:80/midasv21/options.html"
+midaswww*WWWParameters.mapCallback:	Set Value ....WWWParamHome value WWW_Home\nSet Value ....WWWParamGate value WWW_Gateway\nSet Ingot . N GetValue(.^^^XmMainWindow...WWWHyper,cacheSize)\nif N>0 Set V\
+alue ....WWWParamCacheSize value N\nelse Set Value ....WWWParamCacheSize value 2\nSet Value ....WWWParamCacheEnable set N>0\nSet Value ....ConfirmExit set GetConfirmExit(.)\nSet Value ....WWWOptionSho\
+wProgress set WWWWaitingTime()>=0\nif WWWWaitingTime()>=0 Set Value ....WWWOptionShowProgressTime value WWWWaitingTime()/100\nSet Value ....WWWShowProgressUpdateTime value WWWUpdateTime()/100\nSet Val\
+ue ....EnableHTTP2 set WWWHTTPLevel()=="1.0"\nSet Sensitive ....WWWOptionShowProgressTime WWWWaitingTime()>=0\nSet Sensitive ....WWWShowProgressUpdateTime WWWWaitingTime()>=0\nSet Sensitive ....WWWPar\
+amCacheSize N>0\nSet Sensitive ....WWWParamApply False\nSet Sensitive ....WWWParamReset False\nSet Sensitive ....WWWParamSave True
+midaswww*WWWPrint.dialogTitle:	WWW Print ...
+midaswww*WWWPrint.helpCallback:	Set Ingot .^^^XmMainWindow WWWFileRequest "http://www-midas.slac.stanford.edu:80/midasv21/print_window.html"
+midaswww*WWWPrintCancel.activateCallback:	PopDown .^^
+midaswww*WWWPrintConfirm.dialogTitle:	WWW Print Confirm
+midaswww*WWWPrintConfirm.midasCreateCallback:	PopDown ..Cancel
+midaswww*WWWPrintFormatMenu.midasCreateCallback:	Custom Connect WWW "<format>" .
+midaswww*WWWPrintHelp.activateCallback:	Invoke Callback .^^ helpCallback
+midaswww*WWWPrintOk.activateCallback:	If Format=="Postscript" Set Ingot . Tempfile GetValue(IsPS,file)\nIf Format=="HTML" Set Ingot . Tempfile WWWTempFile()\nIf Format=="HTML" WWW Dump .^^^XmMainWindo\
+w...WWWHyper Tempfile\nSet Ingot . PrintCommand GetValue(.^^^...WWWPrintCommandText,value)\nsystem PrintCommand++" "++Tempfile\nIf Format=="HTML" system "%delete %Tempfile"\nIf ConfirmPrint Set Value \
+.^^^XmMainWindow###WWWPrintConfirm messageString "Document '"++WWWTitle++"' printed (Command: "++PrintCommand++")"\nIf ConfirmPrint Popup .^^^XmMainWindow...WWWPrintConfirm\nPopDown .^^ 
+midaswww*WWWPrintOptions.dialogTitle:	Print Options
+midaswww*WWWPrintOptions.helpCallback:	Set Ingot .^^^WWWMain WWWFileRequest "http://www-midas.slac.stanford.edu:80/midasv21/print_options.html"
+midaswww*WWWPrintOptions.mapCallback:	Set Value ....WWWPrintOptionsHTMLText value PrintCommandHTML\nSet Value ....WWWPrintOptionsPostscriptText   value PrintCommandPS\nSet Value ....WWWPrintOptionsCon\
+firm set ConfirmPrint\nSet Sensitive ....WWWPrintOptionsReset False\nSet Sensitive ....WWWPrintOptionsApply False
+midaswww*WWWPrintOptionsApply.activateCallback:	Set Ingot .^^^XmMainWindow PrintCommandHTML GetValue(.^^^...WWWPrintOptionsHTMLText,value)\nSet Ingot .^^^XmMainWindow PrintCommandPS   GetValue(.^^^...\
+WWWPrintOptionsPostscriptText,value)\nSet Ingot .^^^XmMainWindow ConfirmPrint GetValue(.^^^...WWWPrintOptionsConfirm,set)\nStore App Resource .^^^midaswww "confirmPrint" ConfirmPrint\nStore App Resour\
+ce .^^^midaswww "printCommandHTML" PrintCommandHTML\nStore App Resource .^^^midaswww "printCommandPS" PrintCommandPS\nSet Sensitive .^^^...WWWPrintOptionsApply False\nSet Sensitive .^^^...WWWPrintOpti\
+onsReset False\n
+midaswww*WWWPrintOptionsCancel.activateCallback:	PopDown .^^
+midaswww*WWWPrintOptionsConfirm.valueChangedCallback:	Set Sensitive .^^^...WWWPrintOptionsApply True\nSet Sensitive .^^^...WWWPrintOptionsReset True
+midaswww*WWWPrintOptionsHTMLText.valueChangedCallback:	Set Sensitive .^^^...WWWPrintOptionsApply True\nSet Sensitive .^^^...WWWPrintOptionsReset True\n
+midaswww*WWWPrintOptionsHelp.activateCallback:	Invoke Callback .^^ helpCallback
+midaswww*WWWPrintOptionsOk.activateCallback:	Invoke Callback .^.WWWPrintOptionsApply activateCallback\nInvoke Callback .^.WWWPrintOptionsCancel activateCallback
+midaswww*WWWPrintOptionsPostscriptText.valueChangedCallback:	Set Sensitive .^^^...WWWPrintOptionsApply True\nSet Sensitive .^^^...WWWPrintOptionsReset True\n
+midaswww*WWWPrintOptionsReset.activateCallback:	Invoke Callback .^^^WWWPrintOptions mapCallback
+midaswww*WWWPrint_popup.Format:	If Format=="Postscript" Set Value ....WWWPrintCommandText value PrintCommandPS\nIf Format=="HTML" Set Value ....WWWPrintCommandText value PrintCommandHTML
+midaswww*WWWPrint_popup.FormatExecuteWhenCreated:	True
+midaswww*WWWPrint_popup.PrintCommandHTML:	If Format=="HTML" Set Value ....WWWPrintCommandText value PrintCommandHTML
+midaswww*WWWPrint_popup.PrintCommandHTMLExecuteWhenCreated:	False
+midaswww*WWWPrint_popup.PrintCommandPS:	If Format=="Postscript" Set Value ....WWWPrintCommandText value PrintCommandPS
+midaswww*WWWPrint_popup.PrintCommandPSExecuteWhenCreated:	False
+midaswww*WWWPrint_popup.midasIngots:	Format PrintCommandHTML
+midaswww*WWWSave.DocFormat:	
+midaswww*WWWSave.DocFormatExecuteWhenCreated:	True
+midaswww*WWWSave.SaveAs:	
+midaswww*WWWSave.SaveAsExecuteWhenCreated:	True
+midaswww*WWWSave.activateCallback:	If IsPs!=0 System "%copy %GetValue(IsPS,file) %GetValue(.^...XmTextField,value)"\nElse WWW Dump .^^^XmMainWindow...WWWHyper GetValue(.^...XmTextField,value)\nPopDown\
+ .^ 
+midaswww*WWWSave.cancelCallback:	Popdown .
+midaswww*WWWSave.dialogTitle:	Save Document
+midaswww*WWWSave.helpCallback:	Set Ingot .^^^XmMainWindow WWWFileRequest "http://www-midas.slac.stanford.edu:80/midasv21/save.html"
+midaswww*WWWSave.midasIngots:	DocFormat SaveAs
+midaswww*WWWSave.okCallback:	Set Ingot . SaveAs GetValue(.,dirSpec)\nIf Format=="Postscript" Set Ingot . PSFile GetValue(IsPS,file) \nIf Format=="HTML" WWW Dump .^^^XmMainWindow...WWWHyper SaveAs\nEls\
+e If Format=="Postscript"  System "%copy %PSFile %SaveAs"\nPopDown .
+midaswww*WWWSave.selectionLabelString:	Save As
+midaswww*WWWSaveFileAs.cancelCallback:	PopDown .
+midaswww*WWWSaveFileAs.dialogTitle:	Save File As...
+midaswww*WWWSaveFileAs.mapCallback:	Set Ingot . result ""\nSet Value ....WWWSaveFileAsText value WWWParent(WWWFile)\nSet Value . dirSpec GetValue(.,directory)++file 
+midaswww*WWWSaveFileAs.okCallback:	Set Ingot . result GetValue(.,"dirSpec")\nPopDown .
+midaswww*WWWSaveFileAs.selectionLabelString:	Save As
+midaswww*WWWSaveFileAsText.editable:	false
+midaswww*WWWSaveFormatMenu.midasCreateCallback:	Custom Connect WWW "<format>" .
+midaswww*WWWSaveHelp.activateCallback:	Invoke Callback .^ helpCallback
+midaswww*WWWSearch.DocFormat:	If DocFormat!="HTML" PopDown .
+midaswww*WWWSearch.dialogTitle:	Search Document
+midaswww*WWWSearch.helpCallback:	Set Ingot .^^^XmMainWindow WWWFileRequest "http://www-midas.slac.stanford.edu:80/midasv21/search_window.html"
+midaswww*WWWSearch.midasIngots:	DocFormat
+midaswww*WWWSearchCancel.activateCallback:	Popdown .^^WWWSearch
+midaswww*WWWSearchFind.activateCallback:	WWW Search .^^^...SGMLHyper GetValue(.^^WWWSearch...WWWSearchText,value) GetValue(.^^WWWSearch...WWWSearchCaseSensitive,set) GetValue(.^^WWWSearch...WWWSearchC\
+ontinue,set)
+midaswww*WWWSearchHelp.activateCallback:	Invoke Callback .^^ helpCallback
+midaswww*WWWShowProgressUpdateTime.valueChangedCallback:	Set Sensitive .^^^WWWParameters...WWWParamApply True\nSet Sensitive .^^^WWWParameters...WWWParamReset True\nSet Sensitive .^^^WWWParameters...W\
+WWParamSave False\n
+midaswww*WWWSource*default.color:	Black
+midaswww*WWWSource*default.defaultClass:	SGMLPlainText
+midaswww*WWWSource*default.fontFamily:	courier
+midaswww*WWWSource*default.fontSpacing:	m
+midaswww*WWWSource.BorderWidth:	0
+midaswww*WWWSource.WWWFile:	If ShowSource WWW Put . WWWSource(.^^^XmMainWindow...WWWHyper)
+midaswww*WWWSource.WWWFileExecuteWhenCreated:	False
+midaswww*WWWSource.midasIngots:	WWWFile
+midaswww*WWWTruncate.dialogTitle:	Truncated...
+midaswww*WWWTruncate.helpCallback:	Set Ingot .^^^XmMainWindow WWWFileRequest "http://www-midas.slac.stanford.edu:80/midasv21/truncate.html"
+midaswww*WWWWDocInfoDocNameText.WWWFile:	Set Value . value WWWParent(WWWFile)
+midaswww*WWWWDocInfoDocNameText.WWWFileExecuteWhenCreated:	True
+midaswww*WWWWDocInfoDocNameText.midasIngots:	WWWFile
+midaswww*WWWWaiting.dialogStyle:	XmDIALOG_MODELESS
+midaswww*WWWWaiting.dialogTitle:	Waiting...
+midaswww*WWWWaiting_popup.overrideRedirect:	true
+midaswww*XmCascaseButtonGadget:	-*-helvetica-bold-o-normal-*-14-*-iso8859-1	
+midaswww*XmDialogShell*Postscript.DocFormat:	Set Sensitive . DocFormat=="Postscript"\nIf DocFormat=="Postscript" Set Value .^^^XmMenuShell^.XmRowColumn menuHistory .\nIf DocFormat=="Postscript" Invoke\
+ Callback . activateCallback
+midaswww*XmMenuShell*FontList:	-*-helvetica-bold-o-normal-*-14-*-iso8859-1
+midaswww*XmRowColumn.Text.DocFormat:	Set Sensitive . DocFormat=="Text"\nIf DocFormat=="Text" Set Value .^^^XmMenuShell^.XmRowColumn menuHistory .\nIf DocFormat=="Text" Invoke Callback . activateCallba\
+ck
+midaswww*XmRowColumn.Text.DocFormatExecuteWhenCreated:	True
+midaswww*XmRowColumn.Text.midasIngots:	DocFormat
+midaswww*XmScrollBar.foreground:	#d3d3d3d3d3d3
+XXmidaswww*XmText.fontList:	-*-lucidatypewriter-medium-r-normal-*-14-*-iso8859-1
+XXmidaswww*XmTextField.fontList:	-*-lucidatypewriter-medium-r-normal-*-14-*-iso8859-1
+midaswww*confirmPrint:	False
+midaswww*gv_manager.container.mapCallback:	Set Ingot .^^^XmMainWindow IsPS GetValueRaw(.,child)
+midaswww*gv_manager.container.unmapCallback:	Set Ingot .^^^XmMainWindow IsPS 0
+midaswww*gv_manager.managementPolicy:	ManageOne
+midaswww*printCommandHTML:	lpr
+midaswww*printCommandPS:	lpr
+midaswww*pulldownmenu*fontList:	-*-helvetica-bold-o-normal-*-14-*-iso8859-1
+midaswww*rc2.orientation:	XmHORIZONTAL
+midaswww.ShowTitle:	true
+midaswww.ShowURL:	true
+midaswww.ShowUnrecognizedMarkup:	false
+midaswww.WWWMain*XmRowColumn.Help.helpCallback:	Set Ingot .^^^XmMainWindow WWWFileRequest "http://www-midas.slac.stanford.edu:80/midasv21/menus.html#Help"
+midaswww.confirmExit:	True
+midaswww.confirmPrint:	true
+midaswww.defaultHTTPProtocol:	1.0
+midaswww.filetype_$http_destination:	html
+midaswww.filetype_Z_binary:	true
+midaswww.filetype_Z_command:	uncompress -c
+midaswww.filetype_Z_filter:	true
+midaswww.filetype_au_destination:	file
+midaswww.filetype_au_icon:	music
+midaswww.filetype_basic_destination:	file
+midaswww.filetype_basic_icon:	music
+midaswww.filetype_binary_destination:	xbm
+midaswww.filetype_eps_destination:	ps
+midaswww.filetype_eps_icon:	ps
+midaswww.filetype_exe_binary:	true
+midaswww.filetype_exe_destination:	file
+midaswww.filetype_exe_icon:	floppy
+midaswww.filetype_gif_binary:	true
+midaswww.filetype_gif_destination:	gif
+midaswww.filetype_gif_icon:	graphics
+midaswww.filetype_gz_binary:	true
+midaswww.filetype_gz_command:	gzip -dc
+midaswww.filetype_gz_filter:	true
+midaswww.filetype_html_destination:	html
+midaswww.filetype_html_icon:	web
+midaswww.filetype_jpeg_binary:	true
+midaswww.filetype_jpeg_command:	djpeg -colors 256 -gif
+midaswww.filetype_jpeg_destination:	gif
+midaswww.filetype_jpeg_icon:	graphics
+midaswww.filetype_jpg_binary:	true
+midaswww.filetype_jpg_command:	djpeg -colors 256 -gif
+midaswww.filetype_jpg_destination:	gif
+midaswww.filetype_jpg_icon:	graphics
+midaswww.filetype_mpeg_binary:	true
+midaswww.filetype_mpeg_command:	mpeg_play -quiet
+midaswww.filetype_mpeg_destination:	multimedia
+midaswww.filetype_mpeg_icon:	movie_icon
+midaswww.filetype_mpeg_shellflag:	false
+midaswww.filetype_mpeg_tempfile:	true
+midaswww.filetype_mpg_binary:	true
+midaswww.filetype_mpg_command:	mpeg_play -quiet
+midaswww.filetype_mpg_destination:	multimedia
+midaswww.filetype_mpg_icon:	movie_icon
+midaswww.filetype_mpg_shellflag:	false
+midaswww.filetype_mpg_tempfile:	true
+midaswww.filetype_plain_destination:	text
+midaswww.filetype_pnm_binary:	true
+midaswww.filetype_pnm_command:	ppmquant 256 | ppmtogif
+midaswww.filetype_pnm_destination:	gif
+midaswww.filetype_pnm_icon:	graphics
+midaswww.filetype_postscript_destination:	ps
+midaswww.filetype_postscript_icon:	ps
+midaswww.filetype_ppm_binary:	true
+midaswww.filetype_ppm_command:	ppmquant 256 | ppmtogif
+midaswww.filetype_ppm_destination:	gif
+midaswww.filetype_ppm_icon:	graphics
+midaswww.filetype_ps_destination:	ps
+midaswww.filetype_ps_icon:	ps
+midaswww.filetype_shar_binary:	true
+midaswww.filetype_shar_destination:	file
+midaswww.filetype_shar_icon:	floppy
+midaswww.filetype_tar_binary:	true
+midaswww.filetype_tar_destination:	file
+midaswww.filetype_tar_icon:	floppy
+midaswww.filetype_tiff_binary:	true
+midaswww.filetype_tiff_command:	tifftopnm | ppmtogif
+midaswww.filetype_tiff_destination:	gif
+midaswww.filetype_tiff_icon:	graphics
+midaswww.filetype_tiff_tempfile:	true
+midaswww.filetype_txt_destination:	text
+midaswww.filetype_x-compress_binary:	true
+midaswww.filetype_x-compress_command:	uncompress -c
+midaswww.filetype_x-compress_filter:	true
+midaswww.filetype_x-tiff_binary:	true
+midaswww.filetype_x-tiff_command:	tifftopnm | ppmtogif
+midaswww.filetype_x-tiff_destination:	gif
+midaswww.filetype_x-tiff_icon:	graphics
+midaswww.filetype_x-tiff_tempfile:	true
+midaswww.filetype_x-xbitmap_destination:	xbm
+midaswww.filetype_x-xbitmap_icon:	floppy
+midaswww.filetype_x-zip_binary:	true
+midaswww.filetype_x-zip_command:	gzip -dc
+midaswww.filetype_x-zip_filter:	true
+midaswww.filetype_x-zip_icon:	floppy
+midaswww.filetype_xbm_destination:	xbm
+midaswww.filetype_xbm_icon:	floppy
+midaswww.filetype_z_binary:	true
+midaswww.filetype_z_command:	gzip -dc
+midaswww.filetype_z_filter:	true
+midaswww.filetypes:	ps eps Z z gz gif jpeg jpg html ppm pnm tiff exe tar $http xbm au txt mpeg mpg basic plain x-xbitmap x-tiff postscript binary shar x-compress x-zip
+midaswww.font:	-*-helvetica-bold-r-normal-*-14-*-*-*-*-*-iso8859-1
+midaswww.fontSize:	Large
+midaswww.gateway:	http://htmlgate.slac.stanford.edu:2784
+midaswww.geometry:	700x800
+midaswww.headingFont:	helvetica
+midaswww.headingsFont:	Helvetica
+midaswww.home:	http://slacvm.slac.stanford.edu:80/FIND/slac.html
+midaswww.hotList:	<title>HotList</title><nocache><h1><img pixmap=flame>HotList</h1>\nClick on the <img pixmap=kill> icon to remove an item from the list, or\n<a href=http://www-midas.slac.stanford.edu:80\
+/midasv21/hotlist.html>here</a> for more help.\n<h6><kill><a href=news:comp.infosystems.www>Comp.Infosystems.WWW</a></h6><h6><kill><a href = http://info.cern.ch/hypertext/WWW/TheProject.html > The Wor\
+ld Wide Web project </a></h6>\n<h6><kill><a href = http://www.ncsa.uiuc.edu/SDG/Software/Mosaic/Docs/whats-new.html > What's New With NCSA Mosaic </a></h6><h6><kill><a href = http://sunsite.unc.edu/ex\
+po/ticket_office.html > EXPO Ticket Office </a></h6><h6><kill><a href = http://aka.dcrt.nih.gov > Rob's Multimedia Lab </a></h6><h6><kill><a href = http://www.ncsa.uiuc.edu/demoweb/url-primer.html > A\
+ Beginner's Guide to URLs </a></h6><h6><kill><a href = http://www.ncsa.uiuc.edu/demoweb/html-primer.html > A Beginner's Guide to HTML </a></h6><h6><kill><a href = http://www-midas.slac.stanford.edu/tonyw\
+ww/talk/talk.html > World-Wide Web: An Illustrated Seminar </a></h6><h6><kill><a href = http://pulua.hcc.hawaii.edu/guide/www.guide.html > Entering the World-Wide Web: A Guide to Cyberspace </a></h6>
+midaswww.mimeencode:	x-compress x-zip
+midaswww.mimetypes:	text/plain text/html image/gif image/jpeg image/x-xbitmap image/x-tiff video/mpeg audio/basic application/postscript archive/tar archive/shar application/binary 
+midaswww.printCommandHTML:	lpr
+midaswww.printCommandPS:	lpr
+midaswww.sensitiveColor:	blue
+midaswww.sensitiveFontWeight:	bold
+midaswww.startup:	Open Uid "/usr/local/lib/midaswww.uid" .\nPopup WWWMain\nWWW Init .\nSet value ....WWWHyper naturalWidth 0++(GetValue(..WWWMain,width)-40)\nSet Ingot ..WWWMain PSState 0\nDispatch Queued Commands\nIn\
+voke Callback ....Home_Page activateCallback\nSet Ingot Midas_Main NWin 1\nWWW Register . False
+midaswww.textFont:	new century schoolbook
+midaswww.translations:	#override \n <PropertyNotify> URL : SendMidas("Popup ..XmMainWindow ; Set Ingot ..XmMainWindow WWWFileTemp GetProperty(.,URL)")
+midaswww.underlineHeadings:	true
+midaswww.updateTimeOut:	200
+midaswww.version:	2.1
+midaswww.visitedColor:	#59597171EAEA
+midaswww.visitedFontWeight:	medium
+midaswww.waitingTimeOut:	2000
+!
+! Color preferences
+!
+midaswww*Background:	#d3d3d3d3d3d3
+midaswww*Foreground:	#000000000000
+midaswww*SelectColor:	#ffffffff0000
+midaswww*HighlightColor:	orange
+midaswww*TopShadowColor:	#ffffffffffff
+midaswww*BottomShadowColor:	#a1a1a1a1a1a1
+
+midaswww*WWWMenu*Background:	#8d8dd1d1d2d2
+midaswww*WWWMenu*TopShadowColor:	#d6d6efefefef
+midaswww*WWWMenu*BottomShadowColor:	#4646b1b1b3b3
+
+midaswww*WWWHistoryMenu*Background:	#8d8dd1d1d2d2
+midaswww*WWWHistoryMenu*TopShadowColor:	#d6d6efefefef
+midaswww*WWWHistoryMenu*BottomShadowColor:	#4646b1b1b3b3
+ 
+midaswww*XmTextField*Background:	#b2b2b2b2b2b2
+midaswww*XmLabel*Foreground:	#1d1d15155b5b
+midaswww*XmText*Background:	#b2b2b2b2b2b2

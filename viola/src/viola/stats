@@ -1,0 +1,8 @@
+(dbx) p size
+5776 
+(dbx) p strlen(yyscript)
+[using strlen.strlen]
+11613 
+
+res.fonts.v
+

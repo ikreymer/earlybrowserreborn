@@ -1,0 +1,29 @@
+echo "****** Cleaning XPM library"
+rm -f ../libXPM/*.o
+rm -f ../libXPM/*.a
+rm -f ../libXPM/*~
+rm -f ../libXPM/sxpm 
+
+echo "****** Cleaning W3 library"
+rm -f ../libWWW/Library/Implementation/*.a
+rm -f ../libWWW/Library/Implementation/*.o
+rm -f ../libWWW/Library/Implementation/*~
+rm -f ../libWWW/Library/Implementation/#*#
+
+echo "****** Cleaning XPA library"
+rm -f ../libXPA/src/*.a
+rm -f ../libXPA/src/*.o
+rm -f ../libXPA/src/*~
+rm -f ../libXPA/src/#*#
+
+echo "****** Cleaning GIF library"
+rm -f ../libGIF/*.a
+rm -f ../libGIF/*.o
+rm -f ../libGIF/*~
+rm -f ../libGIF/#*#
+
+echo "****** Cleaning Viola"
+rm -f *.o
+rm -f *~ 
+rm -f #*# 
+rm -f core

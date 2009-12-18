@@ -1,0 +1,175 @@
+                                                            Obtaining Midas WWW
+                              OBTAINING MIDAS WWW
+                                       
+   There are two ways to go about obtaining Midas WWW: 
+   
+      Fetch one of the pre-compiled binaries 
+      
+      Build it yourself from the source code 
+      
+   We recommend you initially try the pre-compiled binaries, and only resort 
+   to building your own version if: 
+   
+      The pre-compiled binary does not exist for your machine, or will not run 
+      
+      You are curious to see how it works 
+      
+      You want to change something 
+      
+   If you have already obtained Midas WWW but are having problems,  try the
+   troubleshooting guide. 
+                                                  Midas WWW pre-compiled Images
+                         MIDAS WWW PRE-COMPILED IMAGES
+                                       
+   A number of precompiled images are available for popular  machines. These
+   are available from freehep.scri.fsu.eduin directory 
+   freehep/networking_email_news/midaswww/binaries. 
+   
+   The following files are available: 
+   
+  midaswww-sgi.exe.Z     Compiled under SGI IRIX 4.0.1 
+                         
+  midaswww-ibm.exe.Z     Compiled under IBM AIX 3.2 
+                         
+  midaswww-hpux.exe.Z    Compiled under HP-UX 9.01 
+                         
+  midaswww-sun4.exe.Z    Compiled under SunOS 4.1.2, also runs under Solaris
+                         5.2 
+                         
+  midaswww-alpha-osf.exe.Z 
+                         Compiled under OSF V1.3 
+                         
+  vms/midaswww_multinet.bck_Z 
+                         Compiled under VMS 5.5 and OPEN-VMS 1.5 
+                         
+   Note: Most of these binaries are linked against shareable versions of the
+   Motif and X libraries. This keeps the images small and ensures that they 
+   run efficiently, however it also means that you must have the appropriate
+   Motif and X libraries already installed on your machine. If you cannot get
+   these pre-compiled binaries to work, but you do have Motif and X libraries
+   available, then you should be able to build your own executable from the 
+   source code.  
+   
+Obtaining and running pre-compiled binaries
+
+   These instructions are for unix, see the VMS instructions  for details on
+   installing VMS binaries. To obtain and run a pre-compiled binary follow
+   these instructions  (substituting the appropriate machine type for XXX): 
+   
+
+   ftp freehep.scri.fsu.edu
+      login as user anonymous
+   cd freehep/networking_email_news/midaswww/binaries
+   binary
+   get midaswww-XXX.exe.Z        <---- replace XXX with apppropriate machine
+   bye
+
+   uncompress midaswww-XXX.exe.Z <---- replace XXX with apppropriate machine
+   mv midaswww-XXX.exe midaswww  <---- replace XXX with apppropriate machine
+   chmod +x midaswww
+   ./midaswww
+
+   The MidasWWW window should now appear.  If it doesn't then see
+   thetroubleshooting guide. 
+   
+Installing pre-compiled binaries
+
+   To install the MidasWWW executable, just move the midaswww file to an
+   appropriate system directory, such as /usr/local/bin/midaswww. 
+                                            Building Midas WWW from Source Code
+                      BUILDING MIDAS WWW FROM SOURCE CODE
+                                       
+   These instructions are for UNIX. See the README_VMS file for VMS
+   installation instructions. 
+   
+Requirements
+
+   To build this version of MidasWWW from source you will need a Unix system
+   with X windows (X11R4 or X11R5) and Motif (version 1.1.0 or greater). You
+   must have all of the following libraries available on your system. 
+   
+Xm                      The Motif Widget set library 
+Mrm                     The Motif resouce manager library 
+Xt                      The X-toolkit library 
+X                       The X library 
+Xmu                     X miscellaneous utility library. 
+                        
+   The current version of MidasWWW has been tested on the following systems: 
+   
+      SGI - Indigo (4.0.5) 
+      
+      RS6000 (AIX 3.2.2) 
+      
+      HP-UX (9.0.1) 
+      
+      SunOS (4.1.2) (with Motif libraries built from source).  
+      
+   MidasWWW should be portable to other unix systems. Please let  us know if
+   you port it to other systems,  and tell us about any changes you had to
+   make. 
+   
+Obtaining MidasWWW
+
+   You can obtain MidasWWW as a compressed TAR file via  anonymous FTP from 
+   freehep.scri.fsu.edu, in directory  /freehep/networking_email_news/midaswww.
+   The most recent tar file is midaswww-2.1.tar.Z. 
+   
+   After obtaining the TAR file, uncompress it and detar it using the commands:
+   
+
+   uncompress midaswww-2.1.tar.Z
+   tar -xvf midaswww-2.1.tar
+   cd midaswww-2.1
+
+Building MidasWWW
+
+   There are two ways to go about creating a Makefile for MidasWWW 
+   
+      Use one of the standard makefiles supplied with the MidasWWW
+      distribution. 
+      
+Makefile.hp             Makefile for HP-UX 
+Makefile.aix32          Makefile for IBM AIX-3.2 
+Makefile.sgi            Makefile for SGI 
+                        
+      Use the standard X-windows utility xmkmf to generate a Makefile.   
+      
+   The xmkmf facility is in principle better since it is supposed to take into
+   account  any machine dependencies,  and to correctly link against the
+   correct libraries on your machine.  However we have found that xmkmf is
+   often not configured correctly for building Motif  programs, so in practice
+   we recommend using the supplied Makefile if one is available for your
+   machine, otherwise try xmkmf, but you will quite possibly have to tweek the
+   resulting Makefile to successfully build Midas WWW. 
+   
+  USING SUPPPLIED MAKEFILE
+  
+   To build MidasWWW use the following command (where MMMM  is the makefile you
+   chose from the list above: 
+   
+
+   make -f MMMM
+
+  USING XMKMF
+  
+   Build MidasWWW as follows: 
+   
+
+   xmkmf
+   make
+
+Testing
+
+   To try out MidasWWW first make sure your DISPLAY envirnonment variable is
+   set up correctly.  Then issue the command: 
+   
+
+   ./midaswww
+
+   The MidasWWW window should now appear.  If it doesn't then see
+   thetroubleshooting guide. 
+   
+Installation
+
+   To install the MidasWWW executable, just move the midaswww file to an
+   appropriate system directory, such as /usr/local/bin/midaswww. 

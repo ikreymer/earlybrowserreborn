@@ -1,0 +1,9 @@
+My apologies for the messy hack up of this package for use in Viola.
+
+I've basically added libxli.c to provide an API for Viola to call upon.
+Hope to have time to clean up, and make more intelligent use of this 
+package, later...
+
+-Pei (pei@ora.com)
+*Becca* beirises@stu.beloit.edu
+*suzze* it is s0189546@hawkmail.monmouth.edu

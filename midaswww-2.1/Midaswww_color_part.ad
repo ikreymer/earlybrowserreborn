@@ -1,0 +1,21 @@
+!
+! Color preferences
+!
+midaswww*Background:	#d3d3d3d3d3d3
+midaswww*Foreground:	#000000000000
+midaswww*SelectColor:	#ffffffff0000
+midaswww*HighlightColor:	orange
+midaswww*TopShadowColor:	#ffffffffffff
+midaswww*BottomShadowColor:	#a1a1a1a1a1a1
+
+midaswww*WWWMenu*Background:	#8d8dd1d1d2d2
+midaswww*WWWMenu*TopShadowColor:	#d6d6efefefef
+midaswww*WWWMenu*BottomShadowColor:	#4646b1b1b3b3
+
+midaswww*WWWHistoryMenu*Background:	#8d8dd1d1d2d2
+midaswww*WWWHistoryMenu*TopShadowColor:	#d6d6efefefef
+midaswww*WWWHistoryMenu*BottomShadowColor:	#4646b1b1b3b3
+ 
+midaswww*XmTextField*Background:	#b2b2b2b2b2b2
+midaswww*XmLabel*Foreground:	#1d1d15155b5b
+midaswww*XmText*Background:	#b2b2b2b2b2b2

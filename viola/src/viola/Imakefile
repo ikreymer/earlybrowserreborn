@@ -1,0 +1,217 @@
+CC		= cc
+
+LOCAL_LIBRARIES = $(EXTENSIONLIB) $(XMULIB) $(XTOOLLIB) $(XLIB) 
+
+SYS_LIBRARIES = -lm
+
+INSTALL = /usr/ucb/install
+
+#TOP = 
+#LDCOMBINEFLAGS = 
+#EXTENSIONSRC =
+
+#ifdef SunArchitecture
+CDEBUGFLAGS   = -g
+
+#CCOPTIONS     = -Bstatic
+#CCOPTIONS    = -Wall
+
+WWW_BIN       = ../libWWW/Library/sun4
+#endif
+
+#ifdef UltrixArchitecture
+
+CDEBUGFLAGS   = -Wf,-XNl15000
+WWW_BIN       = ../libWWW/Library/decstation
+#endif
+
+#WWW_BIN       = ../libWWW/Library/Implementation
+#LEX =  flex
+
+XPM_BIN       = ../libXPM
+
+XPA_BIN       = ../libXPA/src
+
+#GIF_BIN       = ../libGIF
+GIF_BIN       = ../libIMG
+
+STG_BIN       = ../libStyle
+
+SRCS          = $(SRCS_VIOLA)
+
+SRCS_VIOLA    = DefaultStyles.c \
+		ast.c \
+		attr.c \
+		biop.c \
+		cexec.c \
+		cgen.c \
+		cl_glass.c \
+                cl_AC_SGML_txt.c \
+		cl_BCard.c \
+		cl_FCard.c \
+		cl_GIF.c \
+		cl_HTML.c \
+		cl_PS.c \
+		cl_TTY.c \
+		cl_XBM.c \
+		cl_XBMBG.c \
+		cl_XBMButton.c \
+		cl_XPM.c \
+		cl_XPMBG.c \
+		cl_XPMButton.c \
+		cl_client.c \
+		cl_cosmic.c \
+		cl_dial.c \
+		cl_field.c \
+		cl_generic.c \
+		cl_hpane.c \
+		cl_menu.c \
+		cl_pane.c \
+		cl_project.c \
+		cl_radio.c \
+		cl_rubber.c \
+		cl_slider.c \
+		cl_socket.c \
+		cl_stack.c \
+		cl_toggle.c \
+		cl_tray.c \
+		cl_txt.c \
+		cl_txtButton.c \
+		cl_txtDisp.c \
+		cl_txtEdit.c \
+		cl_txtEditLine.c \
+		cl_txtLabel.c \
+		cl_vpane.c \
+		class.c \
+		classlist.c \
+		error.c \
+		event.c \
+		event_x.c \
+		file.c \
+		glib.c \
+		glib_x.c \
+		gram.c \
+		hash.c \
+		membership.c \
+		html.c \
+		html2.c \
+		fosi.c \
+		sgml.c \
+		stgcall.c \
+		ident.c \
+		loader.c \
+		main.c \
+		method.c \
+		misc.c \
+		mystrings.c \
+		obj.c \
+		packet.c \
+		scan.l \
+		violalex.c \
+		slib.c \
+		sys.c \
+		tfed.c \
+		tfed2.c \
+		vlist.c \
+		HTML_share.c \
+		htmath.c \
+		viola.c \
+		msgHandler.c \
+		objs.c \
+		HTML_style.c 
+
+OBJS          = $(OBJS_VIOLA) $(OBJS_WWW) $(OBJS_XPM) $(OBJS_XPA) \
+		$(OBJS_GIF) $(OBJS_STG)
+
+OBJS_VIOLA    = DefaultStyles.o \
+		ast.o \
+		attr.o \
+		biop.o \
+		cexec.o \
+		cgen.o \
+                cl_PS.o \
+                cl_AC_SGML_txt.o \
+		cl_BCard.o \
+		cl_FCard.o \
+		cl_GIF.o \
+		cl_HTML.o \
+		cl_TTY.o \
+		cl_XBM.o \
+		cl_XBMBG.o \
+		cl_XBMButton.o \
+		cl_XPM.o \
+		cl_XPMBG.o \
+		cl_XPMButton.o \
+		cl_client.o \
+		cl_cosmic.o \
+		cl_dial.o \
+		cl_field.o \
+		cl_generic.o \
+		cl_glass.o \
+		cl_hpane.o \
+		cl_menu.o \
+		cl_pane.o \
+		cl_project.o \
+		cl_radio.o \
+		cl_rubber.o \
+		cl_slider.o \
+		cl_socket.o \
+		cl_stack.o \
+		cl_toggle.o \
+		cl_tray.o \
+		cl_txt.o \
+		cl_txtButton.o \
+		cl_txtDisp.o \
+		cl_txtEdit.o \
+		cl_txtEditLine.o \
+		cl_txtLabel.o \
+		cl_vpane.o \
+		class.o \
+		classlist.o \
+		error.o \
+		event.o \
+		event_x.o \
+		file.o \
+		glib.o \
+		glib_x.o \
+		gram.o \
+		hash.o \
+		membership.o \
+		html.o \
+		html2.o \
+		fosi.o \
+		sgml.o \
+		stgcall.o \
+		ident.o \
+		loader.o \
+		main.o \
+		method.o \
+		misc.o \
+		mystrings.o \
+		obj.o \
+		packet.o \
+		violalex.o \
+		slib.o \
+		sys.o \
+		tfed.o \
+		tfed2.o \
+		vlist.o \
+		HTML_share.o \
+		htmath.o \
+		viola.o \
+		msgHandler.o \
+		objs.o \
+		HTML_style.o
+
+OBJS_WWW      = $(WWW_BIN)/libwww.a
+
+OBJS_XPM      = $(XPM_BIN)/libXpm.a
+
+OBJS_XPA      =	$(XPA_BIN)/libXpa.a
+
+#OBJS_GIF     =	$(GIF_BIN)/xgifload.o
+OBJS_GIF      =	$(GIF_BIN)/libIMG.a
+
+OBJS_STG      =	$(STG_BIN)/libstg.o
+
+ComplexProgramTarget(viola)

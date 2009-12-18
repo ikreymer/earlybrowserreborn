@@ -1,0 +1,20 @@
+#
+#
+#
+
+#define IHavesubdirs
+#define PassCDebugFlags
+
+	   OBJS	= Cl.o ClHTTP.o ClFTP.o ClMisc.o ClConnection.o
+	   SRCS	= Cl.c ClHTTP.c ClFTP.c ClMisc.c ClConnection.c
+	SUBDIRS = WWWLibrary
+	DEFINES = -I$(SUBDIRS)
+
+NormalLibraryTarget(Cl, $(OBJS))
+
+MakeSubdirs($(SUBDIRS))
+MakefileSubdirs($(SUBDIRS))
+DependTarget()
+DependSubdirs($(SUBDIRS))
+
+

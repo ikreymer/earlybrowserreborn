@@ -1,0 +1,23 @@
+/* XPM */
+static char * dot [] = {
+"16 16 4 1",
+" 	c green",
+".	c blue",
+"X	c red",
+"o	c white",
+"                ",
+"                ",
+"                ",
+"    .......     ",
+"   .........    ",
+"   .........    ",
+"  ......XXXXXXXX",
+"  ......X....ooX",
+"oo......X....ooX",
+"ooo.....X...oooX",
+"ooo.....X...oooX",
+"oooo....X..ooooX",
+"ooooooo.XooooooX",
+"ooooooooXooooooX",
+"ooooooooXooooooX",
+"ooooooooXXXXXXXX"};

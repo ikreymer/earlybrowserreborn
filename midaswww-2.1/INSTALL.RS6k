@@ -1,0 +1,19 @@
+
+ To rebuild midaswww in AIX 3.2.4:
+ =================================
+
+ 1/. Copy Makefile.rs6k to Makefile.
+     Go over the Makefile and CommonMakefile for suitable
+     options/flags to your system.
+
+ 2/. type "make" to rebuild
+
+ 3/. type "make install" to install
+
+
+ Please refer to README* files for more information.
+
+ Thanks for using aixpdslib.
+
+---------
+library@aixpdslib.seas.ucla.edu
