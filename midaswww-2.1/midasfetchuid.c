@@ -21,9 +21,9 @@ char **filename;
         
 	if ((fileout = open(temp, O_CREAT | O_RDWR, 0666)) > 0)
         {
-  	  if (!strcmp("midas.uid", *filename))
+  	  if (strstr(*filename, "midas.uid"))
 	      write(fileout, midas, sizeof(midas)); 
-	  else if (!strcmp("midaswww.uid", *filename))
+	  else if (strstr(*filename, "midaswww.uid"))
 	      write(fileout, midaswww, sizeof(midaswww));
 	  else
 	  {
