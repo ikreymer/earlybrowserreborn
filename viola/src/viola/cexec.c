@@ -2076,7 +2076,7 @@ Packet *execObjScript(obj)
 		listRefArrayIdx = 0;
 
 #ifdef SCRIPT_FROM_FILENOT
-        tmpfile = saveString("/usr/tmp/violaXXXXXX");
+        tmpfile = saveString("/var/tmp/violaXXXXXX");
         mktemp(tmpfile);
         fp = fopen(tmpfile, "w");
         fputs(yyscript, fp);
@@ -2194,7 +2194,7 @@ Packet *execObjClassScript(obj, result)
 		listRefArrayIdx = 0;
 
 #ifdef SCRIPT_FROM_FILENOT
-        tmpfile = saveString("/usr/tmp/violaXXXXXX");
+        tmpfile = saveString("/var/tmp/violaXXXXXX");
         mktemp(tmpfile);
         fp = fopen(tmpfile, "w");
         fputs(yyscript, fp);
@@ -2301,7 +2301,7 @@ Packet *execScript(obj, result, script)
 	listRefArrayIdx = 0;
 
 #ifdef SCRIPT_FROM_FILENOT
-        tmpfile = saveString("/usr/tmp/violaXXXXXX");
+        tmpfile = saveString("/var/tmp/violaXXXXXX");
         mktemp(tmpfile);
         fp = fopen(tmpfile, "w");
         fputs(yyscript, fp);

@@ -365,7 +365,8 @@ PUBLIC HTStream* HTSaveLocally ARGS3(
 
     free(answer);
 #else
-    me->fp = sink->fp; /* kludge kludge */
+    if(sink)
+        me->fp = sink->fp; /* kludge kludge */
 #endif
 
     return me;

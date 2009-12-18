@@ -47,6 +47,15 @@
 #include <sys/select.h>
 #endif
 
+#ifndef SIGEMT
+#define NO_SIGEMT
+#define SIGEMT SIGUNUSED
+#endif
+#ifndef SIGSYS
+#define NO_SIGSYS
+#define SIGSYS SIGUNUSED
+#endif
+
 static int signal_fatal[] = {
 	SIGBUS, SIGFPE, SIGEMT, SIGILL, SIGSEGV, SIGSYS, 0
 };
@@ -191,10 +200,14 @@ void signalHandler(sig)
 	/* fatal signals */
 	case SIGBUS:
 	case SIGFPE:
+#ifndef NO_SIGEMT
 	case SIGEMT:
+#endif
 	case SIGILL:
 	case SIGSEGV:
+#ifndef NO_SIGSYS
 	case SIGSYS:
+#endif
 		fprintf(stderr,
 			"signalHandler: caught fatal signal %d. Exiting.\n", 
 			sig);

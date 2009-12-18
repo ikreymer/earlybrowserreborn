@@ -478,7 +478,7 @@ void skip_hashbang() {
 	}
 }
 
-static int refresh_buf() {
+/*static*/ int refresh_buf() {
     switch(lexsource) {
 	case FROMFILE:
             getc_buf[0] = *(getc_ptr - 1);
@@ -662,7 +662,7 @@ yypoint:
 extern void *is_inlib(char *s);
 #endif /* ANSI */
 
-static int grabtag(c)
+/*static*/ int grabtag(c)
     char c;
 {
 	char buf[BUFSIZ];
@@ -800,7 +800,7 @@ static int snarf_comment2() {
     return yylex();
 }
 
-static int grabop(c)
+/*static*/ int grabop(c)
     char c;
 {
 	int i;
@@ -829,7 +829,7 @@ static int grabop(c)
 }
 
 #define MAXNLEN 38
-static int grabint(c)
+/*static*/ int grabint(c)
     char c;
 {
     char intbuf[MAXNLEN + 2];
@@ -863,7 +863,7 @@ static int grabint(c)
     return INTCONST;
 }
 
-static int iskeyword(name)
+/*static*/ int iskeyword(name)
     char *name;
 {
 	int index = 0;

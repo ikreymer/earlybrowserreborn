@@ -78,12 +78,12 @@ static char octtools_copyright[] = "Copyright (c) 1988, 1989, Regents of the Uni
 #define XPA_SAVE(str)		strcpy(XPA_MEMX(char, strlen(str)+1), str)
 
 #define XPA_FREE(ptr)		free((char *) ptr)
-
+/*
 extern char *malloc();
 extern char *realloc();
 extern void free();
 extern void exit();
-
+*/
 static XContext xpa_xcon = (XContext) 0;
 static void pb_draw();
 

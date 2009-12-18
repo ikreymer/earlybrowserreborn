@@ -8,6 +8,7 @@
 #include "copyright.h"
 
 #ifndef LIBIMG
+#define XLIB_ILLEGAL_ACCESS
 #include <stdio.h>
 #include <X11/X.h>
 #include <X11/Xlib.h>

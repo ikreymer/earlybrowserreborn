@@ -12,7 +12,7 @@
 
 #include <stdio.h>
 #include <math.h>
-#include <varargs.h>
+//#include <varargs.h>
 #include <ctype.h>
 
 #include "image.h"		/* need ZFILE definition */

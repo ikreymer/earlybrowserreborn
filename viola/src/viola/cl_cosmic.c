@@ -596,7 +596,7 @@ int meth_cosmic_info(self, result, argc, argv)
 	Packet argv[];
 {
 	char *cp;
-	extern int fprintf();
+//	extern int fprintf();
 
 	clearPacket(result);
 	if (argc == 0) {

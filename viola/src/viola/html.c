@@ -481,13 +481,13 @@ PUBLIC void HText_beginHiddenAppend ARGS1(HText *,text)
 */
 PRIVATE void new_line ARGS1(HText *,text)
 {
-	PRIVATE void split_line();
+//	PRIVATE void split_line();
 	split_line(text, text->tbuffi);
 	return;
 }
 
-#define VERBOSE_SPLIT_LINE___
-PRIVATE void split_line ARGS2(HText *,text, int,split)
+//#define VERBOSE_SPLIT_LINE___
+/*PRIVATE*/ void split_line ARGS2(HText *,text, int,split)
 {
 	HTStyle *style = text->style;
 	HTStyle *nextstyle = text->next_style;
@@ -1023,7 +1023,7 @@ printf("HText_endAnchor \n");
 #endif
 }
 
-PUBLIC void HText_appendText ARGS2(HText *,text, char *,str)
+PUBLIC void HText_appendText ARGS2(HText *,text, const char *,str)
 {
 	char *p;
 	for (p = str; *p; p++) HText_appendCharacter(text, *p);
@@ -1156,7 +1156,7 @@ PUBLIC HTStyle * HText_selectionStyle ARGS2(
 */
 PUBLIC void HText_replaceSel ARGS3(
 	HText *,me,
-	char *,aString, 
+	CONST char *,aString, 
 	HTStyle *,aStyle)
 {
 	printf("HText_replaceSel.\n");

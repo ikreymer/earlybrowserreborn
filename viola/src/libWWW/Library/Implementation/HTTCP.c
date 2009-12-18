@@ -53,6 +53,8 @@ extern int errno;
 #endif /* errno */
 #endif /* VMS */
 
+#define THINK_C
+
 #ifndef VM
 #ifndef VMS
 #ifndef NeXT

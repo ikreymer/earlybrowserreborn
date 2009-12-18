@@ -494,11 +494,11 @@ void parseCommandLine(argc, argv,
  */
 #include <errno.h>
 #include <pwd.h>
-
+/*
 extern int errno;
 extern char *sys_errlist[];
 extern int sys_nerr;
-
+*/
 initUserWWW ( www )
 	 char *www;
 {

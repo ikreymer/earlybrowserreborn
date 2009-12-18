@@ -753,7 +753,7 @@ forget_multi:
 		if (dirbuf->d_ino == 0) continue;
 				/* if the entry is not being used, skip it */
 		
-		if (dirbuf->d_namlen > baselen &&      /* Match? */
+		if (dirbuf->d_reclen > baselen &&      /* Match? */
 		    !strncmp(dirbuf->d_name, base, baselen)) {	
 		    HTFormat rep = HTFileFormat(dirbuf->d_name, &encoding);
 		    float value = HTStackValue(rep, format_out,

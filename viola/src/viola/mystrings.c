@@ -393,6 +393,7 @@ char *trimEdgeSpaces(str)
   int i;
   char c, *cp, *cp2;
 
+  if (!str) return str;
   if (!str[0]) return str;
 
   for (cp = str; c = *cp; cp++) {

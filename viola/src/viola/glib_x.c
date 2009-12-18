@@ -1581,7 +1581,7 @@ Pixmap GLMakeXBMFromASCII(w, bitmapStr, width, height, hotx, hoty)
 #else 
 	/* peter@hpkslx.mayfield.HP.COM */
         if (!tmpfile) {
-		tmpfile = saveString("/usr/tmp/violaXXXXXX");
+		tmpfile = saveString("/var/tmp/violaXXXXXX");
 		mktemp(tmpfile);
 	}
 	if (saveFile(tmpfile, bitmapStr) !=0) {
@@ -1611,7 +1611,7 @@ Pixmap GLMakeXPMFromASCII(w, bitmapStr, width, height, hotx, hoty)
 		/* should be able to avoid this kludge soon, when 
 		 * XPM functions take as data string or file pointer...
 		 */
-		tmpFile = saveString("/usr/tmp/violaXXXXXX");
+		tmpFile = saveString("/var/tmp/violaXXXXXX");
 		mktemp(tmpFile);
 	}
 	if (saveFile(tmpFile, bitmapStr) != 0) {
