@@ -7,9 +7,10 @@ value
 !`T^
     Midas_Custom_Button_Width: 82;
     Midas_Cusom_Button_Offset: -35;
+    Midas_Icon_Color: color_table(background color = ' ', 
+        foreground color = '*');
     Midas_Custom_Large_Font: font_table(font('-*-HELVETICA-BOLD-R-*--*-180-*-*-*-*-ISO8859-1'));
-    HandyPakIcon: exported icon(color_table = color_table(background color = ' ', 
-            foreground color = '*'),
+    HandyPakIcon: exported icon(color_table = Midas_Icon_Color,
         '                                        ',
         ' ***************************************',
         ' *                                *   **',
@@ -50,8 +51,7 @@ value
         ' * *                *               *  *',
         ' **    *    *   *   *   *   *   *   *  *',
         ' ***************************************');
-    MidasIcon: exported icon(color_table = color_table(background color = ' ', 
-            foreground color = '*'),
+    MidasIcon: exported icon(color_table = Midas_Icon_Color,
         '**           **        *           **** ',
         ' ***        *  *      * *        **   * ',
         '  ****     *    *    *   *     **    *  ',

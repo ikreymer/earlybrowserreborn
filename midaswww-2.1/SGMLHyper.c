@@ -2179,7 +2179,7 @@ Widget SGMLHyperLoadFile(widget,fname)
 Widget widget;
 char   *fname;
 {
-    extern char *sys_errlist[];
+//    extern char *sys_errlist[];
     Widget result = NULL;
 
     FILE *f = fopen(fname,"r");

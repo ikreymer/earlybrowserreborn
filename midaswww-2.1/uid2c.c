@@ -3,7 +3,7 @@
 
 /* convert uid file to ascii file to use in c */
 void converttoc ();
-char *getfilename();
+void getfilename();
 
 main ( argc, agrv)
 int argc;
@@ -37,10 +37,10 @@ FILE *infp;
 char *filein;
 {
 	FILE *outfp;
-	char fileout[100], name[100], *tempf;
+	char fileout[100], name[100], tempf[100];
 	int c, i;
 
-	tempf = getfilename(filein);
+	getfilename(filein,tempf);
 	strcpy(fileout, tempf);
 	strcpy(name, tempf);
 	strcat(fileout,".uic");
@@ -70,12 +70,10 @@ char *filein;
 	}
 }
 
-char *getfilename (infile)
+void getfilename (infile, outfile)
 char *infile;
+char *outfile;
 {
-	char filename[100];
-
-	strcpy(filename, infile);
-	filename[strlen(infile)-4] = '\0';
-	return filename;
+	strcpy(outfile, infile);
+	*(outfile+strlen(outfile)-4) = '\0';
 }
