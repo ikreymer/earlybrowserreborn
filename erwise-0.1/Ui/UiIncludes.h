@@ -4,7 +4,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
-#include <varargs.h>
+//#include <varargs.h>
 
 #include <X11/Intrinsic.h>
 #include <X11/cursorfont.h>

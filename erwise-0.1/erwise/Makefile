@@ -135,9 +135,9 @@
 # X Window System make variables; this need to be coordinated with rules
 
           PATHSEP = /
-        USRLIBDIR = /v/X11R5/lib
-           BINDIR = /v/X11R5/bin
-          INCROOT = /v/X11R5/include
+        USRLIBDIR = /usr/lib
+           BINDIR = /usr/bin
+          INCROOT = /usr/include
      BUILDINCROOT = $(TOP)
       BUILDINCDIR = $(BUILDINCROOT)/X11
       BUILDINCTOP = ..
@@ -217,17 +217,17 @@ PICFLAGS = -fPIC
           DEPXLIB = $(DEPEXTENSIONLIB)
              XLIB = $(EXTENSIONLIB) -lX11
 
-        DEPXMULIB = $(USRLIBDIR)/libXmu.sa.$(SOXMUREV)
+        DEPXMULIB = $(USRLIBDIR)/libXmu.so
        XMULIBONLY = -lXmu
            XMULIB = -lXmu
 
        DEPOLDXLIB =
           OLDXLIB = -loldX
 
-      DEPXTOOLLIB = $(USRLIBDIR)/libXt.sa.$(SOXTREV)
+      DEPXTOOLLIB = $(USRLIBDIR)/libXt.so
          XTOOLLIB = -lXt
 
-        DEPXAWLIB = $(USRLIBDIR)/libXaw.sa.$(SOXAWREV)
+        DEPXAWLIB = $(USRLIBDIR)/libXaw7.so
            XAWLIB = -lXaw
 
         DEPXILIB =
@@ -235,7 +235,7 @@ PICFLAGS = -fPIC
 
         SOXLIBREV = 4.10
           SOXTREV = 4.10
-         SOXAWREV = 5.0
+         SOXAWREV = 7.0
         SOOLDXREV = 4.10
          SOXMUREV = 4.10
         SOXEXTREV = 4.10

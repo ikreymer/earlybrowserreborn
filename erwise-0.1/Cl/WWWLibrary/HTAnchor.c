@@ -85,7 +85,7 @@ PRIVATE BOOL equivalent
 **	document. The parent anchor must already exist.
 */
 
-PRIVATE HTChildAnchor * HTAnchor_findChild
+HTChildAnchor * HTAnchor_findChild
   ARGS2 (HTParentAnchor *,parent, CONST char *,tag)
 {
   HTChildAnchor *child;

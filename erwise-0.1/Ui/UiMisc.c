@@ -1,7 +1,8 @@
 static char *rcsid = "$Id: UiMisc.c,v 1.3 1992/03/26 18:13:50 kny Exp kny $";
 
 #include "UiIncludes.h"
-
+#include <stdarg.h>
+#include <stdio.h>
 
 static void uitimeouthandler(XtPointer data, XtIntervalId * id);
 static void uifdinputhandler(XtPointer data, int *fd, XtInputId * id);
@@ -480,9 +481,7 @@ void uiUndefineCursor()
 
 
 ArgList
-uiVaSetArgs(nargs, va_alist)
-int *nargs;
-va_dcl
+uiVaSetArgs(int *nargs, ...)
 {
     static Arg args[50];
     String tmpstr;
@@ -490,7 +489,7 @@ va_dcl
 
     *nargs = 0;
 
-    va_start(pvar);
+    va_start(pvar,tmpstr);
     tmpstr = va_arg(pvar, String);
     while (tmpstr) {
 	XtSetArg(args[(int) *nargs], tmpstr, va_arg(pvar, XtArgVal));
@@ -510,7 +509,7 @@ String resource;
 {
     Arg args[1];
 
-    XtSetArg(args[0], resource, (XtArgVal) 0);
+    XtSetArg(args[0], resource, &args[0].value);
     XtGetValues(wdg, args, 1);
 
     return args[0].value;

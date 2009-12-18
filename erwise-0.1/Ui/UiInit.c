@@ -8,8 +8,8 @@ static void uisetupdefaults(int argc, char *argv[],
 static Widget uicreatebutton(Widget parentwdg, char *name, int leftpos,
 			      int rightpos);
 
-static void uitopactivatecb(Widget wdg, caddr_t actionname,
-			     XmPushButtonCallbackStruct * calldata);
+static void uitopactivatecb(Widget wdg, XtPointer actionname,
+			     XtPointer calldata);
 
 
 uiTopLevel_t uiTopLevel;
@@ -131,7 +131,7 @@ int rightpos;
 		  XmNrightAttachment, XmATTACH_POSITION,
 		  XmNrightPosition, rightpos, NULL);
     XtAddCallback(tmpwdg, XmNactivateCallback, uitopactivatecb,
-		  (caddr_t) name);
+		  (XtPointer) name);
     XtManageChild(tmpwdg);
 
     return tmpwdg;
@@ -140,8 +140,8 @@ int rightpos;
 
 static void uitopactivatecb(wdg, actionname, calldata)
 Widget wdg;
-caddr_t actionname;
-XmPushButtonCallbackStruct *calldata;
+XtPointer actionname;
+XtPointer calldata;
 {
     uiAction_t *tmpaction;
 

@@ -99,8 +99,8 @@ static char logo_bits[] =
  0x00, 0x00, 0x00, 0x00, 0xa0, 0xff, 0x0f, 0x00, 0x00, 0x00, 0x00, 0x00};
 
 
-Widget uicreateinfoform();
-Widget uicreateinfook(Widget parent);
+static Widget uicreateinfoform();
+static Widget uicreateinfook(Widget parent);
 void uicreateinfolabels(Widget parent, Widget bottomwdg);
 static void uiinfookcb(char *address, HText_t * htext,
 		        HTextObject_t * htextobject, void *parameter);

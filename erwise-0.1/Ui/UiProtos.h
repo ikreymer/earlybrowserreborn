@@ -5,7 +5,7 @@
  *  Misc. prototypes (external to library)
  */
 
-extern int fprintf(FILE * stream, char *format,...);
+//extern int fprintf(FILE * stream, char *format,...);
 
 
 /*
@@ -83,7 +83,7 @@ extern void uiDialogVariableCB(Widget wdg, caddr_t variablename,
 			        XmAnyCallbackStruct * calldata);
 extern void uiDefineCursor(Cursor cursor);
 extern void uiUndefineCursor(void);
-extern ArgList uiVaSetArgs( /*int *nargs, va_alist*/ );
+extern ArgList uiVaSetArgs(int *nargs, ...);
 extern XtArgVal uiGetArg(Widget wdg, String resource);
 extern void *uiMalloc(int size);
 extern void *uiReAlloc(void *, int size);

@@ -140,7 +140,7 @@ typedef char	BOOLEAN;		/* Logical value */
 #define NO (BOOLEAN)0
 #endif
 
-#define TCP_PORT 2784		/* 80 Allocated by Jon Postel/ISI 24-Jan-92 */
+#define TCP_PORT 80		/* 80 Allocated by Jon Postel/ISI 24-Jan-92 */
 
 /*	Is character c white space? */
 
@@ -161,7 +161,8 @@ typedef char	BOOLEAN;		/* Logical value */
 #include <varargs.h>
 #endif
 #else
-#include <varargs.h>
+//#include <varargs.h>
+#include <stdarg.h>
 #endif /* ERWISE */
 
 #ifdef CURSES

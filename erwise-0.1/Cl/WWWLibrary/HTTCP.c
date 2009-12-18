@@ -37,6 +37,7 @@ PRIVATE char *hostname=0;		/* The name of this host */
 ** On return,
 **	returns		a negative status in the unix way.
 */
+#define THINK_C
 #ifndef PCNFS
 #ifdef vms
 extern int uerrno;	/* Deposit of error info (as perr errno.h) */
@@ -223,7 +224,7 @@ PUBLIC int HTParseInet(sin, str)
 #ifdef MVS	/* Oustanding problem with crsh in MVS gethostbyname */
 	if(TRACE)printf("HTTCP: Calling gethostbyname(%s)\n", host);
 #endif
-	phost=gethostbyname(host);	/* See netdb.h */
+	phost=gethostbyname2(host,AF_INET);	/* See netdb.h */
 #ifdef MVS
 	if(TRACE)printf("HTTCP: gethostbyname() returned %d\n", phost);
 #endif
