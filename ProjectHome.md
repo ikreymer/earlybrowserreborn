@@ -1,0 +1,1 @@
+A project for making early World Wide Web browser running in modern Linux.
